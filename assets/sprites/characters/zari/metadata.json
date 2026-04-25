@@ -1,0 +1,30 @@
+{
+  "character": {
+    "id": "0456ccff-756b-42b7-9141-8364be86642b",
+    "name": "zari",
+    "prompt": "Young female student archer, white shirt under a purple hoodie, dark shorts with leggings, sneakers. Hair in a high ponytail, wide enthusiastic brown eyes, big smile. Holds a handmade wooden bow, pencil case worn as a quiver on her back. Pixel art style, thick black outlines, clean cel-shading, saturated colors, semi-realistic proportions, detailed face with visible eyes, dark shadows on clothing folds, professional sprite quality.",
+    "size": {
+      "width": 92,
+      "height": 92
+    },
+    "template_id": "mannequin",
+    "directions": 8,
+    "view": "low top-down",
+    "created_at": "2026-04-23T22:29:31.092413+00:00"
+  },
+  "frames": {
+    "rotations": {
+      "south": "rotations/south.png",
+      "south-east": "rotations/south-east.png",
+      "east": "rotations/east.png",
+      "north-east": "rotations/north-east.png",
+      "north": "rotations/north.png",
+      "north-west": "rotations/north-west.png",
+      "west": "rotations/west.png",
+      "south-west": "rotations/south-west.png"
+    },
+    "animations": {}
+  },
+  "export_version": "2.0",
+  "export_date": "2026-04-25T15:10:15.660933"
+}

@@ -1,7 +1,12 @@
 [gd_scene format=3 uid="uid://bblbxhgifqypx"]
 
 [ext_resource type="Texture2D" uid="uid://b1ksturm4e6nn" path="res://icon.svg" id="1_tr34o"]
+[ext_resource type="Script" uid="uid://bwnct6fqr38cf" path="res://icon.gd" id="2_hqyvl"]
 
 [node name="Icon" type="Sprite2D" unique_id=610321301]
 position = Vector2(540, 337)
 texture = ExtResource("1_tr34o")
+script = ExtResource("2_hqyvl")
+
+[node name="Window" type="Window" parent="." unique_id=1285470657]
+oversampling_override = 1.0
