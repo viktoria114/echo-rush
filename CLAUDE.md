@@ -1,7 +1,11 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 # Echo Rush
 
 Shooter roguelite top-down en 2D con 4 personajes estudiantiles.
-Motor: **Godot 4** | Lenguaje: **GDScript únicamente** | Integración: **Claude API**
+Motor: **Godot 4.6.2** | Lenguaje: **GDScript únicamente** | Integración: **Claude API**
 
 ---
 
@@ -11,6 +15,22 @@ Cuatro estudiantes caen a un mundo paralelo a través de un portal y deben
 sobrevivir oleadas de monstruos. Entre oleadas aparece **Echo**, un mercader
 misterioso cuyos diálogos se generan con Claude API. El jugador escribe en
 lenguaje libre y Echo responde con keywords que activan habilidades reales.
+
+---
+
+## Estado actual del proyecto (2026-04-25)
+
+**Existe:**
+- Escenas de personajes: `scenes/characters/Rael.tscn`, `Lena.tscn`, `Brom.tscn`, `Zari.tscn`
+- Sprites de Rael completos: rotaciones (8 dir) + animaciones walk/punch/idle en `assets/sprites/characters/rael/`
+- Sprites de Zari: solo rotaciones (8 dir) en `assets/sprites/characters/zari/` — sin animaciones aún
+- Packs de fondos: descargados como ZIP en `assets/backgrounds/` — **no extraídos todavía**
+
+**Pendiente (no existe código aún):**
+- Toda la carpeta `/scripts/` (player, enemies, ui, systems)
+- Escenas de niveles, UI, menús, enemigos
+- `config.gd` (debe crearse antes de cualquier script que lo use)
+- Audio, fuentes, sprites de Lena/Brom/enemies/ui
 
 ---
 
@@ -29,20 +49,79 @@ lenguaje libre y Echo responde con keywords que activan habilidades reales.
 
 ```
 /scenes/
-  levels/       → Level1, Level2, Level3, PrologueScene, InfiniteMode
-  ui/           → HUD, GameOver, EchoShop, FinalChoice, MainMenu
-  characters/   → Player (Rael), Lena, Brom, Zari
-  enemies/      → Enemy (base), GoblinCaptain, GolemGuardian, PortalGuardian
-/scripts/
+  levels/       → Level1, Level2, Level3, PrologueScene, InfiniteMode  [PENDIENTE]
+  ui/           → HUD, GameOver, EchoShop, FinalChoice, MainMenu        [PENDIENTE]
+  characters/   → Rael.tscn, Lena.tscn, Brom.tscn, Zari.tscn          [EXISTE]
+  enemies/      → Enemy (base), GoblinCaptain, GolemGuardian, PortalGuardian [PENDIENTE]
+/scripts/       → [PENDIENTE — crear esta carpeta con los primeros scripts]
   player/       → movimiento, ataque, stats de Rael
   enemies/      → IA básica de enemigos
   ui/           → lógica de pantallas
   systems/      → WaveManager, EchoAPI, KeywordSystem, DialogueSystem
 /assets/
-  sprites/      → personajes, enemigos, fondos
-  audio/        → música y efectos
-  fonts/        → tipografías del juego
+  sprites/characters/rael/     → rotaciones/ + animations/  [COMPLETO]
+  sprites/characters/zari/     → rotaciones/ solo           [PARCIAL]
+  sprites/characters/lena/     → vacío                      [PENDIENTE]
+  sprites/characters/brom/     → vacío                      [PENDIENTE]
+  backgrounds/                 → ZIPs descargados, sin extraer
+  audio/music/ audio/sfx/      → vacíos
+  fonts/                       → vacío
 ```
+
+---
+
+## Assets disponibles
+
+Todos los assets están en `res://assets/`. Cuando uses un asset en una escena,
+**siempre referenciá la ruta completa** con `res://` para que Godot la resuelva.
+
+### Fondos por nivel
+
+| Nivel | Carpeta | Pack |
+|-------|---------|------|
+| Prólogo — Aula | `res://assets/backgrounds/school/` | 2dClassroomAssetPackByStyloo |
+| Prólogo — Sótano | `res://assets/backgrounds/dark-lakes/` | dark-lakes |
+| Nivel 1 — Aldea | `res://assets/backgrounds/village/` | 2dvillageassetpackwithoutline |
+| Nivel 2 — Ciudad | `res://assets/backgrounds/city/` | 2dcitywithoutoutline |
+| Nivel 3 — Dungeon | `res://assets/backgrounds/dungeon/` | 2ddungeonassetpackwithoutline |
+| Parallax general | `res://assets/backgrounds/parallax/` | RiverParallaxBackground + Forest&&Moon |
+
+> Los packs de fondos son archivos ZIP. Extraerlos dentro de su carpeta correspondiente antes de referenciarlos en escenas.
+
+### Sprites de Rael (92×92 px, Pixellab)
+
+Organizados en `res://assets/sprites/characters/rael/`:
+
+| Subcarpeta | Contenido |
+|------------|-----------|
+| `rotations/` | 8 sprites estáticos (S, SE, E, NE, N, NW, W, SW) |
+| `animations/animation-75bd5ea5/` | Walk — 6 frames × 3 dirs (S, N, E) |
+| `animations/Walking-cf92d571/` | Walk — 6 frames × dir W |
+| `animations/Cross_Punch-a4b41712/` | Ataque — 6 frames × 4 dirs (S, N, E, W) |
+| `animations/Fight_Stance_Idle-da976329/` | Idle — 8 frames × dir S |
+
+Al configurar `AnimatedSprite2D` para Rael, combinar los frames de estas carpetas por dirección.
+
+### Sprites de Zari (92×92 px, Pixellab)
+
+Solo rotaciones en `res://assets/sprites/characters/zari/rotations/` (8 direcciones).
+Animaciones de Zari aún no descargadas.
+
+### Sprites de Lena y Brom (pendientes)
+
+Generados con Pixellab. IDs para descargar cuando estén listos:
+- **Lena:** `e4d0bf23-cee7-41b1-b13f-203f7bcfff7f`
+- **Brom:** `b5394951-d8ca-4073-9a5f-649219bd2e0e`
+
+Usar placeholder `Polygon2D` (Lena = azul, Brom = verde) hasta que los sprites estén disponibles.
+
+### Reglas de uso de assets
+
+- Nunca hardcodear rutas de assets como strings sueltos. Usar `preload()` al inicio del script.
+- Ejemplo: `const SPRITE_RAEL = preload("res://assets/sprites/characters/rael/rotations/south.png")`
+- Si un asset del pack tiene múltiples variantes, elegir la versión **sin outline** cuando esté disponible.
+- Audio solo en formato `.ogg`. Si un efecto viene en otro formato, convertirlo antes de importar.
+- Los fondos de parallax se implementan con nodos `ParallaxBackground` + `ParallaxLayer` de Godot.
 
 ---
 
@@ -75,7 +154,7 @@ Máximo 3 keywords activas simultáneamente. Mostrar en HUD.
 
 ## Claude API — Echo
 
-- Modelo: `claude-sonnet-4-20250514`
+- Modelo: `claude-sonnet-4-6`
 - La llamada se hace desde `EchoAPI.gd` via `HTTPRequest` de Godot
 - El system prompt define la personalidad de Echo y las keywords disponibles
 - Parsear la keyword con regex: buscar patrón `\[([A-Z]+)\]` al final de la respuesta
@@ -110,10 +189,11 @@ Máximo 3 keywords activas simultáneamente. Mostrar en HUD.
 ## Gotchas importantes
 
 - El loop de oleadas vive en `WaveManager.gd`. No duplicar lógica de oleadas en los niveles.
-- Los compañeros autónomos (Lena, Brom, Zari) usan NavigationAgent2D — requiere NavigationRegion2D en cada nivel.
+- Los compañeros autónomos (Lena, Brom, Zari) usan `NavigationAgent2D` — requiere `NavigationRegion2D` en cada nivel.
 - `EchoShop` solo aparece cuando `WaveManager` emite la señal `wave_completed` y el número de oleada es múltiplo de 5.
 - La keyword se extrae con regex del **final** de la respuesta de Echo. Si no hay keyword, mostrar mensaje de error en UI sin crashear.
 - El prólogo es solo texto + sprites estáticos. No tiene combate ni física activa.
+- `config.gd` debe existir como Autoload antes de que cualquier otro script lo referencie.
 - `prompts_log.md` debe actualizarse manualmente después de cada sesión de trabajo con Claude Code.
 
 ---
