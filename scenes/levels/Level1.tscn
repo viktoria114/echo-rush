@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://c44ygdjspnilk"]
+
+[ext_resource type="Script" path="res://scripts/ui/level_manager.gd" id="1_lvl"]
+[ext_resource type="Script" path="res://scripts/systems/wave_manager.gd" id="2_wave"]
+[ext_resource type="PackedScene" uid="uid://raelscene0001" path="res://scenes/characters/Rael.tscn" id="3_rael"]
+[ext_resource type="PackedScene" uid="uid://lenascene0001" path="res://scenes/characters/Lena.tscn" id="4_lena"]
+[ext_resource type="PackedScene" uid="uid://bromscene0001" path="res://scenes/characters/Brom.tscn" id="5_brom"]
+[ext_resource type="PackedScene" uid="uid://zariscene0001" path="res://scenes/characters/Zari.tscn" id="6_zari"]
+[ext_resource type="PackedScene" uid="uid://enemyscene001" path="res://scenes/enemies/Enemy.tscn" id="7_enemy"]
+[ext_resource type="PackedScene" uid="uid://hudscene0001" path="res://scenes/ui/HUD.tscn" id="8_hud"]
+
+[node name="Level1" type="Node2D"]
+script = ExtResource("1_lvl")
+
+[node name="Cielo" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.35, 0.55, 0.75, 1)
+z_index = -10
+
+[node name="Suelo" type="ColorRect" parent="."]
+anchor_left = 0.0
+anchor_top = 0.42
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.28, 0.52, 0.2, 1)
+z_index = -9
+
+[node name="Enemigos" type="Node2D" parent="."]
+
+[node name="PuntosSpawn" type="Node2D" parent="."]
+
+[node name="Spawn1" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(120, 200)
+
+[node name="Spawn2" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1800, 200)
+
+[node name="Spawn3" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(120, 880)
+
+[node name="Spawn4" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1800, 880)
+
+[node name="WaveManager" type="Node" parent="."]
+script = ExtResource("2_wave")
+escena_enemigo = ExtResource("7_enemy")
+
+[node name="Jugador" parent="." instance=ExtResource("3_rael")]
+position = Vector2(960, 540)
+
+[node name="Companeros" type="Node2D" parent="."]
+
+[node name="Lena" parent="Companeros" instance=ExtResource("4_lena")]
+position = Vector2(880, 540)
+
+[node name="Brom" parent="Companeros" instance=ExtResource("5_brom")]
+position = Vector2(960, 620)
+
+[node name="Zari" parent="Companeros" instance=ExtResource("6_zari")]
+position = Vector2(1040, 540)
+
+[node name="HUD" parent="." instance=ExtResource("8_hud")]
