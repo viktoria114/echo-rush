@@ -1,0 +1,113 @@
+{
+  "character": {
+    "id": "540ea6d4-f1d0-49d1-be5d-33d4a6b9e60f",
+    "name": "rael",
+    "prompt": "Student fighter with a torn school uniform, sleeves rolled up, red scarf around his neck. Athletic build, spiky dark hair, confident aggressive stance. Holds a baseball bat as weapon. Warm red and grey color palette.",
+    "size": {
+      "width": 92,
+      "height": 92
+    },
+    "template_id": "mannequin",
+    "directions": 8,
+    "view": "low top-down",
+    "created_at": "2026-04-23T22:06:00.948389+00:00"
+  },
+  "frames": {
+    "rotations": {
+      "south": "rotations/south.png",
+      "south-east": "rotations/south-east.png",
+      "east": "rotations/east.png",
+      "north-east": "rotations/north-east.png",
+      "north": "rotations/north.png",
+      "north-west": "rotations/north-west.png",
+      "west": "rotations/west.png",
+      "south-west": "rotations/south-west.png"
+    },
+    "animations": {
+      "animation-75bd5ea5": {
+        "south": [
+          "animations/animation-75bd5ea5/south/frame_000.png",
+          "animations/animation-75bd5ea5/south/frame_001.png",
+          "animations/animation-75bd5ea5/south/frame_002.png",
+          "animations/animation-75bd5ea5/south/frame_003.png",
+          "animations/animation-75bd5ea5/south/frame_004.png",
+          "animations/animation-75bd5ea5/south/frame_005.png"
+        ],
+        "north": [
+          "animations/animation-75bd5ea5/north/frame_000.png",
+          "animations/animation-75bd5ea5/north/frame_001.png",
+          "animations/animation-75bd5ea5/north/frame_002.png",
+          "animations/animation-75bd5ea5/north/frame_003.png",
+          "animations/animation-75bd5ea5/north/frame_004.png",
+          "animations/animation-75bd5ea5/north/frame_005.png"
+        ],
+        "east": [
+          "animations/animation-75bd5ea5/east/frame_000.png",
+          "animations/animation-75bd5ea5/east/frame_001.png",
+          "animations/animation-75bd5ea5/east/frame_002.png",
+          "animations/animation-75bd5ea5/east/frame_003.png",
+          "animations/animation-75bd5ea5/east/frame_004.png",
+          "animations/animation-75bd5ea5/east/frame_005.png"
+        ]
+      },
+      "Walking-cf92d571": {
+        "west": [
+          "animations/Walking-cf92d571/west/frame_000.png",
+          "animations/Walking-cf92d571/west/frame_001.png",
+          "animations/Walking-cf92d571/west/frame_002.png",
+          "animations/Walking-cf92d571/west/frame_003.png",
+          "animations/Walking-cf92d571/west/frame_004.png",
+          "animations/Walking-cf92d571/west/frame_005.png"
+        ]
+      },
+      "Cross_Punch-a4b41712": {
+        "south": [
+          "animations/Cross_Punch-a4b41712/south/frame_000.png",
+          "animations/Cross_Punch-a4b41712/south/frame_001.png",
+          "animations/Cross_Punch-a4b41712/south/frame_002.png",
+          "animations/Cross_Punch-a4b41712/south/frame_003.png",
+          "animations/Cross_Punch-a4b41712/south/frame_004.png",
+          "animations/Cross_Punch-a4b41712/south/frame_005.png"
+        ],
+        "east": [
+          "animations/Cross_Punch-a4b41712/east/frame_000.png",
+          "animations/Cross_Punch-a4b41712/east/frame_001.png",
+          "animations/Cross_Punch-a4b41712/east/frame_002.png",
+          "animations/Cross_Punch-a4b41712/east/frame_003.png",
+          "animations/Cross_Punch-a4b41712/east/frame_004.png",
+          "animations/Cross_Punch-a4b41712/east/frame_005.png"
+        ],
+        "north": [
+          "animations/Cross_Punch-a4b41712/north/frame_000.png",
+          "animations/Cross_Punch-a4b41712/north/frame_001.png",
+          "animations/Cross_Punch-a4b41712/north/frame_002.png",
+          "animations/Cross_Punch-a4b41712/north/frame_003.png",
+          "animations/Cross_Punch-a4b41712/north/frame_004.png",
+          "animations/Cross_Punch-a4b41712/north/frame_005.png"
+        ],
+        "west": [
+          "animations/Cross_Punch-a4b41712/west/frame_000.png",
+          "animations/Cross_Punch-a4b41712/west/frame_001.png",
+          "animations/Cross_Punch-a4b41712/west/frame_002.png",
+          "animations/Cross_Punch-a4b41712/west/frame_003.png",
+          "animations/Cross_Punch-a4b41712/west/frame_004.png",
+          "animations/Cross_Punch-a4b41712/west/frame_005.png"
+        ]
+      },
+      "Fight_Stance_Idle-da976329": {
+        "south": [
+          "animations/Fight_Stance_Idle-da976329/south/frame_000.png",
+          "animations/Fight_Stance_Idle-da976329/south/frame_001.png",
+          "animations/Fight_Stance_Idle-da976329/south/frame_002.png",
+          "animations/Fight_Stance_Idle-da976329/south/frame_003.png",
+          "animations/Fight_Stance_Idle-da976329/south/frame_004.png",
+          "animations/Fight_Stance_Idle-da976329/south/frame_005.png",
+          "animations/Fight_Stance_Idle-da976329/south/frame_006.png",
+          "animations/Fight_Stance_Idle-da976329/south/frame_007.png"
+        ]
+      }
+    }
+  },
+  "export_version": "2.0",
+  "export_date": "2026-04-25T15:09:59.000261"
+}
