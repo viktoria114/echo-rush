@@ -1,0 +1,3 @@
+# Ignorar ZIPs de asset packs — demasiado grandes para GitHub
+*.zip
+*.ZIP
