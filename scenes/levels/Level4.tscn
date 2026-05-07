@@ -1,0 +1,128 @@
+[gd_scene format=3 uid="uid://level4_tscn_01"]
+
+[ext_resource type="Script" path="res://scripts/ui/level_manager.gd" id="1_lvl"]
+[ext_resource type="Script" path="res://scripts/systems/wave_manager.gd" id="2_wave"]
+[ext_resource type="PackedScene" uid="uid://raelscene0001" path="res://scenes/characters/Rael.tscn" id="3_rael"]
+[ext_resource type="PackedScene" uid="uid://lenascene0001" path="res://scenes/characters/Lena.tscn" id="4_lena"]
+[ext_resource type="PackedScene" uid="uid://bromscene0001" path="res://scenes/characters/Brom.tscn" id="5_brom"]
+[ext_resource type="PackedScene" uid="uid://zariscene0001" path="res://scenes/characters/Zari.tscn" id="6_zari"]
+[ext_resource type="PackedScene" uid="uid://enemyscene001" path="res://scenes/enemies/Enemy.tscn" id="7_enemy"]
+[ext_resource type="PackedScene" uid="uid://boss_scene_01" path="res://scenes/enemies/Boss.tscn" id="8_boss"]
+[ext_resource type="PackedScene" uid="uid://hudscene0001" path="res://scenes/ui/HUD.tscn" id="9_hud"]
+
+[sub_resource type="RectangleShape2D" id="S_W1"]
+size = Vector2(120, 120)
+[sub_resource type="RectangleShape2D" id="S_W2"]
+size = Vector2(120, 120)
+[sub_resource type="RectangleShape2D" id="S_W3"]
+size = Vector2(120, 120)
+[sub_resource type="RectangleShape2D" id="S_W4"]
+size = Vector2(120, 120)
+
+[node name="Level4" type="Node2D"]
+script = ExtResource("1_lvl")
+proxima_escena = ""
+
+[node name="VoidOscuro" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.06, 0.04, 0.10, 1)
+z_index = -10
+
+[node name="Arena" type="ColorRect" parent="."]
+anchor_left = 0.05
+anchor_top = 0.10
+anchor_right = 0.95
+anchor_bottom = 0.95
+color = Color(0.10, 0.07, 0.16, 1)
+z_index = -9
+
+[node name="Obstaculos" type="Node2D" parent="."]
+
+[node name="PilarTL" type="StaticBody2D" parent="Obstaculos"]
+position = Vector2(180, 155)
+[node name="Forma" type="CollisionShape2D" parent="Obstaculos/PilarTL"]
+shape = SubResource("S_W1")
+[node name="Visual" type="Polygon2D" parent="Obstaculos/PilarTL"]
+polygon = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
+color = Color(0.20, 0.10, 0.28, 1)
+
+[node name="PilarTR" type="StaticBody2D" parent="Obstaculos"]
+position = Vector2(1740, 155)
+[node name="Forma" type="CollisionShape2D" parent="Obstaculos/PilarTR"]
+shape = SubResource("S_W2")
+[node name="Visual" type="Polygon2D" parent="Obstaculos/PilarTR"]
+polygon = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
+color = Color(0.20, 0.10, 0.28, 1)
+
+[node name="PilarBL" type="StaticBody2D" parent="Obstaculos"]
+position = Vector2(180, 925)
+[node name="Forma" type="CollisionShape2D" parent="Obstaculos/PilarBL"]
+shape = SubResource("S_W3")
+[node name="Visual" type="Polygon2D" parent="Obstaculos/PilarBL"]
+polygon = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
+color = Color(0.20, 0.10, 0.28, 1)
+
+[node name="PilarBR" type="StaticBody2D" parent="Obstaculos"]
+position = Vector2(1740, 925)
+[node name="Forma" type="CollisionShape2D" parent="Obstaculos/PilarBR"]
+shape = SubResource("S_W4")
+[node name="Visual" type="Polygon2D" parent="Obstaculos/PilarBR"]
+polygon = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
+color = Color(0.20, 0.10, 0.28, 1)
+
+[node name="Enemigos" type="Node2D" parent="."]
+
+[node name="PuntosSpawn" type="Node2D" parent="."]
+[node name="S01" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(100, 130)
+[node name="S02" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(380, 80)
+[node name="S03" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(680, 70)
+[node name="S04" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(960, 65)
+[node name="S05" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1240, 70)
+[node name="S06" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1540, 80)
+[node name="S07" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1820, 130)
+[node name="S08" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(80, 340)
+[node name="S09" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1840, 340)
+[node name="S10" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(80, 540)
+[node name="S11" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1840, 540)
+[node name="S12" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(80, 740)
+[node name="S13" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1840, 740)
+[node name="S14" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(100, 950)
+[node name="S15" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(960, 1010)
+[node name="S16" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1820, 950)
+
+[node name="WaveManager" type="Node" parent="."]
+script = ExtResource("2_wave")
+waves_per_level = 7
+escena_enemigo = ExtResource("7_enemy")
+escena_boss = ExtResource("8_boss")
+
+[node name="Jugador" parent="." instance=ExtResource("3_rael")]
+position = Vector2(960, 540)
+
+[node name="Companeros" type="Node2D" parent="."]
+[node name="Lena" parent="Companeros" instance=ExtResource("4_lena")]
+position = Vector2(880, 540)
+[node name="Brom" parent="Companeros" instance=ExtResource("5_brom")]
+position = Vector2(960, 620)
+[node name="Zari" parent="Companeros" instance=ExtResource("6_zari")]
+position = Vector2(1040, 540)
+
+[node name="HUD" parent="." instance=ExtResource("9_hud")]

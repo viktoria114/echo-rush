@@ -30,8 +30,13 @@ const ANIM_ATTACK := {
 
 func _ready() -> void:
 	add_to_group("jugador")
+<<<<<<< HEAD
 	vida_actual = Config.PLAYER_MAX_HP
 	sprite.play("running_south")
+=======
+	vida_actual = UpgradeSystem.get_vida_max()
+	_configurar_animaciones()
+>>>>>>> 6fe6e5e115d7b25944c97b7a580f89f20c382a2a
 
 func _physics_process(delta: float) -> void:
 	if ataque_cooldown > 0.0:
@@ -49,7 +54,7 @@ func _manejar_movimiento() -> void:
 	if dir != Vector2.ZERO:
 		dir = dir.normalized()
 		_actualizar_direccion(dir)
-		velocity = dir * Config.PLAYER_SPEED
+		velocity = dir * UpgradeSystem.get_velocidad()
 		if not atacando:
 			sprite.play(ANIM_WALK.get(direccion, "walk_south"))
 	else:
@@ -71,21 +76,22 @@ func _actualizar_direccion(dir: Vector2) -> void:
 		direccion = "south" if dir.y > 0 else "north"
 
 func _ejecutar_ataque() -> void:
-	var cooldown := Config.PLAYER_ATTACK_COOLDOWN
-	if "RAYO" in keywords_activas:
-		cooldown *= Config.KEYWORD_RAYO_COOLDOWN_MULT
-	ataque_cooldown = cooldown
+	ataque_cooldown = UpgradeSystem.get_cooldown()
 	atacando = true
 	contador_ataques += 1
 
 	_posicionar_hitbox()
 	sprite.play(ANIM_ATTACK.get(direccion, "attack_south"))
 
+<<<<<<< HEAD
 	# Detectar golpe a mitad de la animación
 	await get_tree().create_timer(0.6).timeout
+=======
+	await get_tree().create_timer(0.15).timeout
+>>>>>>> 6fe6e5e115d7b25944c97b7a580f89f20c382a2a
 	for cuerpo in hitbox.get_overlapping_bodies():
 		if cuerpo.is_in_group("enemigos") and cuerpo.has_method("recibir_dano"):
-			cuerpo.recibir_dano(Config.PLAYER_ATTACK_DAMAGE)
+			cuerpo.recibir_dano(UpgradeSystem.get_dano_melee())
 			if "SANGRE" in keywords_activas:
 				curar(Config.KEYWORD_SANGRE_HEAL)
 			if "VENENO" in keywords_activas:
@@ -131,7 +137,7 @@ func recibir_dano(cantidad: int) -> void:
 		queue_free()
 
 func curar(cantidad: int) -> void:
-	vida_actual = min(Config.PLAYER_MAX_HP, vida_actual + cantidad)
+	vida_actual = min(UpgradeSystem.get_vida_max(), vida_actual + cantidad)
 	emit_signal("vida_cambiada", vida_actual)
 
 func agregar_keyword(kw: String) -> void:

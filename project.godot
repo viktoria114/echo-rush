@@ -18,6 +18,10 @@ config/icon="res://icon.svg"
 [autoload]
 
 Config="*res://scripts/config.gd"
+Economy="*res://scripts/systems/economy.gd"
+KeywordSystem="*res://scripts/systems/keyword_system.gd"
+EchoAPI="*res://scripts/systems/echo_api.gd"
+UpgradeSystem="*res://scripts/systems/upgrade_system.gd"
 
 [input]
 

@@ -6,18 +6,31 @@
 [ext_resource type="PackedScene" uid="uid://lenascene0001" path="res://scenes/characters/Lena.tscn" id="4_lena"]
 [ext_resource type="PackedScene" uid="uid://bromscene0001" path="res://scenes/characters/Brom.tscn" id="5_brom"]
 [ext_resource type="PackedScene" uid="uid://zariscene0001" path="res://scenes/characters/Zari.tscn" id="6_zari"]
+[ext_resource type="PackedScene" uid="uid://boss_scene_01" path="res://scenes/enemies/Boss.tscn" id="7_boss"]
 [ext_resource type="PackedScene" uid="uid://hudscene0001" path="res://scenes/ui/HUD.tscn" id="8_hud"]
 [ext_resource type="PackedScene" path="res://scenes/enemies/Slime.tscn" id="9_slime"]
 [ext_resource type="PackedScene" path="res://scenes/enemies/Goblin.tscn" id="10_goblin"]
 
+[sub_resource type="RectangleShape2D" id="S_W1"]
+size = Vector2(220, 90)
+[sub_resource type="RectangleShape2D" id="S_W2"]
+size = Vector2(220, 90)
+[sub_resource type="RectangleShape2D" id="S_W3"]
+size = Vector2(200, 55)
+[sub_resource type="RectangleShape2D" id="S_W4"]
+size = Vector2(200, 55)
+[sub_resource type="RectangleShape2D" id="S_W5"]
+size = Vector2(300, 55)
+
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_lvl")
+proxima_escena = "res://scenes/levels/Level2.tscn"
 
 [node name="Cielo" type="ColorRect" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color(0.35, 0.55, 0.75, 1)
+color = Color(0.38, 0.6, 0.85, 1)
 z_index = -10
 
 [node name="Suelo" type="ColorRect" parent="."]
@@ -25,40 +38,93 @@ anchor_left = 0.0
 anchor_top = 0.42
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color(0.28, 0.52, 0.2, 1)
+color = Color(0.28, 0.52, 0.20, 1)
 z_index = -9
+
+[node name="Obstaculos" type="Node2D" parent="."]
+
+[node name="CasaIzq" type="StaticBody2D" parent="Obstaculos"]
+position = Vector2(220, 280)
+[node name="Forma" type="CollisionShape2D" parent="Obstaculos/CasaIzq"]
+shape = SubResource("S_W1")
+[node name="Visual" type="Polygon2D" parent="Obstaculos/CasaIzq"]
+polygon = PackedVector2Array(-110, -45, 110, -45, 110, 45, -110, 45)
+color = Color(0.55, 0.36, 0.18, 1)
+
+[node name="CasaDer" type="StaticBody2D" parent="Obstaculos"]
+position = Vector2(1700, 280)
+[node name="Forma" type="CollisionShape2D" parent="Obstaculos/CasaDer"]
+shape = SubResource("S_W2")
+[node name="Visual" type="Polygon2D" parent="Obstaculos/CasaDer"]
+polygon = PackedVector2Array(-110, -45, 110, -45, 110, 45, -110, 45)
+color = Color(0.55, 0.36, 0.18, 1)
+
+[node name="CercaArrIzq" type="StaticBody2D" parent="Obstaculos"]
+position = Vector2(750, 170)
+[node name="Forma" type="CollisionShape2D" parent="Obstaculos/CercaArrIzq"]
+shape = SubResource("S_W3")
+[node name="Visual" type="Polygon2D" parent="Obstaculos/CercaArrIzq"]
+polygon = PackedVector2Array(-100, -27, 100, -27, 100, 27, -100, 27)
+color = Color(0.5, 0.32, 0.14, 1)
+
+[node name="CercaArrDer" type="StaticBody2D" parent="Obstaculos"]
+position = Vector2(1170, 170)
+[node name="Forma" type="CollisionShape2D" parent="Obstaculos/CercaArrDer"]
+shape = SubResource("S_W4")
+[node name="Visual" type="Polygon2D" parent="Obstaculos/CercaArrDer"]
+polygon = PackedVector2Array(-100, -27, 100, -27, 100, 27, -100, 27)
+color = Color(0.5, 0.32, 0.14, 1)
+
+[node name="CercaBajo" type="StaticBody2D" parent="Obstaculos"]
+position = Vector2(960, 860)
+[node name="Forma" type="CollisionShape2D" parent="Obstaculos/CercaBajo"]
+shape = SubResource("S_W5")
+[node name="Visual" type="Polygon2D" parent="Obstaculos/CercaBajo"]
+polygon = PackedVector2Array(-150, -27, 150, -27, 150, 27, -150, 27)
+color = Color(0.5, 0.32, 0.14, 1)
 
 [node name="Enemigos" type="Node2D" parent="."]
 
 [node name="PuntosSpawn" type="Node2D" parent="."]
-
-[node name="Spawn1" type="Marker2D" parent="PuntosSpawn"]
-position = Vector2(120, 200)
-
-[node name="Spawn2" type="Marker2D" parent="PuntosSpawn"]
-position = Vector2(1800, 200)
-
-[node name="Spawn3" type="Marker2D" parent="PuntosSpawn"]
-position = Vector2(120, 880)
-
-[node name="Spawn4" type="Marker2D" parent="PuntosSpawn"]
-position = Vector2(1800, 880)
+[node name="S01" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(100, 150)
+[node name="S02" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(480, 80)
+[node name="S03" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(960, 70)
+[node name="S04" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1440, 80)
+[node name="S05" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1820, 150)
+[node name="S06" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(80, 540)
+[node name="S07" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1840, 540)
+[node name="S08" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(100, 930)
+[node name="S09" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(480, 1000)
+[node name="S10" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(960, 1010)
+[node name="S11" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1440, 1000)
+[node name="S12" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1820, 930)
 
 [node name="WaveManager" type="Node" parent="."]
 script = ExtResource("2_wave")
+waves_per_level = 2
 escenas_enemigos = [ExtResource("9_slime"), ExtResource("10_goblin")]
+escena_boss = ExtResource("7_boss")
 
 [node name="Jugador" parent="." instance=ExtResource("3_rael")]
 position = Vector2(960, 540)
 
 [node name="Companeros" type="Node2D" parent="."]
-
 [node name="Lena" parent="Companeros" instance=ExtResource("4_lena")]
 position = Vector2(880, 540)
-
 [node name="Brom" parent="Companeros" instance=ExtResource("5_brom")]
 position = Vector2(960, 620)
-
 [node name="Zari" parent="Companeros" instance=ExtResource("6_zari")]
 position = Vector2(1040, 540)
 

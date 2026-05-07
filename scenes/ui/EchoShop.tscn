@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://cxmwk7r4bnpq2"]
+
+[ext_resource type="Script" path="res://scripts/ui/echo_shop.gd" id="1_es"]
+
+[node name="EchoShop" type="CanvasLayer"]
+script = ExtResource("1_es")
+
+[node name="Fondo" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.04, 0.04, 0.08, 0.88)
+
+[node name="Centro" type="CenterContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Panel" type="PanelContainer" parent="Centro"]
+custom_minimum_size = Vector2(740, 0)
+
+[node name="Margin" type="MarginContainer" parent="Centro/Panel"]
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_top = 28
+theme_override_constants/margin_bottom = 28
+
+[node name="VBox" type="VBoxContainer" parent="Centro/Panel/Margin"]
+theme_override_constants/separation = 14
+
+[node name="LabelTitulo" type="Label" parent="Centro/Panel/Margin/VBox"]
+layout_mode = 2
+text = "~ E C H O ~"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 42
+theme_override_colors/font_color = Color(0.95, 0.78, 0.25, 1)
+
+[node name="LabelEcho" type="Label" parent="Centro/Panel/Margin/VBox"]
+layout_mode = 2
+text = "Echo: ..."
+autowrap_mode = 3
+custom_minimum_size = Vector2(0, 110)
+theme_override_font_sizes/font_size = 17
+theme_override_colors/font_color = Color(0.88, 0.88, 0.88, 1)
+
+[node name="Sep1" type="HSeparator" parent="Centro/Panel/Margin/VBox"]
+layout_mode = 2
+
+[node name="FilaInfo" type="HBoxContainer" parent="Centro/Panel/Margin/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="LabelMonedasKey" type="Label" parent="Centro/Panel/Margin/VBox/FilaInfo"]
+layout_mode = 2
+text = "Monedas:"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(1.0, 0.85, 0.2, 1)
+
+[node name="LabelMonedas" type="Label" parent="Centro/Panel/Margin/VBox/FilaInfo"]
+layout_mode = 2
+text = "0"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(1.0, 0.85, 0.2, 1)
+
+[node name="LabelKeywords" type="Label" parent="Centro/Panel/Margin/VBox"]
+layout_mode = 2
+text = "Sin poderes activos"
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(0.65, 0.92, 1.0, 1)
+
+[node name="Sep2" type="HSeparator" parent="Centro/Panel/Margin/VBox"]
+layout_mode = 2
+
+[node name="HBoxInput" type="HBoxContainer" parent="Centro/Panel/Margin/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="InputJugador" type="LineEdit" parent="Centro/Panel/Margin/VBox/HBoxInput"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Habla con Echo..."
+theme_override_font_sizes/font_size = 16
+
+[node name="BtnPreguntar" type="Button" parent="Centro/Panel/Margin/VBox/HBoxInput"]
+layout_mode = 2
+text = "Preguntar"
+theme_override_font_sizes/font_size = 16
+
+[node name="BtnReroll" type="Button" parent="Centro/Panel/Margin/VBox"]
+layout_mode = 2
+text = "Preguntar de nuevo (50 monedas)"
+theme_override_font_sizes/font_size = 14
+
+[node name="BtnContinuar" type="Button" parent="Centro/Panel/Margin/VBox"]
+layout_mode = 2
+text = "Continuar  →"
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(0.35, 1.0, 0.45, 1)
