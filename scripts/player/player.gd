@@ -136,4 +136,3 @@ func agregar_keyword(kw: String) -> void:
 	keywords_activas.append(kw)
 	if kw == "ESCUDO":
 		escudo_restante += Config.KEYWORD_SHIELD_HP
-

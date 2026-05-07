@@ -4,10 +4,10 @@
 [ext_resource type="Script" path="res://scripts/systems/wave_manager.gd" id="2_wave"]
 [ext_resource type="PackedScene" uid="uid://raelscene0001" path="res://scenes/characters/Rael.tscn" id="3_rael"]
 [ext_resource type="PackedScene" uid="uid://lenascene0001" path="res://scenes/characters/Lena.tscn" id="4_lena"]
-[ext_resource type="PackedScene" uid="uid://bromscene0001" path="res://scenes/characters/Brom.tscn" id="5_brom"]
 [ext_resource type="PackedScene" uid="uid://zariscene0001" path="res://scenes/characters/Zari.tscn" id="6_zari"]
-[ext_resource type="PackedScene" uid="uid://enemyscene001" path="res://scenes/enemies/Enemy.tscn" id="7_enemy"]
-[ext_resource type="PackedScene" uid="uid://boss_scene_01" path="res://scenes/enemies/Boss.tscn" id="8_boss"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/Goblin.tscn" id="7_goblin"]
+[ext_resource type="PackedScene" uid="uid://skeleton_archer_01" path="res://scenes/enemies/SkeletonArcher.tscn" id="8_skeleton"]
+[ext_resource type="PackedScene" uid="uid://boss_golem_01" path="res://scenes/enemies/BossGolem.tscn" id="10_golem"]
 [ext_resource type="PackedScene" uid="uid://hudscene0001" path="res://scenes/ui/HUD.tscn" id="9_hud"]
 
 [sub_resource type="RectangleShape2D" id="S_W1"]
@@ -123,8 +123,8 @@ position = Vector2(1820, 920)
 [node name="WaveManager" type="Node" parent="."]
 script = ExtResource("2_wave")
 waves_per_level = 3
-escena_enemigo = ExtResource("7_enemy")
-escena_boss = ExtResource("8_boss")
+escenas_enemigos = [ExtResource("7_goblin"), ExtResource("8_skeleton")]
+escena_boss = ExtResource("10_golem")
 
 [node name="Jugador" parent="." instance=ExtResource("3_rael")]
 position = Vector2(960, 540)
@@ -132,8 +132,6 @@ position = Vector2(960, 540)
 [node name="Companeros" type="Node2D" parent="."]
 [node name="Lena" parent="Companeros" instance=ExtResource("4_lena")]
 position = Vector2(880, 540)
-[node name="Brom" parent="Companeros" instance=ExtResource("5_brom")]
-position = Vector2(960, 620)
 [node name="Zari" parent="Companeros" instance=ExtResource("6_zari")]
 position = Vector2(1040, 540)
 

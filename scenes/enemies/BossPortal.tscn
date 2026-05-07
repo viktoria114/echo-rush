@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://boss_portal_01"]
+
+[ext_resource type="Script" path="res://scripts/enemies/boss_portal.gd" id="1_portal"]
+
+[sub_resource type="CircleShape2D" id="PortColShape"]
+radius = 44.0
+
+[node name="BossPortal" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("1_portal")
+
+[node name="Poligono" type="Polygon2D" parent="."]
+color = Color(0.45, 0.10, 0.80, 1.0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("PortColShape")
