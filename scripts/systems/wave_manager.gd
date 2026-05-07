@@ -30,6 +30,9 @@ func iniciar_siguiente_oleada() -> void:
 		_spawnear_normales(cantidad)
 
 func _spawnear_normales(cantidad: int) -> void:
+	if puntos_spawn.is_empty() or escenas_enemigos.is_empty():
+		push_warning("WaveManager: puntos_spawn o escenas_enemigos no configurados en el inspector")
+		return
 	var indices: Array = []
 	for i in range(puntos_spawn.size()):
 		indices.append(i)

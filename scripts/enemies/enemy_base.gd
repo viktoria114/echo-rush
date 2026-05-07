@@ -63,11 +63,14 @@ func _morir() -> void:
 	_muerto = true
 	set_physics_process(false)
 	emit_signal("enemigo_muerto")
-	# Soltar moneda en la posición del enemigo
+	var pos := global_position
+	call_deferred("_soltar_moneda", pos)
+	call_deferred("queue_free")
+
+func _soltar_moneda(pos: Vector2) -> void:
 	var moneda := COIN_SCENE.instantiate()
 	get_parent().add_child(moneda)
-	moneda.global_position = global_position
-	queue_free()
+	moneda.global_position = pos
 
 func aplicar_veneno(dps: float) -> void:
 	veneno_dps = dps

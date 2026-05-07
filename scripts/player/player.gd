@@ -30,13 +30,8 @@ const ANIM_ATTACK := {
 
 func _ready() -> void:
 	add_to_group("jugador")
-<<<<<<< HEAD
-	vida_actual = Config.PLAYER_MAX_HP
-	sprite.play("running_south")
-=======
 	vida_actual = UpgradeSystem.get_vida_max()
-	_configurar_animaciones()
->>>>>>> 6fe6e5e115d7b25944c97b7a580f89f20c382a2a
+	sprite.play("running_south")
 
 func _physics_process(delta: float) -> void:
 	if ataque_cooldown > 0.0:
@@ -83,12 +78,7 @@ func _ejecutar_ataque() -> void:
 	_posicionar_hitbox()
 	sprite.play(ANIM_ATTACK.get(direccion, "attack_south"))
 
-<<<<<<< HEAD
-	# Detectar golpe a mitad de la animación
-	await get_tree().create_timer(0.6).timeout
-=======
 	await get_tree().create_timer(0.15).timeout
->>>>>>> 6fe6e5e115d7b25944c97b7a580f89f20c382a2a
 	for cuerpo in hitbox.get_overlapping_bodies():
 		if cuerpo.is_in_group("enemigos") and cuerpo.has_method("recibir_dano"):
 			cuerpo.recibir_dano(UpgradeSystem.get_dano_melee())
@@ -104,7 +94,7 @@ func _ejecutar_ataque() -> void:
 
 	var n_frames: int = sprite.sprite_frames.get_frame_count(sprite.animation)
 	var fps: float = sprite.sprite_frames.get_animation_speed(sprite.animation)
-	await get_tree().create_timer(float(n_frames) / fps - 0.6).timeout
+	await get_tree().create_timer(float(n_frames) / fps - 0.15).timeout
 	sprite.stop()
 	atacando = false
 

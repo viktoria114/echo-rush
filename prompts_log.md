@@ -138,3 +138,109 @@ scenes/
 - ✓ `scenes/enemies/` (carpeta de enemigos)
 - ✓ `scenes/npcs/` (nueva carpeta de NPCs)
 - ✓ `assets/sprites/npcs/` (nueva carpeta de NPCs)
+
+---
+
+## Sesión 2026-05-07 — Scripts de personajes, enemigos y sistemas core (commit `6fe6e5e`)
+
+**Acción:** Implementación de funcionalidades de gameplay principales
+
+### Scripts nuevos creados
+
+| Archivo | Descripción |
+|---------|-------------|
+| `scripts/systems/echo_api.gd` | Integración Claude API via HTTPRequest; parsea keyword con regex `\[([A-Z]+)\]` |
+| `scripts/systems/economy.gd` | Autoload: maneja monedas, drops de enemigos |
+| `scripts/systems/keyword_system.gd` | Autoload: almacena y aplica hasta 3 keywords activas al jugador |
+| `scripts/systems/upgrade_system.gd` | Autoload: stat scaling (vida, velocidad, daño, cooldown) |
+| `scripts/systems/wave_manager.gd` | Loop de oleadas; emite señal `wave_completed` cada N oleadas |
+| `scripts/enemies/boss.gd` | Comportamiento de boss (hereda `enemy_base.gd`) |
+| `scripts/items/coin.gd` | Moneda: se añade al grupo `monedas`, suma a Economy al recoger |
+| `scripts/ui/echo_shop.gd` | Tienda de Echo con tipeo de texto y botones de upgrade |
+| `scripts/ui/shop.gd` | Tienda general (entre niveles) |
+| `scripts/ui/hud.gd` | HUD: vida, oleada, monedas, keywords activas |
+| `scripts/ui/level_manager.gd` | Transición entre niveles, carga de escenas |
+
+### Escenas nuevas
+
+| Escena | Contenido |
+|--------|-----------|
+| `scenes/levels/Level1–4.tscn` | 4 niveles con NavigationRegion2D, spawns, Wave Manager |
+| `scenes/ui/EchoShop.tscn` | Panel de diálogo + tipeo libre + 3 botones upgrade |
+| `scenes/ui/Shop.tscn` | Tienda entre oleadas |
+| `scenes/ui/HUD.tscn` | Barras de vida, label de oleada, panel de keywords |
+| `scenes/enemies/Boss.tscn` | Boss con ProgressBar de vida |
+| `scenes/items/Coin.tscn` | Pickup de moneda |
+
+### Autoloads registrados en `project.godot`
+
+```
+Config         → scripts/config.gd
+Economy        → scripts/systems/economy.gd
+KeywordSystem  → scripts/systems/keyword_system.gd
+EchoAPI        → scripts/systems/echo_api.gd
+UpgradeSystem  → scripts/systems/upgrade_system.gd
+```
+
+---
+
+## Sesión 2026-05-07 — Sprites conectados en escenas (commit `f7e5fb5`)
+
+**Acción:** Se conectaron los SpriteFrames de todos los personajes y enemigos en sus respectivas `.tscn`
+
+### Escenas actualizadas con SpriteFrames completos
+
+| Escena | Animaciones conectadas |
+|--------|----------------------|
+| `scenes/characters/Rael.tscn` | running (8 dirs) + attack (8 dirs) |
+| `scenes/characters/Lena.tscn` | running (8 dirs) + attack (8 dirs) — ataque mágico |
+| `scenes/characters/Brom.tscn` | running (8 dirs) + attack (8 dirs) — escudo/lunge |
+| `scenes/characters/Zari.tscn` | running (8 dirs) + attack (8 dirs) — arco |
+| `scenes/enemies/Goblin.tscn` | running (8 dirs) + attack (8 dirs) |
+| `scenes/enemies/Slime.tscn` | attack bounce (8 dirs, 16 frames) |
+
+### Scripts de compañeros y enemigos creados
+
+| Script | Lógica |
+|--------|--------|
+| `scripts/characters/lena.gd` | IA: flanqueo a distancia (250–380 px), dispara `Arrow.tscn` |
+| `scripts/characters/brom.gd` | IA: tanque cuerpo a cuerpo (≤75 px), ataque en área |
+| `scripts/characters/zari.gd` | IA: flanqueo a distancia (220–320 px), dispara `Arrow.tscn` |
+| `scripts/enemies/goblin.gd` | Hereda `enemy_base.gd`, sin lógica extra aún |
+| `scripts/enemies/slime.gd` | Hereda `enemy_base.gd`, animación direccional 4 dirs |
+| `scripts/projectiles/arrow.gd` | Proyectil lineal; llama `recibir_dano` al impactar |
+
+### Script del jugador extendido (`scripts/player/player.gd`)
+
+- Movimiento 8 direcciones con ANIM_WALK/ANIM_ATTACK dict
+- Hitbox posicionada por dirección al atacar
+- Soporte de keywords: FUEGO (explosión), SANGRE (curación), VENENO, HIELO
+- Usa `UpgradeSystem` para stats escalables (vida, velocidad, daño, cooldown)
+
+---
+
+## Sesión 2026-05-07 — Revisión general y fix de merge conflict (Claude Code)
+
+**Herramienta:** Claude Code (claude-sonnet-4-6) — revisión automática del estado del proyecto
+
+### Problema crítico corregido
+
+`scripts/player/player.gd` tenía marcadores de conflicto git sin resolver (`<<<<<<< HEAD` / `=======` / `>>>>>>>`), lo que impedía que Godot parseara el script. Se resolvió eligiendo:
+- `_ready()`: `UpgradeSystem.get_vida_max()` (versión escalable del commit `6fe6e5e`)
+- Timer de detección de golpe: `0.15 s` (versión más responsiva)
+- Timer de fin de animación: `float(n_frames) / fps - 0.15` (consistente)
+
+### Estado del proyecto al 2026-05-07
+
+**Existe y funciona:**
+- 23 scripts GDScript, 21 escenas `.tscn`
+- 5 Autoloads configurados en `project.godot`
+- Sprites completos: Rael, Lena, Brom, Zari, Goblin, Slime, Echo (NPC estático)
+- Niveles Level1–4 + PrologueScene
+- UI: MainMenu, HUD, GameOver, EchoShop, Shop
+
+**Bugs conocidos pendientes (al 2026-05-07):**
+- Idle animation de algunos personajes congela en último frame (no hay `idle_*` en ningún companion)
+- Poder mágico de Lena usa `Config.PLAYER_ATTACK_DAMAGE` (daño físico) en vez de daño mágico
+- Brom running animation: posible inconsistencia en nombre de animación (prefijo con guión vs guión bajo)
+- Slime: solo tiene `attack_*` (no `running_*`), y solo detecta 4 dirs (sin diagonales)
