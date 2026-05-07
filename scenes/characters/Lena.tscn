@@ -1,10 +1,653 @@
 [gd_scene format=3 uid="uid://dntjl7j5amaii"]
 
-[node name="Lena" type="CharacterBody2D"]
+[ext_resource type="Script" path="res://scripts/characters/lena.gd" id="0_lena"]
+[ext_resource type="Texture2D" uid="uid://dygihyo6l5b0v" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/east/frame_000.png" id="1_ny2y0"]
+[ext_resource type="Texture2D" uid="uid://cc0eo700ifx4n" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/east/frame_001.png" id="2_nkk1v"]
+[ext_resource type="Texture2D" uid="uid://bwjco201nbiy1" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/east/frame_002.png" id="3_g277h"]
+[ext_resource type="Texture2D" uid="uid://jasrsi42g5so" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/east/frame_003.png" id="4_dmtn0"]
+[ext_resource type="Texture2D" uid="uid://dw3ace8ueuqkp" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/east/frame_004.png" id="5_xlr71"]
+[ext_resource type="Texture2D" uid="uid://8o3kmvfd354e" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/east/frame_005.png" id="6_6cu5v"]
+[ext_resource type="Texture2D" uid="uid://cbvjwddh22mio" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/east/frame_006.png" id="7_sb5bo"]
+[ext_resource type="Texture2D" uid="uid://d4lkxplws5wsh" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/east/frame_007.png" id="8_k0ejm"]
+[ext_resource type="Texture2D" uid="uid://brfsnljxqua21" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/east/frame_008.png" id="9_q2wcw"]
+[ext_resource type="Texture2D" uid="uid://dn51ghtgjywf2" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north/frame_000.png" id="10_gm8fi"]
+[ext_resource type="Texture2D" uid="uid://b6iyeog226uqq" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north/frame_001.png" id="11_mmty3"]
+[ext_resource type="Texture2D" uid="uid://cdx2ygoof38sb" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north/frame_002.png" id="12_ymslx"]
+[ext_resource type="Texture2D" uid="uid://isic71olcuc2" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north/frame_003.png" id="13_11kpk"]
+[ext_resource type="Texture2D" uid="uid://d1r5j40bob1wy" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north/frame_004.png" id="14_y0jle"]
+[ext_resource type="Texture2D" uid="uid://d2wnq6cpykpr" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north/frame_005.png" id="15_q5ijm"]
+[ext_resource type="Texture2D" uid="uid://425w8esp63oi" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north/frame_006.png" id="16_b2axg"]
+[ext_resource type="Texture2D" uid="uid://b20vvioo5uxmr" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north/frame_007.png" id="17_pka0p"]
+[ext_resource type="Texture2D" uid="uid://537gs443ranm" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north/frame_008.png" id="18_o0m4b"]
+[ext_resource type="Texture2D" uid="uid://60y10ubiihsm" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-east/frame_000.png" id="19_yw780"]
+[ext_resource type="Texture2D" uid="uid://qmkkuwu7un37" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-east/frame_001.png" id="20_37bmn"]
+[ext_resource type="Texture2D" uid="uid://c3g8tel5t0wpd" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-east/frame_002.png" id="21_f4e7y"]
+[ext_resource type="Texture2D" uid="uid://d4iyvkhxcfwtr" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-east/frame_003.png" id="22_30gs0"]
+[ext_resource type="Texture2D" uid="uid://dij4qiahycehn" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-east/frame_004.png" id="23_hrk1q"]
+[ext_resource type="Texture2D" uid="uid://7grneapx4ce6" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-east/frame_005.png" id="24_umuad"]
+[ext_resource type="Texture2D" uid="uid://ckmo7yoj6yfqi" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-east/frame_006.png" id="25_eo17v"]
+[ext_resource type="Texture2D" uid="uid://cvaycwvwk7m2p" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-east/frame_007.png" id="26_u4ddh"]
+[ext_resource type="Texture2D" uid="uid://cxpyslq8wowie" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-east/frame_008.png" id="27_7jler"]
+[ext_resource type="Texture2D" uid="uid://dr3230tfmiv8l" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-west/frame_000.png" id="28_pehjq"]
+[ext_resource type="Texture2D" uid="uid://ddlojh7ejauro" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-west/frame_001.png" id="29_3bvg3"]
+[ext_resource type="Texture2D" uid="uid://bykkx1bfut2av" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-west/frame_002.png" id="30_3r6ap"]
+[ext_resource type="Texture2D" uid="uid://u4opm7cvgsn6" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-west/frame_003.png" id="31_trfs4"]
+[ext_resource type="Texture2D" uid="uid://bbigordl4rsta" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-west/frame_004.png" id="32_kgteb"]
+[ext_resource type="Texture2D" uid="uid://bqr8s86hv5ggk" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-west/frame_005.png" id="33_ftd17"]
+[ext_resource type="Texture2D" uid="uid://degwjd765ilbb" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-west/frame_006.png" id="34_4iox1"]
+[ext_resource type="Texture2D" uid="uid://bjfgebnec4u5d" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-west/frame_007.png" id="35_siayd"]
+[ext_resource type="Texture2D" uid="uid://c4t0rpttlyoga" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/north-west/frame_008.png" id="36_2ckw1"]
+[ext_resource type="Texture2D" uid="uid://bj2cb20xyeigb" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south/frame_000.png" id="37_5vb5h"]
+[ext_resource type="Texture2D" uid="uid://d123cy75pnm6u" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south/frame_001.png" id="38_b3vh8"]
+[ext_resource type="Texture2D" uid="uid://da10a4tfpbaud" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south/frame_002.png" id="39_robh2"]
+[ext_resource type="Texture2D" uid="uid://y0j6bfnyfdit" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south/frame_003.png" id="40_wphed"]
+[ext_resource type="Texture2D" uid="uid://5kbsnt7pm03y" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south/frame_004.png" id="41_dq3hg"]
+[ext_resource type="Texture2D" uid="uid://7r1bfnv0w3ch" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south/frame_005.png" id="42_dl4hp"]
+[ext_resource type="Texture2D" uid="uid://43wquvda3djo" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south/frame_006.png" id="43_fj3r1"]
+[ext_resource type="Texture2D" uid="uid://da2gev1030gfg" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south/frame_007.png" id="44_03tx2"]
+[ext_resource type="Texture2D" uid="uid://dy8se1qkiwx6h" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south/frame_008.png" id="45_k57gq"]
+[ext_resource type="Texture2D" uid="uid://dsxjbeth6jfvb" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-east/frame_000.png" id="46_edkh6"]
+[ext_resource type="Texture2D" uid="uid://trv55g1bgpr" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-east/frame_001.png" id="47_mnx21"]
+[ext_resource type="Texture2D" uid="uid://blus3ngo2d4n2" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-east/frame_002.png" id="48_gw5qc"]
+[ext_resource type="Texture2D" uid="uid://jfkjpv4bd1na" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-east/frame_003.png" id="49_jqh41"]
+[ext_resource type="Texture2D" uid="uid://cbojvxamhg3la" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-east/frame_004.png" id="50_11scw"]
+[ext_resource type="Texture2D" uid="uid://nhnue12ugva5" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-east/frame_005.png" id="51_vakim"]
+[ext_resource type="Texture2D" uid="uid://baaxma724bd1d" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-east/frame_006.png" id="52_mxtml"]
+[ext_resource type="Texture2D" uid="uid://kiu74fiay3c7" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-east/frame_007.png" id="53_elj5b"]
+[ext_resource type="Texture2D" uid="uid://cho1aft5g8u2p" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-east/frame_008.png" id="54_anbq7"]
+[ext_resource type="Texture2D" uid="uid://c6nt0t277tg5c" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-west/frame_000.png" id="55_cusow"]
+[ext_resource type="Texture2D" uid="uid://dj0f1oohidg7i" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-west/frame_001.png" id="56_mu4oo"]
+[ext_resource type="Texture2D" uid="uid://diwb7cy1p70su" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-west/frame_002.png" id="57_ljdee"]
+[ext_resource type="Texture2D" uid="uid://ct2n7r00lvkd8" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-west/frame_003.png" id="58_76jhp"]
+[ext_resource type="Texture2D" uid="uid://d6pgw6e5e2yx" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-west/frame_004.png" id="59_wtvab"]
+[ext_resource type="Texture2D" uid="uid://brb5hecmolic0" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-west/frame_005.png" id="60_s1ukt"]
+[ext_resource type="Texture2D" uid="uid://ccrcumso00los" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-west/frame_006.png" id="61_ox8sf"]
+[ext_resource type="Texture2D" uid="uid://dt1fmj3muwj56" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-west/frame_007.png" id="62_gcpsb"]
+[ext_resource type="Texture2D" uid="uid://d3dmes2mbx2dy" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/south-west/frame_008.png" id="63_ncscd"]
+[ext_resource type="Texture2D" uid="uid://b47vnsi4meum4" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/west/frame_000.png" id="64_pefoa"]
+[ext_resource type="Texture2D" uid="uid://c1uhd15mglwk3" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/west/frame_001.png" id="65_3icsb"]
+[ext_resource type="Texture2D" uid="uid://dook2t1c7usom" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/west/frame_002.png" id="66_ng0cp"]
+[ext_resource type="Texture2D" uid="uid://bp4llx8a05prt" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/west/frame_003.png" id="67_14032"]
+[ext_resource type="Texture2D" uid="uid://c2wyr6y2h5a2r" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/west/frame_004.png" id="68_tcldh"]
+[ext_resource type="Texture2D" uid="uid://vdxd333w2ws1" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/west/frame_005.png" id="69_wnl1t"]
+[ext_resource type="Texture2D" uid="uid://u1ph57fwguip" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/west/frame_006.png" id="70_t0p7d"]
+[ext_resource type="Texture2D" uid="uid://ctg4j17ahvjcn" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/west/frame_007.png" id="71_6c4yf"]
+[ext_resource type="Texture2D" uid="uid://obdjotg4qlpo" path="res://assets/sprites/characters/lena/animations/Magical_ranged_attack_arms_extended_forward_glowin-adf7ee86/west/frame_008.png" id="72_mqk3v"]
+[ext_resource type="Texture2D" uid="uid://ct2e87a50rndj" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/east/frame_000.png" id="73_pv2w4"]
+[ext_resource type="Texture2D" uid="uid://6n2ntips4nkb" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/east/frame_001.png" id="74_1gvqh"]
+[ext_resource type="Texture2D" uid="uid://c16upcpyyoypj" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/east/frame_002.png" id="75_aeupw"]
+[ext_resource type="Texture2D" uid="uid://q17vmejpy6d2" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/east/frame_003.png" id="76_25vtu"]
+[ext_resource type="Texture2D" uid="uid://couxixkxiku1s" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/east/frame_004.png" id="77_vqjxf"]
+[ext_resource type="Texture2D" uid="uid://ds8xt34us05ay" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/east/frame_005.png" id="78_m3yw1"]
+[ext_resource type="Texture2D" uid="uid://gw8j1mglx7o8" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/east/frame_006.png" id="79_y65gm"]
+[ext_resource type="Texture2D" uid="uid://coecdxgiirppt" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/east/frame_007.png" id="80_rfgq4"]
+[ext_resource type="Texture2D" uid="uid://t7aq3uh6fx73" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north/frame_000.png" id="81_4ajuc"]
+[ext_resource type="Texture2D" uid="uid://d1hfbxw7xtno3" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north/frame_001.png" id="82_52i5i"]
+[ext_resource type="Texture2D" uid="uid://inv0k3dif661" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north/frame_002.png" id="83_wluxr"]
+[ext_resource type="Texture2D" uid="uid://ch051p6vp81uk" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north/frame_003.png" id="84_xs442"]
+[ext_resource type="Texture2D" uid="uid://odn5gmrwqcfl" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north/frame_004.png" id="85_wspe0"]
+[ext_resource type="Texture2D" uid="uid://cw50gsw5lf3mr" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north/frame_005.png" id="86_ufw0i"]
+[ext_resource type="Texture2D" uid="uid://tbo8bxtyj6uj" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north/frame_006.png" id="87_24d56"]
+[ext_resource type="Texture2D" uid="uid://skj370trigww" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north/frame_007.png" id="88_qa6ed"]
+[ext_resource type="Texture2D" uid="uid://0wfeachejq6g" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north-east/frame_000.png" id="89_ecj5w"]
+[ext_resource type="Texture2D" uid="uid://difji6kwrvy22" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north-east/frame_001.png" id="90_q5cjo"]
+[ext_resource type="Texture2D" uid="uid://fopevcgy1rrl" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north-east/frame_002.png" id="91_7bmbx"]
+[ext_resource type="Texture2D" uid="uid://c1sd747nqu0lj" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north-east/frame_003.png" id="92_plws3"]
+[ext_resource type="Texture2D" uid="uid://c0mbfhwg40u28" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north-east/frame_004.png" id="93_h5guh"]
+[ext_resource type="Texture2D" uid="uid://bgkxsomrty2df" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north-east/frame_005.png" id="94_f6iis"]
+[ext_resource type="Texture2D" uid="uid://yahm2mo6ahqk" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north-east/frame_006.png" id="95_roj4g"]
+[ext_resource type="Texture2D" uid="uid://dak16ajfv4r2a" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north-east/frame_007.png" id="96_xejd4"]
+[ext_resource type="Texture2D" uid="uid://c77q8pmsyjkw4" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north-west/frame_000.png" id="97_nqb8h"]
+[ext_resource type="Texture2D" uid="uid://c627abw8mq86o" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north-west/frame_001.png" id="98_p2msy"]
+[ext_resource type="Texture2D" uid="uid://bwt57s4fchus6" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north-west/frame_002.png" id="99_xwfl2"]
+[ext_resource type="Texture2D" uid="uid://bdbsbm0jowr3d" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north-west/frame_003.png" id="100_3i0q2"]
+[ext_resource type="Texture2D" uid="uid://bv2p0bp06cjd6" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north-west/frame_004.png" id="101_ddwnj"]
+[ext_resource type="Texture2D" uid="uid://be1qjhpgknufk" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north-west/frame_005.png" id="102_0lxh0"]
+[ext_resource type="Texture2D" uid="uid://77nvgf7xdd0d" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north-west/frame_006.png" id="103_t6cba"]
+[ext_resource type="Texture2D" uid="uid://cwxvwswqggbce" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/north-west/frame_007.png" id="104_3aiow"]
+[ext_resource type="Texture2D" uid="uid://ci7b4hywfdybv" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south/frame_000.png" id="105_5uj4h"]
+[ext_resource type="Texture2D" uid="uid://b4qbcgc0ostsi" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south/frame_001.png" id="106_m1llb"]
+[ext_resource type="Texture2D" uid="uid://cevkc1lxa5rh0" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south/frame_002.png" id="107_1hiq6"]
+[ext_resource type="Texture2D" uid="uid://drepi2hpdklf5" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south/frame_003.png" id="108_ht0bf"]
+[ext_resource type="Texture2D" uid="uid://c8y6kvcpwrxus" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south/frame_004.png" id="109_by85l"]
+[ext_resource type="Texture2D" uid="uid://c341rljfnpw36" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south/frame_005.png" id="110_en2q1"]
+[ext_resource type="Texture2D" uid="uid://d0akwpjtqyh60" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south/frame_006.png" id="111_8dpsj"]
+[ext_resource type="Texture2D" uid="uid://bdwbbc1f4cnwx" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south/frame_007.png" id="112_8lewr"]
+[ext_resource type="Texture2D" uid="uid://bcypkbg2msl2o" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south-east/frame_000.png" id="113_3up0j"]
+[ext_resource type="Texture2D" uid="uid://da45wk16b2o4w" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south-east/frame_001.png" id="114_jcj5w"]
+[ext_resource type="Texture2D" uid="uid://d2wag3ws76hro" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south-east/frame_002.png" id="115_x05v6"]
+[ext_resource type="Texture2D" uid="uid://206cvmgy5inb" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south-east/frame_003.png" id="116_ln2vb"]
+[ext_resource type="Texture2D" uid="uid://xd7u5ampucwk" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south-east/frame_004.png" id="117_dvltr"]
+[ext_resource type="Texture2D" uid="uid://cgowdcebypbt" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south-east/frame_005.png" id="118_jrcss"]
+[ext_resource type="Texture2D" uid="uid://8vpgxysce63n" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south-east/frame_006.png" id="119_h1cec"]
+[ext_resource type="Texture2D" uid="uid://gl3m2e7ujulo" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south-east/frame_007.png" id="120_og1lr"]
+[ext_resource type="Texture2D" uid="uid://bn7nhuo863pqs" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south-west/frame_000.png" id="121_ep8vc"]
+[ext_resource type="Texture2D" uid="uid://npcvh36u40xr" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south-west/frame_001.png" id="122_hqrap"]
+[ext_resource type="Texture2D" uid="uid://b7tlbp1ks2tuo" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south-west/frame_002.png" id="123_v2lnp"]
+[ext_resource type="Texture2D" uid="uid://cmmyfsjswvgpn" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south-west/frame_003.png" id="124_f7j0s"]
+[ext_resource type="Texture2D" uid="uid://b7u4m2rh0bx3a" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south-west/frame_004.png" id="125_odwpx"]
+[ext_resource type="Texture2D" uid="uid://c215qk1bo6ynn" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south-west/frame_005.png" id="126_i8bnx"]
+[ext_resource type="Texture2D" uid="uid://hbtn4r1xx2bp" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south-west/frame_006.png" id="127_e1on5"]
+[ext_resource type="Texture2D" uid="uid://3xjebj578q1t" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/south-west/frame_007.png" id="128_bpmg7"]
+[ext_resource type="Texture2D" uid="uid://w6k33dmken6c" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/west/frame_000.png" id="129_d7iwe"]
+[ext_resource type="Texture2D" uid="uid://5o42sqymod8i" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/west/frame_001.png" id="130_cubyc"]
+[ext_resource type="Texture2D" uid="uid://cyopkh518qli8" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/west/frame_002.png" id="131_p1unb"]
+[ext_resource type="Texture2D" uid="uid://bsdnwgwdus1s2" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/west/frame_003.png" id="132_q0pwk"]
+[ext_resource type="Texture2D" uid="uid://c8dnmifuyxuvx" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/west/frame_004.png" id="133_ngcyo"]
+[ext_resource type="Texture2D" uid="uid://teigkfeo6pll" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/west/frame_005.png" id="134_307ks"]
+[ext_resource type="Texture2D" uid="uid://dt6w41v6t28t5" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/west/frame_006.png" id="135_cbivu"]
+[ext_resource type="Texture2D" uid="uid://bujpwqgpewnki" path="res://assets/sprites/characters/lena/animations/Running-f8408c7a/west/frame_007.png" id="136_1q4jj"]
 
-[node name="Placeholder" type="Polygon2D" parent="."]
-color = Color(0.18, 0.45, 1.0, 1.0)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lena"]
+radius = 18.0
+height = 40.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p3tqf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ny2y0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_nkk1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_g277h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dmtn0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xlr71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6cu5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_sb5bo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_k0ejm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_q2wcw")
+}],
+"loop": true,
+"name": &"attack-east",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_gm8fi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_mmty3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ymslx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_11kpk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_y0jle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_q5ijm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_b2axg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_pka0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_o0m4b")
+}],
+"loop": true,
+"name": &"attack-north",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_yw780")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_37bmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_f4e7y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_30gs0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_hrk1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_umuad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_eo17v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_u4ddh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_7jler")
+}],
+"loop": true,
+"name": &"attack-north-east",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_pehjq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_3bvg3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_3r6ap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_trfs4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_kgteb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ftd17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_4iox1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_siayd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_2ckw1")
+}],
+"loop": true,
+"name": &"attack-north-west",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37_5vb5h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_b3vh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_robh2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_wphed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_dq3hg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_dl4hp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_fj3r1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_03tx2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_k57gq")
+}],
+"loop": true,
+"name": &"attack-south",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("46_edkh6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_mnx21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_gw5qc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_jqh41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_11scw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_vakim")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_mxtml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_elj5b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_anbq7")
+}],
+"loop": true,
+"name": &"attack-south-east",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("55_cusow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_mu4oo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_ljdee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_76jhp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_wtvab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_s1ukt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_ox8sf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_gcpsb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_ncscd")
+}],
+"loop": true,
+"name": &"attack-south-west",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("64_pefoa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_3icsb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_ng0cp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_14032")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_tcldh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_wnl1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_t0p7d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_6c4yf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_mqk3v")
+}],
+"loop": true,
+"name": &"attack-west",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("73_pv2w4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_1gvqh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_aeupw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_25vtu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_vqjxf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_m3yw1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_y65gm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_rfgq4")
+}],
+"loop": true,
+"name": &"running-east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("81_4ajuc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_52i5i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_wluxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_xs442")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_wspe0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_ufw0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_24d56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_qa6ed")
+}],
+"loop": true,
+"name": &"running-north",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("89_ecj5w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_q5cjo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_7bmbx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_plws3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_h5guh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_f6iis")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_roj4g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_xejd4")
+}],
+"loop": true,
+"name": &"running-north-east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("97_nqb8h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_p2msy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_xwfl2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_3i0q2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_ddwnj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_0lxh0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_t6cba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_3aiow")
+}],
+"loop": true,
+"name": &"running-north-west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("105_5uj4h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_m1llb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_1hiq6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_ht0bf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_by85l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_en2q1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_8dpsj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_8lewr")
+}],
+"loop": true,
+"name": &"running-south",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("113_3up0j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_jcj5w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_x05v6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_ln2vb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_dvltr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_jrcss")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_h1cec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_og1lr")
+}],
+"loop": true,
+"name": &"running-south-east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("121_ep8vc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_hqrap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_v2lnp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_f7j0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_odwpx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_i8bnx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_e1on5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_bpmg7")
+}],
+"loop": true,
+"name": &"running-south-west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("129_d7iwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_cubyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_p1unb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_q0pwk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_ngcyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_307ks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_cbivu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_1q4jj")
+}],
+"loop": true,
+"name": &"running-west",
+"speed": 10.0
+}]
+
+[node name="Lena" type="CharacterBody2D" unique_id=169002764]
+script = ExtResource("0_lena")
+
+[node name="Placeholder" type="Polygon2D" parent="." unique_id=499359932]
+color = Color(0.18, 0.45, 1, 1)
 polygon = PackedVector2Array(-21, -46, 21, -46, 21, 46, -21, 46)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 0)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1846850971]
+shape = SubResource("CapsuleShape2D_lena")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1810406963]
+sprite_frames = SubResource("SpriteFrames_p3tqf")
+animation = &"attack-north-west"

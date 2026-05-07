@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://arrow00001"]
+
+[ext_resource type="Script" path="res://scripts/projectiles/arrow.gd" id="1_arrow"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_arrow"]
+radius = 3.0
+height = 18.0
+
+[node name="Arrow" type="Area2D"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_arrow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_arrow")
+
+[node name="Visual" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-12, -2, 12, -2, 12, 2, -12, 2)
+color = Color(0.55, 0.35, 0.1, 1)

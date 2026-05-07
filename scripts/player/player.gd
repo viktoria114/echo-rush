@@ -16,18 +16,22 @@ var escudo_restante: int = 0
 @onready var hitbox: Area2D = $HitboxArea
 
 const ANIM_WALK := {
-	"south": "walk_south", "north": "walk_north",
-	"east": "walk_east",   "west": "walk_west"
+	"south": "running_south",           "north": "running_north",
+	"east": "running_east",             "west": "running_west",
+	"south-east": "running_south-east", "south-west": "running_south-west",
+	"north-east": "running_north-east", "north-west": "running_north-west"
 }
-const ANIM_PUNCH := {
-	"south": "punch_south", "north": "punch_north",
-	"east": "punch_east",   "west": "punch_west"
+const ANIM_ATTACK := {
+	"south": "attack_south",           "north": "attack_north",
+	"east": "attack_east",             "west": "attack_west",
+	"south-east": "attack_south-east", "south-west": "attack_south-west",
+	"north-east": "attack_north-east", "north-west": "attack_north-west"
 }
 
 func _ready() -> void:
 	add_to_group("jugador")
 	vida_actual = Config.PLAYER_MAX_HP
-	_configurar_animaciones()
+	sprite.play("running_south")
 
 func _physics_process(delta: float) -> void:
 	if ataque_cooldown > 0.0:
@@ -51,10 +55,17 @@ func _manejar_movimiento() -> void:
 	else:
 		velocity = Vector2.ZERO
 		if not atacando:
-			sprite.play("idle")
+			sprite.stop()
 
 func _actualizar_direccion(dir: Vector2) -> void:
-	if abs(dir.x) >= abs(dir.y):
+	var ax: float = abs(dir.x)
+	var ay: float = abs(dir.y)
+	if ax > 0.35 and ay > 0.35:
+		if dir.x > 0:
+			direccion = "south-east" if dir.y > 0 else "north-east"
+		else:
+			direccion = "south-west" if dir.y > 0 else "north-west"
+	elif ax >= ay:
 		direccion = "east" if dir.x > 0 else "west"
 	else:
 		direccion = "south" if dir.y > 0 else "north"
@@ -68,10 +79,10 @@ func _ejecutar_ataque() -> void:
 	contador_ataques += 1
 
 	_posicionar_hitbox()
-	sprite.play(ANIM_PUNCH.get(direccion, "punch_south"))
+	sprite.play(ANIM_ATTACK.get(direccion, "attack_south"))
 
 	# Detectar golpe a mitad de la animación
-	await get_tree().create_timer(0.15).timeout
+	await get_tree().create_timer(0.6).timeout
 	for cuerpo in hitbox.get_overlapping_bodies():
 		if cuerpo.is_in_group("enemigos") and cuerpo.has_method("recibir_dano"):
 			cuerpo.recibir_dano(Config.PLAYER_ATTACK_DAMAGE)
@@ -85,7 +96,10 @@ func _ejecutar_ataque() -> void:
 	if "FUEGO" in keywords_activas and contador_ataques % Config.KEYWORD_FUEGO_INTERVAL == 0:
 		_explosion_fuego()
 
-	await sprite.animation_finished
+	var n_frames: int = sprite.sprite_frames.get_frame_count(sprite.animation)
+	var fps: float = sprite.sprite_frames.get_animation_speed(sprite.animation)
+	await get_tree().create_timer(float(n_frames) / fps - 0.6).timeout
+	sprite.stop()
 	atacando = false
 
 func _posicionar_hitbox() -> void:
@@ -127,25 +141,3 @@ func agregar_keyword(kw: String) -> void:
 	if kw == "ESCUDO":
 		escudo_restante += Config.KEYWORD_SHIELD_HP
 
-func _configurar_animaciones() -> void:
-	var sf := SpriteFrames.new()
-	sf.remove_animation("default")
-	_agregar_anim(sf, "walk_south", "animation-75bd5ea5/south",          6, 10.0, true)
-	_agregar_anim(sf, "walk_north", "animation-75bd5ea5/north",          6, 10.0, true)
-	_agregar_anim(sf, "walk_east",  "animation-75bd5ea5/east",           6, 10.0, true)
-	_agregar_anim(sf, "walk_west",  "Walking-cf92d571/west",             6, 10.0, true)
-	_agregar_anim(sf, "punch_south","Cross_Punch-a4b41712/south",        6, 12.0, false)
-	_agregar_anim(sf, "punch_north","Cross_Punch-a4b41712/north",        6, 12.0, false)
-	_agregar_anim(sf, "punch_east", "Cross_Punch-a4b41712/east",         6, 12.0, false)
-	_agregar_anim(sf, "punch_west", "Cross_Punch-a4b41712/west",         6, 12.0, false)
-	_agregar_anim(sf, "idle",       "Fight_Stance_Idle-da976329/south",  8,  8.0, true)
-	sprite.sprite_frames = sf
-	sprite.play("idle")
-
-func _agregar_anim(sf: SpriteFrames, nombre: String, subcarpeta: String, n: int, fps: float, loop: bool) -> void:
-	sf.add_animation(nombre)
-	sf.set_animation_speed(nombre, fps)
-	sf.set_animation_loop(nombre, loop)
-	for i in range(n):
-		var ruta := "res://assets/sprites/characters/rael/animations/%s/frame_%03d.png" % [subcarpeta, i]
-		sf.add_frame(nombre, load(ruta))
