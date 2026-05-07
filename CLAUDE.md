@@ -6,6 +6,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Shooter roguelite top-down en 2D con 4 personajes estudiantiles.
 Motor: **Godot 4.6.2** | Lenguaje: **GDScript únicamente** | Integración: **Claude API**
+Studio: **Claude Code Game Studios v0.3.0**
+Stage: **En desarrollo activo** (ver Estado actual)
+
+---
+
+## Technology Stack
+
+- **Engine**: Godot 4.6.2
+- **Language**: GDScript
+- **Build System**: SCons (engine), Godot Export Templates
+- **Asset Pipeline**: Godot Import System + custom resource pipeline
+
+## Engine Version Reference
+
+@docs/engine-reference/godot/VERSION.md
 
 ---
 
@@ -217,3 +232,73 @@ Máximo 3 keywords activas simultáneamente. Mostrar en HUD.
 - [ ] Finales A y B implementados
 - [ ] `prompts_log.md` con evidencia de uso de IA
 - [ ] `DEMO_CHECKLIST.md` con guía de 8 minutos para la presentación
+
+
+## Configuración del Studio (Claude Code Game Studios)
+
+Este proyecto usa el framework Claude Code Game Studios.
+Los agentes y skills están en `.claude/`.
+
+### Rutas del proyecto (para agentes y rules)
+
+Las rules en `.claude/rules/` aplican a estas rutas:
+
+| Rule | Ruta en este proyecto |
+|------|-----------------------|
+| gameplay | `scenes/` y `scripts/player/`, `scripts/enemies/` |
+| core/engine | `scripts/systems/` |
+| ui | `scenes/ui/` y `scripts/ui/` |
+| ai | `scripts/systems/EchoAPI.gd`, `scripts/systems/KeywordSystem.gd` |
+| design/gdd | `design/` |
+| tests | (no hay tests aún — pendiente) |
+| prototypes | `prototypes/` |
+
+### Motor y agentes activos
+
+Usar **solo** el agente set de Godot 4. Los agentes de Unity y Unreal no aplican a este proyecto.
+
+Agentes principales para este proyecto:
+- `godot-specialist` — decisiones de engine, escenas, nodos
+- `gdscript-programmer` — código GDScript, señales, autoloads
+- `systems-designer` — WaveManager, KeywordSystem, EchoAPI
+- `ui-programmer` — HUD, menús, EchoShop
+- `narrative-director` — diálogos de Echo, guión
+- `qa-tester` — bugs, edge cases, validación de keyword parsing
+
+### Convenciones adicionales para agentes
+
+- Los scripts de GDScript van siempre en `scripts/` con subcarpeta por dominio
+- `config.gd` es Autoload — debe cargarse antes que cualquier otro script
+- Las señales son el único mecanismo de comunicación entre nodos (sin referencias directas)
+- Comentarios de funciones en **español**
+- El modelo de Claude API a usar en `EchoAPI.gd` es `claude-sonnet-4-6`
+
+## Contexto para el studio
+
+### Deadline
+Expo: **7 de mayo de 2026**. Flujo mínimo funcional: Menú → Prólogo → Nivel 1 → Nivel 2 → Nivel 3 → Final.
+
+### Prioridad de desarrollo
+
+1. `config.gd` (Autoload) — base de todo
+2. Movimiento y ataque de Rael
+3. Sistema de oleadas (`WaveManager.gd`)
+4. Echo + Claude API (`EchoAPI.gd`, `KeywordSystem.gd`)
+5. HUD con keywords activas
+6. Enemigos, jefes, UI restante
+
+### Lo que NO hacer (para agentes)
+
+- No usar C# bajo ninguna circunstancia
+- No hardcodear valores numéricos en scripts — siempre via `config.gd`
+- No crear referencias directas entre nodos — solo señales
+- No generar assets de audio en formatos distintos a `.ogg`
+- No modificar archivos `.tscn` existentes en `scenes/characters/` sin revisar el estado actual primero
+
+### Estado de assets al inicio de sesión
+
+Antes de trabajar con sprites o fondos, verificar:
+- Los ZIPs de fondos en `assets/backgrounds/` pueden no estar extraídos
+- Zari solo tiene rotaciones, sin animaciones
+- Lena y Brom usan `Polygon2D` como placeholder (azul y verde respectivamente)
+- Rael es el único personaje con sprites y animaciones completas
