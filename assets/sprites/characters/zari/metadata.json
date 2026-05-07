@@ -23,8 +23,173 @@
       "west": "rotations/west.png",
       "south-west": "rotations/south-west.png"
     },
-    "animations": {}
+    "animations": {
+      "Running-6f6d8126": {
+        "south": [
+          "animations/Running-6f6d8126/south/frame_000.png",
+          "animations/Running-6f6d8126/south/frame_001.png",
+          "animations/Running-6f6d8126/south/frame_002.png",
+          "animations/Running-6f6d8126/south/frame_003.png",
+          "animations/Running-6f6d8126/south/frame_004.png",
+          "animations/Running-6f6d8126/south/frame_005.png",
+          "animations/Running-6f6d8126/south/frame_006.png",
+          "animations/Running-6f6d8126/south/frame_007.png"
+        ],
+        "south-east": [
+          "animations/Running-6f6d8126/south-east/frame_000.png",
+          "animations/Running-6f6d8126/south-east/frame_001.png",
+          "animations/Running-6f6d8126/south-east/frame_002.png",
+          "animations/Running-6f6d8126/south-east/frame_003.png",
+          "animations/Running-6f6d8126/south-east/frame_004.png",
+          "animations/Running-6f6d8126/south-east/frame_005.png",
+          "animations/Running-6f6d8126/south-east/frame_006.png",
+          "animations/Running-6f6d8126/south-east/frame_007.png"
+        ],
+        "east": [
+          "animations/Running-6f6d8126/east/frame_000.png",
+          "animations/Running-6f6d8126/east/frame_001.png",
+          "animations/Running-6f6d8126/east/frame_002.png",
+          "animations/Running-6f6d8126/east/frame_003.png",
+          "animations/Running-6f6d8126/east/frame_004.png",
+          "animations/Running-6f6d8126/east/frame_005.png",
+          "animations/Running-6f6d8126/east/frame_006.png",
+          "animations/Running-6f6d8126/east/frame_007.png"
+        ],
+        "south-west": [
+          "animations/Running-6f6d8126/south-west/frame_000.png",
+          "animations/Running-6f6d8126/south-west/frame_001.png",
+          "animations/Running-6f6d8126/south-west/frame_002.png",
+          "animations/Running-6f6d8126/south-west/frame_003.png",
+          "animations/Running-6f6d8126/south-west/frame_004.png",
+          "animations/Running-6f6d8126/south-west/frame_005.png",
+          "animations/Running-6f6d8126/south-west/frame_006.png",
+          "animations/Running-6f6d8126/south-west/frame_007.png"
+        ],
+        "north-east": [
+          "animations/Running-6f6d8126/north-east/frame_000.png",
+          "animations/Running-6f6d8126/north-east/frame_001.png",
+          "animations/Running-6f6d8126/north-east/frame_002.png",
+          "animations/Running-6f6d8126/north-east/frame_003.png",
+          "animations/Running-6f6d8126/north-east/frame_004.png",
+          "animations/Running-6f6d8126/north-east/frame_005.png",
+          "animations/Running-6f6d8126/north-east/frame_006.png",
+          "animations/Running-6f6d8126/north-east/frame_007.png"
+        ],
+        "north-west": [
+          "animations/Running-6f6d8126/north-west/frame_000.png",
+          "animations/Running-6f6d8126/north-west/frame_001.png",
+          "animations/Running-6f6d8126/north-west/frame_002.png",
+          "animations/Running-6f6d8126/north-west/frame_003.png",
+          "animations/Running-6f6d8126/north-west/frame_004.png",
+          "animations/Running-6f6d8126/north-west/frame_005.png",
+          "animations/Running-6f6d8126/north-west/frame_006.png",
+          "animations/Running-6f6d8126/north-west/frame_007.png"
+        ],
+        "west": [
+          "animations/Running-6f6d8126/west/frame_000.png",
+          "animations/Running-6f6d8126/west/frame_001.png",
+          "animations/Running-6f6d8126/west/frame_002.png",
+          "animations/Running-6f6d8126/west/frame_003.png",
+          "animations/Running-6f6d8126/west/frame_004.png",
+          "animations/Running-6f6d8126/west/frame_005.png",
+          "animations/Running-6f6d8126/west/frame_006.png",
+          "animations/Running-6f6d8126/west/frame_007.png"
+        ],
+        "north": [
+          "animations/Running-6f6d8126/north/frame_000.png",
+          "animations/Running-6f6d8126/north/frame_001.png",
+          "animations/Running-6f6d8126/north/frame_002.png",
+          "animations/Running-6f6d8126/north/frame_003.png",
+          "animations/Running-6f6d8126/north/frame_004.png",
+          "animations/Running-6f6d8126/north/frame_005.png",
+          "animations/Running-6f6d8126/north/frame_006.png",
+          "animations/Running-6f6d8126/north/frame_007.png"
+        ]
+      },
+      "Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea": {
+        "south": [
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south/frame_000.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south/frame_001.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south/frame_002.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south/frame_003.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south/frame_004.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south/frame_005.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south/frame_006.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south/frame_007.png"
+        ],
+        "south-east": [
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south-east/frame_000.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south-east/frame_001.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south-east/frame_002.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south-east/frame_003.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south-east/frame_004.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south-east/frame_005.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south-east/frame_006.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south-east/frame_007.png"
+        ],
+        "north-east": [
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north-east/frame_000.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north-east/frame_001.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north-east/frame_002.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north-east/frame_003.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north-east/frame_004.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north-east/frame_005.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north-east/frame_006.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north-east/frame_007.png"
+        ],
+        "south-west": [
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south-west/frame_000.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south-west/frame_001.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south-west/frame_002.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south-west/frame_003.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south-west/frame_004.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south-west/frame_005.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south-west/frame_006.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/south-west/frame_007.png"
+        ],
+        "west": [
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/west/frame_000.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/west/frame_001.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/west/frame_002.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/west/frame_003.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/west/frame_004.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/west/frame_005.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/west/frame_006.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/west/frame_007.png"
+        ],
+        "east": [
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/east/frame_000.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/east/frame_001.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/east/frame_002.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/east/frame_003.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/east/frame_004.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/east/frame_005.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/east/frame_006.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/east/frame_007.png"
+        ],
+        "north-west": [
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north-west/frame_000.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north-west/frame_001.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north-west/frame_002.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north-west/frame_003.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north-west/frame_004.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north-west/frame_005.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north-west/frame_006.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north-west/frame_007.png"
+        ],
+        "north": [
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north/frame_000.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north/frame_001.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north/frame_002.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north/frame_003.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north/frame_004.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north/frame_005.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north/frame_006.png",
+          "animations/Fluid_archery_attack_character_reaches_for_arrow_n-a37dd7ea/north/frame_007.png"
+        ]
+      }
+    }
   },
   "export_version": "2.0",
-  "export_date": "2026-04-25T15:10:15.660933"
+  "export_date": "2026-05-01T22:39:39.444661"
 }

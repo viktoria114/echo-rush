@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://echoscene0001"]
+
+[node name="Echo" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 0)
+
+[node name="DialogueMarker" type="Marker2D" parent="."]
+position = Vector2(0, -64)
