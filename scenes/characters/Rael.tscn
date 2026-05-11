@@ -1,6 +1,618 @@
-[gd_scene load_steps=4 format=3 uid="uid://raelscene0001"]
+[gd_scene format=3 uid="uid://bsq4f3pm47iyy"]
 
-[ext_resource type="Script" path="res://scripts/player/player.gd" id="1_player"]
+[ext_resource type="Script" uid="uid://bqm7w1cdjcpli" path="res://scripts/player/player.gd" id="1_player"]
+[ext_resource type="Texture2D" uid="uid://brjr0t3jbcwe8" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/east/frame_000.png" id="2_pk3sb"]
+[ext_resource type="Texture2D" uid="uid://bu3x6xikk1550" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/east/frame_001.png" id="3_v1ddu"]
+[ext_resource type="Texture2D" uid="uid://t7hbn88xc5wg" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/east/frame_002.png" id="4_awx7d"]
+[ext_resource type="Texture2D" uid="uid://cw7j82tshp56p" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/east/frame_003.png" id="5_2eac3"]
+[ext_resource type="Texture2D" uid="uid://byulgsa5j2p1q" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/east/frame_004.png" id="6_3i1wn"]
+[ext_resource type="Texture2D" uid="uid://c2ldaeisckmrj" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/east/frame_005.png" id="7_a701n"]
+[ext_resource type="Texture2D" uid="uid://dib3k0gs04un6" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/east/frame_006.png" id="8_4qjic"]
+[ext_resource type="Texture2D" uid="uid://cyrut7r7h4epj" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/east/frame_007.png" id="9_4ysf5"]
+[ext_resource type="Texture2D" uid="uid://bc61rxrlx72q6" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/east/frame_008.png" id="10_dt1bf"]
+[ext_resource type="Texture2D" uid="uid://o13qo8wym140" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/east/frame_000.png" id="11_67kx5"]
+[ext_resource type="Texture2D" uid="uid://c30ej3ro3170p" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north/frame_000.png" id="11_rhhev"]
+[ext_resource type="Texture2D" uid="uid://b77lbt8vulk7n" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north/frame_001.png" id="12_deg8d"]
+[ext_resource type="Texture2D" uid="uid://5u6qbeshjnn5" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/east/frame_001.png" id="12_fhqi4"]
+[ext_resource type="Texture2D" uid="uid://37ss44o51er7" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north/frame_002.png" id="13_76nnm"]
+[ext_resource type="Texture2D" uid="uid://deei7kxyenhjg" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/east/frame_002.png" id="13_scfid"]
+[ext_resource type="Texture2D" uid="uid://c7cga04d2lw0x" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/east/frame_003.png" id="14_ff3w6"]
+[ext_resource type="Texture2D" uid="uid://b5k4as1cmjxn5" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north/frame_003.png" id="14_nd11e"]
+[ext_resource type="Texture2D" uid="uid://dx52jgwnvfkjv" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/east/frame_004.png" id="15_2yah5"]
+[ext_resource type="Texture2D" uid="uid://dvofioqq2bjsf" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north/frame_004.png" id="15_gh0kc"]
+[ext_resource type="Texture2D" uid="uid://dq4pdrmsxq5ad" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/east/frame_005.png" id="16_17pa4"]
+[ext_resource type="Texture2D" uid="uid://brhempe8ohefv" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north/frame_005.png" id="16_k65j5"]
+[ext_resource type="Texture2D" uid="uid://cgxpt5prp0om2" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north/frame_006.png" id="17_3lv5y"]
+[ext_resource type="Texture2D" uid="uid://esciroimim6t" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/east/frame_006.png" id="17_genxl"]
+[ext_resource type="Texture2D" uid="uid://b35qo38tmt0vb" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/east/frame_007.png" id="18_dk55a"]
+[ext_resource type="Texture2D" uid="uid://bhekhjn3gb3ey" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north/frame_007.png" id="18_nfug1"]
+[ext_resource type="Texture2D" uid="uid://d27qxw5bppv85" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north/frame_000.png" id="19_g3aok"]
+[ext_resource type="Texture2D" uid="uid://d4n34k1gidhag" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north-east/frame_000.png" id="19_ps2n4"]
+[ext_resource type="Texture2D" uid="uid://vmx8ni1tyb13" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north-east/frame_001.png" id="20_mm1ha"]
+[ext_resource type="Texture2D" uid="uid://cphv3lwuuyrgc" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north/frame_001.png" id="20_ttwp2"]
+[ext_resource type="Texture2D" uid="uid://ksuleu3ntgto" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north/frame_002.png" id="21_ct6dn"]
+[ext_resource type="Texture2D" uid="uid://tj32qk82lrn8" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north-east/frame_002.png" id="21_dd83f"]
+[ext_resource type="Texture2D" uid="uid://cp6jj6fni54uf" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north-east/frame_003.png" id="22_8ky0v"]
+[ext_resource type="Texture2D" uid="uid://dd6m3dxdxw1lx" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north/frame_003.png" id="22_e8cxc"]
+[ext_resource type="Texture2D" uid="uid://cbrwyf3cqciuq" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north-east/frame_004.png" id="23_xt1oa"]
+[ext_resource type="Texture2D" uid="uid://dhybxns83b2bx" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north/frame_004.png" id="23_yjocw"]
+[ext_resource type="Texture2D" uid="uid://b6rj7fe8s6lmg" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north-east/frame_005.png" id="24_ccm7j"]
+[ext_resource type="Texture2D" uid="uid://c2c646d4r41wk" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north/frame_005.png" id="24_fvxtn"]
+[ext_resource type="Texture2D" uid="uid://bhwg50vu8yl3v" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north/frame_006.png" id="25_jo7f6"]
+[ext_resource type="Texture2D" uid="uid://bi5p4n3xv242e" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north-east/frame_006.png" id="25_ngmfl"]
+[ext_resource type="Texture2D" uid="uid://cqx153nfjhcfs" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north/frame_007.png" id="26_bjssu"]
+[ext_resource type="Texture2D" uid="uid://c3quxp8h533kc" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north-east/frame_007.png" id="26_r1vb8"]
+[ext_resource type="Texture2D" uid="uid://dug27f33xtd5p" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north-west/frame_000.png" id="27_aqe7f"]
+[ext_resource type="Texture2D" uid="uid://c8cfwcoxar1l1" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north-east/frame_000.png" id="27_dle82"]
+[ext_resource type="Texture2D" uid="uid://v3b34me6d5cl" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north-west/frame_001.png" id="28_7yaeg"]
+[ext_resource type="Texture2D" uid="uid://lxq71inxu43" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north-east/frame_001.png" id="28_y46ku"]
+[ext_resource type="Texture2D" uid="uid://dfu4hrxlfysn8" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north-west/frame_002.png" id="29_v6uch"]
+[ext_resource type="Texture2D" uid="uid://0jonam0ppouc" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north-east/frame_002.png" id="29_yp258"]
+[ext_resource type="Texture2D" uid="uid://shv0mvekslxn" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north-west/frame_003.png" id="30_gyj08"]
+[ext_resource type="Texture2D" uid="uid://bgpiatugaptd8" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north-east/frame_003.png" id="30_hhqts"]
+[ext_resource type="Texture2D" uid="uid://celv3ksbi5u0p" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north-west/frame_004.png" id="31_bwj5d"]
+[ext_resource type="Texture2D" uid="uid://buys0yactc1xs" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north-east/frame_004.png" id="31_mnph4"]
+[ext_resource type="Texture2D" uid="uid://bw35j2m8ervk6" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north-east/frame_005.png" id="32_1gw6t"]
+[ext_resource type="Texture2D" uid="uid://ceyf0b1cxnxdt" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north-west/frame_005.png" id="32_m4yj5"]
+[ext_resource type="Texture2D" uid="uid://n2ujecgsgrvy" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north-east/frame_006.png" id="33_0cfd1"]
+[ext_resource type="Texture2D" uid="uid://rcq58qb2ncrg" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north-west/frame_006.png" id="33_1gcqy"]
+[ext_resource type="Texture2D" uid="uid://djt16mjorq3c3" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/north-west/frame_007.png" id="34_0iw70"]
+[ext_resource type="Texture2D" uid="uid://cuscq3h57n1e5" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north-east/frame_007.png" id="34_xm6no"]
+[ext_resource type="Texture2D" uid="uid://d3qr6wlmcrfbg" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south/frame_000.png" id="35_r5p60"]
+[ext_resource type="Texture2D" uid="uid://d36dora17urdu" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north-west/frame_000.png" id="35_tqnt3"]
+[ext_resource type="Texture2D" uid="uid://baxnw67s4sfmw" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south/frame_001.png" id="36_r6cw5"]
+[ext_resource type="Texture2D" uid="uid://nnmamfxaj4kt" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north-west/frame_001.png" id="36_rhrqt"]
+[ext_resource type="Texture2D" uid="uid://bo7dg5slnohf3" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south/frame_002.png" id="37_mhbo4"]
+[ext_resource type="Texture2D" uid="uid://b6ty2ybbf2db" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north-west/frame_002.png" id="37_ux2as"]
+[ext_resource type="Texture2D" uid="uid://b75dl08736x5r" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south/frame_003.png" id="38_ppk6u"]
+[ext_resource type="Texture2D" uid="uid://p8x4gxr3bcvh" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north-west/frame_003.png" id="38_qimok"]
+[ext_resource type="Texture2D" uid="uid://chixwl8di6ku5" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south/frame_004.png" id="39_ucjii"]
+[ext_resource type="Texture2D" uid="uid://cr15fjpr0pvak" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north-west/frame_004.png" id="39_v7il6"]
+[ext_resource type="Texture2D" uid="uid://b86c5rbumg60i" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north-west/frame_005.png" id="40_k1p2j"]
+[ext_resource type="Texture2D" uid="uid://brniiqtldgs51" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south/frame_005.png" id="40_s36fw"]
+[ext_resource type="Texture2D" uid="uid://dwskx0oshncm8" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/north-west/frame_006.png" id="41_0dlis"]
+[ext_resource type="Texture2D" uid="uid://bi41nturdupgc" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south/frame_006.png" id="41_obqfm"]
+[ext_resource type="Texture2D" uid="uid://ble6low6r1omn" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south/frame_000.png" id="42_xpvqp"]
+[ext_resource type="Texture2D" uid="uid://bihuuo2rhfsvd" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south/frame_007.png" id="42_ytpv1"]
+[ext_resource type="Texture2D" uid="uid://biwwyb10npgva" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south/frame_001.png" id="43_hxjgd"]
+[ext_resource type="Texture2D" uid="uid://gpjsthh7yqnd" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-east/frame_000.png" id="43_vpsbx"]
+[ext_resource type="Texture2D" uid="uid://pmvcnbexg3ph" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-east/frame_001.png" id="44_fse4w"]
+[ext_resource type="Texture2D" uid="uid://byl7u40i8013u" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south/frame_002.png" id="44_up22d"]
+[ext_resource type="Texture2D" uid="uid://co3r5ruxj7dym" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south/frame_003.png" id="45_aepv2"]
+[ext_resource type="Texture2D" uid="uid://d0th4j6qck13g" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-east/frame_002.png" id="45_pup8e"]
+[ext_resource type="Texture2D" uid="uid://mpdk7dktck6d" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-east/frame_003.png" id="46_i32j6"]
+[ext_resource type="Texture2D" uid="uid://74b73qe35ei5" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south/frame_004.png" id="46_m8d8k"]
+[ext_resource type="Texture2D" uid="uid://bdxeeogxm4svx" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south/frame_005.png" id="47_3id4e"]
+[ext_resource type="Texture2D" uid="uid://cdqcubosa0j37" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-east/frame_004.png" id="47_vidkd"]
+[ext_resource type="Texture2D" uid="uid://dwpot5mq4odwn" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-east/frame_005.png" id="48_dobnq"]
+[ext_resource type="Texture2D" uid="uid://cwyl1brg0sau7" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south/frame_006.png" id="48_p0g8w"]
+[ext_resource type="Texture2D" uid="uid://bxxcg8d7yq1c1" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south/frame_007.png" id="49_gb06e"]
+[ext_resource type="Texture2D" uid="uid://bgq0n132gbtr2" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-east/frame_006.png" id="49_maj1h"]
+[ext_resource type="Texture2D" uid="uid://b1kibofsrtypv" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south-east/frame_000.png" id="50_7tsdi"]
+[ext_resource type="Texture2D" uid="uid://cwf7jw3y473gc" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-east/frame_007.png" id="50_cvepj"]
+[ext_resource type="Texture2D" uid="uid://bil4qflh03rry" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south-east/frame_001.png" id="51_5b28a"]
+[ext_resource type="Texture2D" uid="uid://w65qg0spk77v" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-east/frame_008.png" id="51_5xbyb"]
+[ext_resource type="Texture2D" uid="uid://cjuqyeh101qgf" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south-east/frame_002.png" id="52_lxvv8"]
+[ext_resource type="Texture2D" uid="uid://carovgxqv3ht4" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-west/frame_000.png" id="52_qgv6h"]
+[ext_resource type="Texture2D" uid="uid://b4jkuf5vqrcqe" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south-east/frame_003.png" id="53_3jxy0"]
+[ext_resource type="Texture2D" uid="uid://nl10gs6sgh4g" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-west/frame_001.png" id="53_4vguo"]
+[ext_resource type="Texture2D" uid="uid://q0td53uk7ndk" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south-east/frame_004.png" id="54_fy804"]
+[ext_resource type="Texture2D" uid="uid://dsijpskgyukwu" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-west/frame_002.png" id="54_udsw3"]
+[ext_resource type="Texture2D" uid="uid://c8y3oqh227ff3" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-west/frame_003.png" id="55_rqphk"]
+[ext_resource type="Texture2D" uid="uid://b3vvnwgjso8kl" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south-east/frame_005.png" id="55_tee11"]
+[ext_resource type="Texture2D" uid="uid://dmynpbmsmgejo" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-west/frame_004.png" id="56_kt4ei"]
+[ext_resource type="Texture2D" uid="uid://cggfoo15a2gs2" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south-east/frame_006.png" id="56_vu830"]
+[ext_resource type="Texture2D" uid="uid://jm4qa1kh21dh" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-west/frame_005.png" id="57_i00al"]
+[ext_resource type="Texture2D" uid="uid://dbyb7f3fk1dvh" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south-east/frame_007.png" id="57_mr6uq"]
+[ext_resource type="Texture2D" uid="uid://d3fhgp26vatgs" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south-west/frame_000.png" id="58_2bsex"]
+[ext_resource type="Texture2D" uid="uid://bytq0eh3pjg6e" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-west/frame_006.png" id="58_h1be2"]
+[ext_resource type="Texture2D" uid="uid://cmrkrj7ex7g8w" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-west/frame_007.png" id="59_1k8hg"]
+[ext_resource type="Texture2D" uid="uid://c0jt2knj706sh" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south-west/frame_001.png" id="59_s1c8h"]
+[ext_resource type="Texture2D" uid="uid://bijmp15gcy4m1" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south-west/frame_002.png" id="60_e3ejn"]
+[ext_resource type="Texture2D" uid="uid://383nl1lmdylp" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/south-west/frame_008.png" id="60_vfc7w"]
+[ext_resource type="Texture2D" uid="uid://bxq3y0oan61oh" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/west/frame_000.png" id="61_mahjn"]
+[ext_resource type="Texture2D" uid="uid://ce4wfrortj51v" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south-west/frame_003.png" id="61_rhhev"]
+[ext_resource type="Texture2D" uid="uid://bqr5cxg3ceklv" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/west/frame_001.png" id="62_a23y3"]
+[ext_resource type="Texture2D" uid="uid://bcmxss8bf2xd6" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south-west/frame_004.png" id="62_deg8d"]
+[ext_resource type="Texture2D" uid="uid://bm5eogdataj6j" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/west/frame_002.png" id="63_7okft"]
+[ext_resource type="Texture2D" uid="uid://b8ns6gb6kf5gl" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south-west/frame_005.png" id="63_76nnm"]
+[ext_resource type="Texture2D" uid="uid://xrh5mtpr0s83" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/west/frame_003.png" id="64_hxnjg"]
+[ext_resource type="Texture2D" uid="uid://cniyyt87q36x0" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south-west/frame_006.png" id="64_nd11e"]
+[ext_resource type="Texture2D" uid="uid://c5nmc4a1j3s7i" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/west/frame_004.png" id="65_7kcf7"]
+[ext_resource type="Texture2D" uid="uid://b3vbtf5v63eci" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/south-west/frame_007.png" id="65_gh0kc"]
+[ext_resource type="Texture2D" uid="uid://31lt2p24e021" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/west/frame_005.png" id="66_d0nmk"]
+[ext_resource type="Texture2D" uid="uid://b7omjsjcix1q3" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/west/frame_000.png" id="66_k65j5"]
+[ext_resource type="Texture2D" uid="uid://crvr7q78vxa3e" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/west/frame_001.png" id="67_3lv5y"]
+[ext_resource type="Texture2D" uid="uid://c382m12f0ybor" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/west/frame_006.png" id="67_8pw44"]
+[ext_resource type="Texture2D" uid="uid://c2b1hg2vefor" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/west/frame_007.png" id="68_7xg73"]
+[ext_resource type="Texture2D" uid="uid://4nwryruqan51" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/west/frame_002.png" id="68_nfug1"]
+[ext_resource type="Texture2D" uid="uid://cyvohaiyognkj" path="res://assets/sprites/characters/rael/animations/Baseball_bat_swing_powerful_overhead_strike_full_b-08604485/west/frame_008.png" id="69_6riyy"]
+[ext_resource type="Texture2D" uid="uid://dkulh1invoy12" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/west/frame_003.png" id="69_ps2n4"]
+[ext_resource type="Texture2D" uid="uid://dr0bfiyxo6ol0" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/west/frame_004.png" id="70_mm1ha"]
+[ext_resource type="Texture2D" uid="uid://cxb3ags0aymb1" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/west/frame_005.png" id="71_dd83f"]
+[ext_resource type="Texture2D" uid="uid://c5w77ysajbcqo" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/west/frame_006.png" id="72_8ky0v"]
+[ext_resource type="Texture2D" uid="uid://cvgfsj6at1cek" path="res://assets/sprites/characters/rael/animations/Running-eefd6131/west/frame_007.png" id="73_xt1oa"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ccm7j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_pk3sb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_v1ddu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_awx7d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2eac3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_3i1wn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_a701n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4qjic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4ysf5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_dt1bf")
+}],
+"loop": true,
+"name": &"attack_east",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_rhhev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_deg8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_76nnm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_nd11e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_gh0kc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_k65j5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_3lv5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_nfug1")
+}],
+"loop": true,
+"name": &"attack_north",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_ps2n4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_mm1ha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_dd83f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_8ky0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_xt1oa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ccm7j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_ngmfl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_r1vb8")
+}],
+"loop": true,
+"name": &"attack_north-east",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_aqe7f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_7yaeg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_v6uch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_gyj08")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_bwj5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_m4yj5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_1gcqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_0iw70")
+}],
+"loop": true,
+"name": &"attack_north-west",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("35_r5p60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_r6cw5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_mhbo4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_ppk6u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ucjii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_s36fw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_obqfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_ytpv1")
+}],
+"loop": true,
+"name": &"attack_south",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("43_vpsbx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_fse4w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_pup8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_i32j6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_vidkd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_dobnq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_maj1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_cvepj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_5xbyb")
+}],
+"loop": true,
+"name": &"attack_south-east",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("52_qgv6h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_4vguo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_udsw3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_rqphk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_kt4ei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_i00al")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_h1be2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_1k8hg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_vfc7w")
+}],
+"loop": true,
+"name": &"attack_south-west",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("61_mahjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_a23y3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_7okft")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_hxnjg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_7kcf7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_d0nmk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_8pw44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_7xg73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_6riyy")
+}],
+"loop": true,
+"name": &"attack_west",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_67kx5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_fhqi4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_scfid")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ff3w6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_2yah5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_17pa4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_genxl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_dk55a")
+}],
+"loop": true,
+"name": &"running_east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_g3aok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ttwp2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ct6dn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_e8cxc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_yjocw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_fvxtn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_jo7f6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_bjssu")
+}],
+"loop": true,
+"name": &"running_north",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_dle82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_y46ku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_yp258")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_hhqts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_mnph4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_1gw6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_0cfd1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_xm6no")
+}],
+"loop": true,
+"name": &"running_north-east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("35_tqnt3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_rhrqt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_ux2as")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_qimok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_v7il6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_k1p2j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_0dlis")
+}],
+"loop": true,
+"name": &"running_north-west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42_xpvqp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_hxjgd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_up22d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_aepv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_m8d8k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_3id4e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_p0g8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_gb06e")
+}],
+"loop": true,
+"name": &"running_south",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("50_7tsdi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_5b28a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_lxvv8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_3jxy0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_fy804")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_tee11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_vu830")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_mr6uq")
+}],
+"loop": true,
+"name": &"running_south-east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("58_2bsex")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_s1c8h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_e3ejn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_rhhev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_deg8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_76nnm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_nd11e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_gh0kc")
+}],
+"loop": true,
+"name": &"running_south-west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("66_k65j5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_3lv5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_nfug1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_ps2n4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_mm1ha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_dd83f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_8ky0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_xt1oa")
+}],
+"loop": true,
+"name": &"running_west",
+"speed": 10.0
+}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_body"]
 radius = 20.0
@@ -9,21 +621,23 @@ height = 45.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_hitbox"]
 radius = 40.0
 
-[node name="Rael" type="CharacterBody2D"]
-collision_layer = 1
-collision_mask = 3
+[node name="Rael" type="CharacterBody2D" unique_id=267325098]
+collision_mask = 2
 script = ExtResource("1_player")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=899104158]
+sprite_frames = SubResource("SpriteFrames_ccm7j")
+animation = &"running_west"
+frame_progress = 0.083616845
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=827470591]
 shape = SubResource("CapsuleShape2D_body")
 
-[node name="HitboxArea" type="Area2D" parent="."]
+[node name="HitboxArea" type="Area2D" parent="." unique_id=49177595]
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxArea" unique_id=1759961080]
 shape = SubResource("CircleShape2D_hitbox")
 
 [node name="Camara" type="Camera2D" parent="."]

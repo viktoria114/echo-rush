@@ -1,0 +1,202 @@
+{
+  "group_id": null,
+  "objects": [
+    {
+      "id": "31ef1066-f19d-4822-be76-3fa105f1d4ca",
+      "name": null,
+      "prompt": "small green gelatinous slime, translucent blobby body, single large eye, glowing core",
+      "size": {
+        "width": 64,
+        "height": 64
+      },
+      "directions": 8,
+      "view": "low top-down",
+      "rotations": {
+        "south": "rotations/south.png",
+        "south-east": "rotations/south-east.png",
+        "east": "rotations/east.png",
+        "north-east": "rotations/north-east.png",
+        "north": "rotations/north.png",
+        "north-west": "rotations/north-west.png",
+        "west": "rotations/west.png",
+        "south-west": "rotations/south-west.png"
+      },
+      "animations": {
+        "attack bounce": {
+          "directions": {
+            "south-east": {
+              "frames": [
+                "animations/attack bounce/south-east/frame_000.png",
+                "animations/attack bounce/south-east/frame_001.png",
+                "animations/attack bounce/south-east/frame_002.png",
+                "animations/attack bounce/south-east/frame_003.png",
+                "animations/attack bounce/south-east/frame_004.png",
+                "animations/attack bounce/south-east/frame_005.png",
+                "animations/attack bounce/south-east/frame_006.png",
+                "animations/attack bounce/south-east/frame_007.png",
+                "animations/attack bounce/south-east/frame_008.png",
+                "animations/attack bounce/south-east/frame_009.png",
+                "animations/attack bounce/south-east/frame_010.png",
+                "animations/attack bounce/south-east/frame_011.png",
+                "animations/attack bounce/south-east/frame_012.png",
+                "animations/attack bounce/south-east/frame_013.png",
+                "animations/attack bounce/south-east/frame_014.png",
+                "animations/attack bounce/south-east/frame_015.png"
+              ],
+              "frame_count": 16
+            },
+            "south": {
+              "frames": [
+                "animations/attack bounce/south/frame_000.png",
+                "animations/attack bounce/south/frame_001.png",
+                "animations/attack bounce/south/frame_002.png",
+                "animations/attack bounce/south/frame_003.png",
+                "animations/attack bounce/south/frame_004.png",
+                "animations/attack bounce/south/frame_005.png",
+                "animations/attack bounce/south/frame_006.png",
+                "animations/attack bounce/south/frame_007.png",
+                "animations/attack bounce/south/frame_008.png",
+                "animations/attack bounce/south/frame_009.png",
+                "animations/attack bounce/south/frame_010.png",
+                "animations/attack bounce/south/frame_011.png",
+                "animations/attack bounce/south/frame_012.png",
+                "animations/attack bounce/south/frame_013.png",
+                "animations/attack bounce/south/frame_014.png",
+                "animations/attack bounce/south/frame_015.png"
+              ],
+              "frame_count": 16
+            },
+            "east": {
+              "frames": [
+                "animations/attack bounce/east/frame_000.png",
+                "animations/attack bounce/east/frame_001.png",
+                "animations/attack bounce/east/frame_002.png",
+                "animations/attack bounce/east/frame_003.png",
+                "animations/attack bounce/east/frame_004.png",
+                "animations/attack bounce/east/frame_005.png",
+                "animations/attack bounce/east/frame_006.png",
+                "animations/attack bounce/east/frame_007.png",
+                "animations/attack bounce/east/frame_008.png",
+                "animations/attack bounce/east/frame_009.png",
+                "animations/attack bounce/east/frame_010.png",
+                "animations/attack bounce/east/frame_011.png",
+                "animations/attack bounce/east/frame_012.png",
+                "animations/attack bounce/east/frame_013.png",
+                "animations/attack bounce/east/frame_014.png",
+                "animations/attack bounce/east/frame_015.png"
+              ],
+              "frame_count": 16
+            },
+            "north-east": {
+              "frames": [
+                "animations/attack bounce/north-east/frame_000.png",
+                "animations/attack bounce/north-east/frame_001.png",
+                "animations/attack bounce/north-east/frame_002.png",
+                "animations/attack bounce/north-east/frame_003.png",
+                "animations/attack bounce/north-east/frame_004.png",
+                "animations/attack bounce/north-east/frame_005.png",
+                "animations/attack bounce/north-east/frame_006.png",
+                "animations/attack bounce/north-east/frame_007.png",
+                "animations/attack bounce/north-east/frame_008.png",
+                "animations/attack bounce/north-east/frame_009.png",
+                "animations/attack bounce/north-east/frame_010.png",
+                "animations/attack bounce/north-east/frame_011.png",
+                "animations/attack bounce/north-east/frame_012.png",
+                "animations/attack bounce/north-east/frame_013.png",
+                "animations/attack bounce/north-east/frame_014.png",
+                "animations/attack bounce/north-east/frame_015.png"
+              ],
+              "frame_count": 16
+            },
+            "north": {
+              "frames": [
+                "animations/attack bounce/north/frame_000.png",
+                "animations/attack bounce/north/frame_001.png",
+                "animations/attack bounce/north/frame_002.png",
+                "animations/attack bounce/north/frame_003.png",
+                "animations/attack bounce/north/frame_004.png",
+                "animations/attack bounce/north/frame_005.png",
+                "animations/attack bounce/north/frame_006.png",
+                "animations/attack bounce/north/frame_007.png",
+                "animations/attack bounce/north/frame_008.png",
+                "animations/attack bounce/north/frame_009.png",
+                "animations/attack bounce/north/frame_010.png",
+                "animations/attack bounce/north/frame_011.png",
+                "animations/attack bounce/north/frame_012.png",
+                "animations/attack bounce/north/frame_013.png",
+                "animations/attack bounce/north/frame_014.png",
+                "animations/attack bounce/north/frame_015.png"
+              ],
+              "frame_count": 16
+            },
+            "north-west": {
+              "frames": [
+                "animations/attack bounce/north-west/frame_000.png",
+                "animations/attack bounce/north-west/frame_001.png",
+                "animations/attack bounce/north-west/frame_002.png",
+                "animations/attack bounce/north-west/frame_003.png",
+                "animations/attack bounce/north-west/frame_004.png",
+                "animations/attack bounce/north-west/frame_005.png",
+                "animations/attack bounce/north-west/frame_006.png",
+                "animations/attack bounce/north-west/frame_007.png",
+                "animations/attack bounce/north-west/frame_008.png",
+                "animations/attack bounce/north-west/frame_009.png",
+                "animations/attack bounce/north-west/frame_010.png",
+                "animations/attack bounce/north-west/frame_011.png",
+                "animations/attack bounce/north-west/frame_012.png",
+                "animations/attack bounce/north-west/frame_013.png",
+                "animations/attack bounce/north-west/frame_014.png",
+                "animations/attack bounce/north-west/frame_015.png"
+              ],
+              "frame_count": 16
+            },
+            "west": {
+              "frames": [
+                "animations/attack bounce/west/frame_000.png",
+                "animations/attack bounce/west/frame_001.png",
+                "animations/attack bounce/west/frame_002.png",
+                "animations/attack bounce/west/frame_003.png",
+                "animations/attack bounce/west/frame_004.png",
+                "animations/attack bounce/west/frame_005.png",
+                "animations/attack bounce/west/frame_006.png",
+                "animations/attack bounce/west/frame_007.png",
+                "animations/attack bounce/west/frame_008.png",
+                "animations/attack bounce/west/frame_009.png",
+                "animations/attack bounce/west/frame_010.png",
+                "animations/attack bounce/west/frame_011.png",
+                "animations/attack bounce/west/frame_012.png",
+                "animations/attack bounce/west/frame_013.png",
+                "animations/attack bounce/west/frame_014.png",
+                "animations/attack bounce/west/frame_015.png"
+              ],
+              "frame_count": 16
+            },
+            "south-west": {
+              "frames": [
+                "animations/attack bounce/south-west/frame_000.png",
+                "animations/attack bounce/south-west/frame_001.png",
+                "animations/attack bounce/south-west/frame_002.png",
+                "animations/attack bounce/south-west/frame_003.png",
+                "animations/attack bounce/south-west/frame_004.png",
+                "animations/attack bounce/south-west/frame_005.png",
+                "animations/attack bounce/south-west/frame_006.png",
+                "animations/attack bounce/south-west/frame_007.png",
+                "animations/attack bounce/south-west/frame_008.png",
+                "animations/attack bounce/south-west/frame_009.png",
+                "animations/attack bounce/south-west/frame_010.png",
+                "animations/attack bounce/south-west/frame_011.png",
+                "animations/attack bounce/south-west/frame_012.png",
+                "animations/attack bounce/south-west/frame_013.png",
+                "animations/attack bounce/south-west/frame_014.png",
+                "animations/attack bounce/south-west/frame_015.png"
+              ],
+              "frame_count": 16
+            }
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "1.0",
+  "export_date": "2026-05-01T22:43:07.815810"
+}

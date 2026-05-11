@@ -1,56 +1,63 @@
 [gd_scene format=3 uid="uid://bnn6c51qbigsy"]
 
-[ext_resource type="Script" path="res://scripts/ui/main_menu.gd" id="1_menu"]
+[ext_resource type="Script" uid="uid://bvxdt8cax2u01" path="res://scripts/ui/main_menu.gd" id="1_menu"]
 
-[node name="MainMenu" type="Node2D"]
+[node name="MainMenu" type="Node2D" unique_id=1990449626]
 script = ExtResource("1_menu")
 
-[node name="Fondo" type="ColorRect" parent="."]
+[node name="Fondo" type="ColorRect" parent="." unique_id=745429018]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color(0.05, 0.05, 0.12, 1)
 
-[node name="UI" type="CanvasLayer" parent="."]
+[node name="UI" type="CanvasLayer" parent="." unique_id=191140176]
 
-[node name="Centro" type="CenterContainer" parent="UI"]
+[node name="Centro" type="CenterContainer" parent="UI" unique_id=956549617]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 1.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="VBox" type="VBoxContainer" parent="UI/Centro"]
+[node name="VBox" type="VBoxContainer" parent="UI/Centro" unique_id=734881791]
 custom_minimum_size = Vector2(320, 0)
+layout_mode = 2
 theme_override_constants/separation = 20
 
-[node name="Titulo" type="Label" parent="UI/Centro/VBox"]
+[node name="Titulo" type="Label" parent="UI/Centro/VBox" unique_id=1688830694]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.85, 0.3, 1)
+theme_override_font_sizes/font_size = 64
 text = "ECHO RUSH"
 horizontal_alignment = 1
-theme_override_font_sizes/font_size = 64
-theme_override_colors/font_color = Color(0.95, 0.85, 0.3, 1)
 
-[node name="Subtitulo" type="Label" parent="UI/Centro/VBox"]
+[node name="Subtitulo" type="Label" parent="UI/Centro/VBox" unique_id=2037281187]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.75, 0.75, 0.85, 1)
 text = "Sobrevive. Negocia. Escapa."
 horizontal_alignment = 1
-theme_override_colors/font_color = Color(0.75, 0.75, 0.85, 1)
 
-[node name="Separador" type="Control" parent="UI/Centro/VBox"]
-layout_mode = 2
+[node name="Separador" type="Control" parent="UI/Centro/VBox" unique_id=1128264298]
 custom_minimum_size = Vector2(0, 24)
-
-[node name="BtnJugar" type="Button" parent="UI/Centro/VBox"]
 layout_mode = 2
-text = "Jugar"
+
+[node name="BtnJugar" type="Button" parent="UI/Centro/VBox" unique_id=1784149118]
+layout_mode = 2
 theme_override_font_sizes/font_size = 28
+text = "Jugar"
 
-[node name="BtnInfinito" type="Button" parent="UI/Centro/VBox"]
+[node name="BtnInfinito" type="Button" parent="UI/Centro/VBox" unique_id=1506105934]
 layout_mode = 2
-text = "Modo Infinito"
 theme_override_font_sizes/font_size = 22
 disabled = true
+text = "Modo Infinito"
 
-[node name="BtnSalir" type="Button" parent="UI/Centro/VBox"]
+[node name="BtnSalir" type="Button" parent="UI/Centro/VBox" unique_id=767065409]
 layout_mode = 2
-text = "Salir"
 theme_override_font_sizes/font_size = 22
+text = "Salir"

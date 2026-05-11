@@ -21,6 +21,11 @@ const ENEMY_ATTACK_COOLDOWN := 1.0
 const ENEMIES_PER_WAVE_BASE := 5
 const WAVE_SCALING := 1.4
 const ECHO_WAVE_INTERVAL := 5
+const WAVES_PER_LEVEL := 5     # oleadas totales antes de abrir la tienda
+
+# Economía
+const COIN_DROP_VALUE := 10    # monedas que da cada moneda recogida
+const ECHO_REROLL_COST := 50
 
 # Keywords
 const MAX_KEYWORDS := 3
