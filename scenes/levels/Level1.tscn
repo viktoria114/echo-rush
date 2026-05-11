@@ -4,8 +4,6 @@
 [ext_resource type="Script" path="res://scripts/systems/wave_manager.gd" id="2_wave"]
 [ext_resource type="PackedScene" uid="uid://raelscene0001" path="res://scenes/characters/Rael.tscn" id="3_rael"]
 [ext_resource type="PackedScene" uid="uid://lenascene0001" path="res://scenes/characters/Lena.tscn" id="4_lena"]
-[ext_resource type="PackedScene" uid="uid://bromscene0001" path="res://scenes/characters/Brom.tscn" id="5_brom"]
-[ext_resource type="PackedScene" uid="uid://zariscene0001" path="res://scenes/characters/Zari.tscn" id="6_zari"]
 [ext_resource type="PackedScene" uid="uid://boss_scene_01" path="res://scenes/enemies/Boss.tscn" id="7_boss"]
 [ext_resource type="PackedScene" uid="uid://hudscene0001" path="res://scenes/ui/HUD.tscn" id="8_hud"]
 [ext_resource type="PackedScene" path="res://scenes/enemies/Slime.tscn" id="9_slime"]
@@ -123,9 +121,5 @@ position = Vector2(960, 540)
 [node name="Companeros" type="Node2D" parent="."]
 [node name="Lena" parent="Companeros" instance=ExtResource("4_lena")]
 position = Vector2(880, 540)
-[node name="Brom" parent="Companeros" instance=ExtResource("5_brom")]
-position = Vector2(960, 620)
-[node name="Zari" parent="Companeros" instance=ExtResource("6_zari")]
-position = Vector2(1040, 540)
 
 [node name="HUD" parent="." instance=ExtResource("8_hud")]

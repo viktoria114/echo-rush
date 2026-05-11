@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://boss_final_01"]
+
+[ext_resource type="Script" path="res://scripts/enemies/boss_final.gd" id="1_final"]
+
+[sub_resource type="CircleShape2D" id="FinColShape"]
+radius = 50.0
+
+[node name="BossFinal" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("1_final")
+
+[node name="Poligono" type="Polygon2D" parent="."]
+color = Color(0.15, 0.03, 0.10, 1.0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("FinColShape")

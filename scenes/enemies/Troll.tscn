@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://troll_scene_01"]
+
+[ext_resource type="Script" path="res://scripts/enemies/troll.gd" id="1_troll"]
+
+[sub_resource type="CircleShape2D" id="TrColShape"]
+radius = 36.0
+
+[node name="Troll" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("1_troll")
+
+[node name="Poligono" type="Polygon2D" parent="."]
+color = Color(0.18, 0.42, 0.18, 1.0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("TrColShape")
