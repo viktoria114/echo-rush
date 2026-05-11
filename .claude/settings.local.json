@@ -5,7 +5,11 @@
       "PowerShell($lenaPath = \"c:\\\\Users\\\\vik\\\\Documents\\\\echo-rush\\\\assets\\\\sprites\\\\characters\\\\lena\"; Write-Host \"=== LENA CHARACTER STRUCTURE ===\" ; Get-ChildItem -Path $lenaPath | ForEach-Object { Write-Host $_.Name })",
       "PowerShell($lenaAnimPath = \"c:\\\\Users\\\\vik\\\\Documents\\\\echo-rush\\\\assets\\\\sprites\\\\characters\\\\lena\\\\animations\"; Write-Host \"=== LENA ANIMATIONS ===\" ; Get-ChildItem -Path $lenaAnimPath | ForEach-Object { Write-Host $_.Name })",
       "PowerShell($lenaRotPath = \"c:\\\\Users\\\\vik\\\\Documents\\\\echo-rush\\\\assets\\\\sprites\\\\characters\\\\lena\\\\rotations\"; Write-Host \"=== LENA ROTATIONS ===\" ; Get-ChildItem -Path $lenaRotPath | ForEach-Object { Write-Host $_.Name })",
-      "PowerShell($bromPath = \"c:\\\\Users\\\\vik\\\\Documents\\\\echo-rush\\\\assets\\\\sprites\\\\characters\\\\brom\"; Write-Host \"=== BROM CHARACTER STRUCTURE ===\" ; Get-ChildItem -Path $bromPath | ForEach-Object { Write-Host $_.Name })"
+      "PowerShell($bromPath = \"c:\\\\Users\\\\vik\\\\Documents\\\\echo-rush\\\\assets\\\\sprites\\\\characters\\\\brom\"; Write-Host \"=== BROM CHARACTER STRUCTURE ===\" ; Get-ChildItem -Path $bromPath | ForEach-Object { Write-Host $_.Name })",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\Spawn070\\\\Documents\\\\GitHub\\\\echo-rush\" -Recurse -Force)",
+      "Bash(Select-Object -Property FullName, PSIsContainer)",
+      "Bash(Sort-Object FullName)",
+      "Bash(Format-Table -AutoSize)"
     ]
   }
 }

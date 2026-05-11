@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://mage_scene_01"]
+
+[ext_resource type="Script" path="res://scripts/enemies/mage.gd" id="1_mage"]
+
+[sub_resource type="CircleShape2D" id="MgColShape"]
+radius = 22.0
+
+[node name="Mage" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("1_mage")
+
+[node name="Poligono" type="Polygon2D" parent="."]
+color = Color(0.55, 0.10, 0.75, 1.0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("MgColShape")

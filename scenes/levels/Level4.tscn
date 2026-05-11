@@ -6,8 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://lenascene0001" path="res://scenes/characters/Lena.tscn" id="4_lena"]
 [ext_resource type="PackedScene" uid="uid://bromscene0001" path="res://scenes/characters/Brom.tscn" id="5_brom"]
 [ext_resource type="PackedScene" uid="uid://zariscene0001" path="res://scenes/characters/Zari.tscn" id="6_zari"]
-[ext_resource type="PackedScene" uid="uid://enemyscene001" path="res://scenes/enemies/Enemy.tscn" id="7_enemy"]
-[ext_resource type="PackedScene" uid="uid://boss_scene_01" path="res://scenes/enemies/Boss.tscn" id="8_boss"]
+[ext_resource type="PackedScene" uid="uid://troll_scene_01" path="res://scenes/enemies/Troll.tscn" id="7_troll"]
+[ext_resource type="PackedScene" uid="uid://mage_scene_01" path="res://scenes/enemies/Mage.tscn" id="8_mage"]
+[ext_resource type="PackedScene" uid="uid://boss_final_01" path="res://scenes/enemies/BossFinal.tscn" id="10_final"]
 [ext_resource type="PackedScene" uid="uid://hudscene0001" path="res://scenes/ui/HUD.tscn" id="9_hud"]
 
 [sub_resource type="RectangleShape2D" id="S_W1"]
@@ -111,8 +112,8 @@ position = Vector2(1820, 950)
 [node name="WaveManager" type="Node" parent="."]
 script = ExtResource("2_wave")
 waves_per_level = 7
-escena_enemigo = ExtResource("7_enemy")
-escena_boss = ExtResource("8_boss")
+escenas_enemigos = [ExtResource("7_troll"), ExtResource("8_mage")]
+escena_boss = ExtResource("10_final")
 
 [node name="Jugador" parent="." instance=ExtResource("3_rael")]
 position = Vector2(960, 540)

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://boss_golem_01"]
+
+[ext_resource type="Script" path="res://scripts/enemies/boss_golem.gd" id="1_golem"]
+
+[sub_resource type="CircleShape2D" id="GolColShape"]
+radius = 46.0
+
+[node name="BossGolem" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("1_golem")
+
+[node name="Poligono" type="Polygon2D" parent="."]
+color = Color(0.55, 0.62, 0.72, 1.0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("GolColShape")

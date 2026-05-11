@@ -566,35 +566,60 @@ tile_set = SubResource("TileSet_xbvxr")
 
 [node name="PuntosSpawn" type="Node2D" parent="." unique_id=320895788]
 
-[node name="Spawn1" type="Marker2D" parent="PuntosSpawn" unique_id=1584325566]
-position = Vector2(80, 80)
+[node name="S01" type="Marker2D" parent="PuntosSpawn" unique_id=1584325566]
+position = Vector2(100, 150)
 
-[node name="Spawn2" type="Marker2D" parent="PuntosSpawn" unique_id=690281156]
-position = Vector2(1456, 80)
+[node name="S02" type="Marker2D" parent="PuntosSpawn" unique_id=690281156]
+position = Vector2(480, 80)
 
-[node name="Spawn3" type="Marker2D" parent="PuntosSpawn" unique_id=1521098986]
-position = Vector2(80, 1456)
+[node name="S03" type="Marker2D" parent="PuntosSpawn" unique_id=1521098986]
+position = Vector2(960, 70)
 
-[node name="Spawn4" type="Marker2D" parent="PuntosSpawn" unique_id=738948301]
-position = Vector2(1456, 1456)
+[node name="S04" type="Marker2D" parent="PuntosSpawn" unique_id=738948301]
+position = Vector2(1440, 80)
+
+[node name="S05" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1820, 150)
+
+[node name="S06" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(80, 540)
+
+[node name="S07" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1840, 540)
+
+[node name="S08" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(100, 930)
+
+[node name="S09" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(480, 1000)
+
+[node name="S10" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(960, 1010)
+
+[node name="S11" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1440, 1000)
+
+[node name="S12" type="Marker2D" parent="PuntosSpawn"]
+position = Vector2(1820, 930)
 
 [node name="WaveManager" type="Node" parent="." unique_id=725172968]
 script = ExtResource("2_wave")
+waves_per_level = 2
 escenas_enemigos = Array[PackedScene]([ExtResource("9_slime"), ExtResource("10_goblin")])
 escena_boss = ExtResource("7_boss")
 
 [node name="Jugador" parent="." unique_id=913336623 instance=ExtResource("3_rael")]
-position = Vector2(768, 768)
+position = Vector2(960, 540)
 
 [node name="Companeros" type="Node2D" parent="." unique_id=407709918]
 
 [node name="Lena" parent="Companeros" unique_id=330716022 instance=ExtResource("4_lena")]
-position = Vector2(688, 768)
+position = Vector2(880, 540)
 
 [node name="Brom" parent="Companeros" unique_id=1555149558 instance=ExtResource("5_brom")]
-position = Vector2(768, 848)
+position = Vector2(960, 620)
 
 [node name="Zari" parent="Companeros" unique_id=2093909031 instance=ExtResource("6_zari")]
-position = Vector2(848, 768)
+position = Vector2(1040, 540)
 
 [node name="HUD" parent="." unique_id=250769658 instance=ExtResource("8_hud")]
