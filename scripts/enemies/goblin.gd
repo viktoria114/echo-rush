@@ -7,7 +7,7 @@ func _ready() -> void:
 	super._ready()
 	barra.max_value = Config.ENEMY_BASE_HP
 	barra.value = Config.ENEMY_BASE_HP
-	sprite.play("running-south")
+	_play_anim("idle_south")
 
 func _mover_hacia_jugador() -> void:
 	super._mover_hacia_jugador()
@@ -15,23 +15,39 @@ func _mover_hacia_jugador() -> void:
 
 func _actualizar_animacion() -> void:
 	if jugador == null:
+		_play_anim("idle_south")
 		return
 	var dir := jugador.global_position - global_position
 	var dist: float = dir.length()
-	var prefijo := "attack" if dist < 55.0 else "running"
-	var anim := prefijo + "-" + _sufijo_dir(dir.normalized())
+	var prefijo := "attack" if dist < 55.0 else "run"
+	var anim := prefijo + "_" + _sufijo_dir(dir.normalized())
 	if sprite.animation != anim:
+		_play_anim(anim)
+
+func _play_anim(anim: String) -> void:
+	if sprite.sprite_frames and sprite.sprite_frames.has_animation(anim):
 		sprite.play(anim)
+	elif sprite.sprite_frames and sprite.sprite_frames.has_animation("default"):
+		sprite.play("default")
 
 func _sufijo_dir(dir: Vector2) -> String:
 	var ax: float = abs(dir.x)
 	var ay: float = abs(dir.y)
 	if ax > 0.35 and ay > 0.35:
-		return ("south" if dir.y > 0 else "north") + ("-east" if dir.x > 0 else "-west")
+		return ("south" if dir.y > 0 else "north") + "-" + ("east" if dir.x > 0 else "west")
 	elif ax >= ay:
 		return "east" if dir.x > 0 else "west"
 	else:
 		return "south" if dir.y > 0 else "north"
+
+func _post_morir() -> void:
+	var dir := Vector2.DOWN
+	if jugador != null and is_instance_valid(jugador):
+		dir = (jugador.global_position - global_position).normalized()
+	var anim := "muerte_" + _sufijo_dir(dir)
+	sprite.sprite_frames.set_animation_loop(anim, false)
+	_play_anim(anim)
+	sprite.animation_finished.connect(queue_free)
 
 func recibir_dano(cantidad: int) -> void:
 	super.recibir_dano(cantidad)

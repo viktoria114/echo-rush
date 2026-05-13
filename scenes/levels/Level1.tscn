@@ -1,125 +1,254 @@
-[gd_scene format=3 uid="uid://c44ygdjspnilk"]
+[gd_scene format=4 uid="uid://c44ygdjspnilk"]
 
-[ext_resource type="Script" path="res://scripts/ui/level_manager.gd" id="1_lvl"]
-[ext_resource type="Script" path="res://scripts/systems/wave_manager.gd" id="2_wave"]
-[ext_resource type="PackedScene" uid="uid://raelscene0001" path="res://scenes/characters/Rael.tscn" id="3_rael"]
-[ext_resource type="PackedScene" uid="uid://lenascene0001" path="res://scenes/characters/Lena.tscn" id="4_lena"]
-[ext_resource type="PackedScene" uid="uid://boss_scene_01" path="res://scenes/enemies/Boss.tscn" id="7_boss"]
+[ext_resource type="Script" uid="uid://p571oouj3ict" path="res://scripts/ui/level_manager.gd" id="1_lvl"]
+[ext_resource type="Script" uid="uid://c02c5g17ti27g" path="res://scripts/systems/wave_manager.gd" id="2_wave"]
+[ext_resource type="PackedScene" uid="uid://bsq4f3pm47iyy" path="res://scenes/characters/Rael.tscn" id="3_rael"]
+[ext_resource type="PackedScene" uid="uid://dntjl7j5amaii" path="res://scenes/characters/Lena.tscn" id="4_lena"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/Boss.tscn" id="7_boss"]
 [ext_resource type="PackedScene" uid="uid://hudscene0001" path="res://scenes/ui/HUD.tscn" id="8_hud"]
-[ext_resource type="PackedScene" path="res://scenes/enemies/Slime.tscn" id="9_slime"]
+[ext_resource type="Texture2D" uid="uid://r183fwsvk3tr" path="res://assets/backgrounds/village/2dvillageassetpackwithoutilne/house on fire.png" id="9_7d7pp"]
+[ext_resource type="PackedScene" uid="uid://8xas8e3hg30w" path="res://scenes/enemies/Slime.tscn" id="9_slime"]
 [ext_resource type="PackedScene" path="res://scenes/enemies/Goblin.tscn" id="10_goblin"]
 
 [sub_resource type="RectangleShape2D" id="S_W1"]
 size = Vector2(220, 90)
+
 [sub_resource type="RectangleShape2D" id="S_W2"]
 size = Vector2(220, 90)
+
 [sub_resource type="RectangleShape2D" id="S_W3"]
 size = Vector2(200, 55)
+
 [sub_resource type="RectangleShape2D" id="S_W4"]
 size = Vector2(200, 55)
+
 [sub_resource type="RectangleShape2D" id="S_W5"]
 size = Vector2(300, 55)
 
-[node name="Level1" type="Node2D"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e5nfq"]
+texture = ExtResource("9_7d7pp")
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+10:10/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_lha2r"]
+sources/0 = SubResource("TileSetAtlasSource_e5nfq")
+
+[node name="Level1" type="Node2D" unique_id=1657394917]
 script = ExtResource("1_lvl")
 proxima_escena = "res://scenes/levels/Level2.tscn"
 
-[node name="Cielo" type="ColorRect" parent="."]
+[node name="Cielo" type="ColorRect" parent="." unique_id=498094614]
+z_index = -10
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color(0.38, 0.6, 0.85, 1)
-z_index = -10
 
-[node name="Suelo" type="ColorRect" parent="."]
-anchor_left = 0.0
+[node name="Suelo" type="ColorRect" parent="." unique_id=1801038336]
+z_index = -9
+anchors_preset = -1
 anchor_top = 0.42
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color(0.28, 0.52, 0.20, 1)
-z_index = -9
+color = Color(0.28, 0.52, 0.2, 1)
 
-[node name="Obstaculos" type="Node2D" parent="."]
+[node name="Obstaculos" type="Node2D" parent="." unique_id=1153865491]
 
-[node name="CasaIzq" type="StaticBody2D" parent="Obstaculos"]
+[node name="CasaIzq" type="StaticBody2D" parent="Obstaculos" unique_id=1754676435]
 position = Vector2(220, 280)
-[node name="Forma" type="CollisionShape2D" parent="Obstaculos/CasaIzq"]
+
+[node name="Forma" type="CollisionShape2D" parent="Obstaculos/CasaIzq" unique_id=1705235763]
 shape = SubResource("S_W1")
-[node name="Visual" type="Polygon2D" parent="Obstaculos/CasaIzq"]
-polygon = PackedVector2Array(-110, -45, 110, -45, 110, 45, -110, 45)
-color = Color(0.55, 0.36, 0.18, 1)
 
-[node name="CasaDer" type="StaticBody2D" parent="Obstaculos"]
+[node name="Visual" type="Polygon2D" parent="Obstaculos/CasaIzq" unique_id=1003783988]
+color = Color(0.55, 0.36, 0.18, 1)
+polygon = PackedVector2Array(-110, -45, 110, -45, 110, 45, -110, 45)
+
+[node name="CasaDer" type="StaticBody2D" parent="Obstaculos" unique_id=1086940427]
 position = Vector2(1700, 280)
-[node name="Forma" type="CollisionShape2D" parent="Obstaculos/CasaDer"]
+
+[node name="Forma" type="CollisionShape2D" parent="Obstaculos/CasaDer" unique_id=936714014]
 shape = SubResource("S_W2")
-[node name="Visual" type="Polygon2D" parent="Obstaculos/CasaDer"]
-polygon = PackedVector2Array(-110, -45, 110, -45, 110, 45, -110, 45)
+
+[node name="Visual" type="Polygon2D" parent="Obstaculos/CasaDer" unique_id=1060646500]
 color = Color(0.55, 0.36, 0.18, 1)
+polygon = PackedVector2Array(-110, -45, 110, -45, 110, 45, -110, 45)
 
-[node name="CercaArrIzq" type="StaticBody2D" parent="Obstaculos"]
+[node name="CercaArrIzq" type="StaticBody2D" parent="Obstaculos" unique_id=2058788924]
 position = Vector2(750, 170)
-[node name="Forma" type="CollisionShape2D" parent="Obstaculos/CercaArrIzq"]
+
+[node name="Forma" type="CollisionShape2D" parent="Obstaculos/CercaArrIzq" unique_id=269879325]
 shape = SubResource("S_W3")
-[node name="Visual" type="Polygon2D" parent="Obstaculos/CercaArrIzq"]
-polygon = PackedVector2Array(-100, -27, 100, -27, 100, 27, -100, 27)
-color = Color(0.5, 0.32, 0.14, 1)
 
-[node name="CercaArrDer" type="StaticBody2D" parent="Obstaculos"]
+[node name="Visual" type="Polygon2D" parent="Obstaculos/CercaArrIzq" unique_id=533076207]
+color = Color(0.5, 0.32, 0.14, 1)
+polygon = PackedVector2Array(-100, -27, 100, -27, 100, 27, -100, 27)
+
+[node name="CercaArrDer" type="StaticBody2D" parent="Obstaculos" unique_id=1958182874]
 position = Vector2(1170, 170)
-[node name="Forma" type="CollisionShape2D" parent="Obstaculos/CercaArrDer"]
+
+[node name="Forma" type="CollisionShape2D" parent="Obstaculos/CercaArrDer" unique_id=1966444137]
 shape = SubResource("S_W4")
-[node name="Visual" type="Polygon2D" parent="Obstaculos/CercaArrDer"]
+
+[node name="Visual" type="Polygon2D" parent="Obstaculos/CercaArrDer" unique_id=1155636524]
+color = Color(0.5, 0.32, 0.14, 1)
 polygon = PackedVector2Array(-100, -27, 100, -27, 100, 27, -100, 27)
-color = Color(0.5, 0.32, 0.14, 1)
 
-[node name="CercaBajo" type="StaticBody2D" parent="Obstaculos"]
+[node name="CercaBajo" type="StaticBody2D" parent="Obstaculos" unique_id=350470007]
 position = Vector2(960, 860)
-[node name="Forma" type="CollisionShape2D" parent="Obstaculos/CercaBajo"]
+
+[node name="Forma" type="CollisionShape2D" parent="Obstaculos/CercaBajo" unique_id=754058731]
 shape = SubResource("S_W5")
-[node name="Visual" type="Polygon2D" parent="Obstaculos/CercaBajo"]
-polygon = PackedVector2Array(-150, -27, 150, -27, 150, 27, -150, 27)
+
+[node name="Visual" type="Polygon2D" parent="Obstaculos/CercaBajo" unique_id=573105594]
 color = Color(0.5, 0.32, 0.14, 1)
+polygon = PackedVector2Array(-150, -27, 150, -27, 150, 27, -150, 27)
 
-[node name="Enemigos" type="Node2D" parent="."]
+[node name="Enemigos" type="Node2D" parent="." unique_id=1328998611]
 
-[node name="PuntosSpawn" type="Node2D" parent="."]
-[node name="S01" type="Marker2D" parent="PuntosSpawn"]
+[node name="PuntosSpawn" type="Node2D" parent="." unique_id=1489691647]
+
+[node name="S01" type="Marker2D" parent="PuntosSpawn" unique_id=627810687]
 position = Vector2(100, 150)
-[node name="S02" type="Marker2D" parent="PuntosSpawn"]
+
+[node name="S02" type="Marker2D" parent="PuntosSpawn" unique_id=802623513]
 position = Vector2(480, 80)
-[node name="S03" type="Marker2D" parent="PuntosSpawn"]
+
+[node name="S03" type="Marker2D" parent="PuntosSpawn" unique_id=557625115]
 position = Vector2(960, 70)
-[node name="S04" type="Marker2D" parent="PuntosSpawn"]
+
+[node name="S04" type="Marker2D" parent="PuntosSpawn" unique_id=1987195243]
 position = Vector2(1440, 80)
-[node name="S05" type="Marker2D" parent="PuntosSpawn"]
+
+[node name="S05" type="Marker2D" parent="PuntosSpawn" unique_id=353181268]
 position = Vector2(1820, 150)
-[node name="S06" type="Marker2D" parent="PuntosSpawn"]
+
+[node name="S06" type="Marker2D" parent="PuntosSpawn" unique_id=96586705]
 position = Vector2(80, 540)
-[node name="S07" type="Marker2D" parent="PuntosSpawn"]
+
+[node name="S07" type="Marker2D" parent="PuntosSpawn" unique_id=1989905201]
 position = Vector2(1840, 540)
-[node name="S08" type="Marker2D" parent="PuntosSpawn"]
+
+[node name="S08" type="Marker2D" parent="PuntosSpawn" unique_id=470064738]
 position = Vector2(100, 930)
-[node name="S09" type="Marker2D" parent="PuntosSpawn"]
+
+[node name="S09" type="Marker2D" parent="PuntosSpawn" unique_id=1344198474]
 position = Vector2(480, 1000)
-[node name="S10" type="Marker2D" parent="PuntosSpawn"]
+
+[node name="S10" type="Marker2D" parent="PuntosSpawn" unique_id=979572951]
 position = Vector2(960, 1010)
-[node name="S11" type="Marker2D" parent="PuntosSpawn"]
+
+[node name="S11" type="Marker2D" parent="PuntosSpawn" unique_id=1176336454]
 position = Vector2(1440, 1000)
-[node name="S12" type="Marker2D" parent="PuntosSpawn"]
+
+[node name="S12" type="Marker2D" parent="PuntosSpawn" unique_id=168566132]
 position = Vector2(1820, 930)
 
-[node name="WaveManager" type="Node" parent="."]
+[node name="WaveManager" type="Node" parent="." unique_id=1668905634]
 script = ExtResource("2_wave")
-waves_per_level = 2
-escenas_enemigos = [ExtResource("9_slime"), ExtResource("10_goblin")]
+escenas_enemigos = Array[PackedScene]([ExtResource("9_slime"), ExtResource("10_goblin")])
 escena_boss = ExtResource("7_boss")
 
-[node name="Jugador" parent="." instance=ExtResource("3_rael")]
+[node name="Jugador" parent="." unique_id=466768637 instance=ExtResource("3_rael")]
 position = Vector2(960, 540)
 
-[node name="Companeros" type="Node2D" parent="."]
-[node name="Lena" parent="Companeros" instance=ExtResource("4_lena")]
+[node name="Companeros" type="Node2D" parent="." unique_id=1053699709]
+
+[node name="Lena" parent="Companeros" unique_id=1036139760 instance=ExtResource("4_lena")]
 position = Vector2(880, 540)
 
-[node name="HUD" parent="." instance=ExtResource("8_hud")]
+[node name="HUD" parent="." unique_id=1571130646 instance=ExtResource("8_hud")]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=283044266]
+tile_map_data = PackedByteArray("AAA4ABcAAAABAAMAAAA4ABgAAAABAAQAAAA4ABkAAAABAAUAAAA4ABoAAAABAAYAAAA4ABsAAAABAAcAAAA5ABcAAAACAAMAAAA5ABgAAAACAAQAAAA5ABkAAAACAAUAAAA5ABoAAAACAAYAAAA5ABsAAAACAAcAAAA5ABwAAAACAAgAAAA5AB0AAAACAAkAAAA5AB4AAAACAAoAAAA6ABcAAAADAAMAAAA6ABgAAAADAAQAAAA6ABkAAAADAAUAAAA6ABoAAAADAAYAAAA6ABsAAAADAAcAAAA6ABwAAAADAAgAAAA6AB0AAAADAAkAAAA6AB4AAAADAAoAAAA7ABcAAAAEAAMAAAA7ABgAAAAEAAQAAAA7ABkAAAAEAAUAAAA7ABoAAAAEAAYAAAA7ABsAAAAEAAcAAAA7ABwAAAAEAAgAAAA7AB0AAAAEAAkAAAA7AB4AAAAEAAoAAAA8ABcAAAAFAAMAAAA8ABgAAAAFAAQAAAA8ABkAAAAFAAUAAAA8ABoAAAAFAAYAAAA8ABsAAAAFAAcAAAA8ABwAAAAFAAgAAAA8AB0AAAAFAAkAAAA8AB4AAAAFAAoAAAA9ABUAAAAGAAEAAAA9ABYAAAAGAAIAAAA9ABcAAAAGAAMAAAA9ABgAAAAGAAQAAAA9ABkAAAAGAAUAAAA9ABoAAAAGAAYAAAA9ABsAAAAGAAcAAAA9ABwAAAAGAAgAAAA9AB0AAAAGAAkAAAA9AB4AAAAGAAoAAAA+ABQAAAAHAAAAAAA+ABUAAAAHAAEAAAA+ABYAAAAHAAIAAAA+ABcAAAAHAAMAAAA+ABgAAAAHAAQAAAA+ABkAAAAHAAUAAAA+ABoAAAAHAAYAAAA+ABsAAAAHAAcAAAA+ABwAAAAHAAgAAAA+AB0AAAAHAAkAAAA+AB4AAAAHAAoAAAA/ABQAAAAIAAAAAAA/ABUAAAAIAAEAAAA/ABYAAAAIAAIAAAA/ABcAAAAIAAMAAAA/ABgAAAAIAAQAAAA/ABkAAAAIAAUAAAA/ABoAAAAIAAYAAAA/ABsAAAAIAAcAAAA/ABwAAAAIAAgAAAA/AB0AAAAIAAkAAAA/AB4AAAAIAAoAAABAABQAAAAJAAAAAABAABUAAAAJAAEAAABAABYAAAAJAAIAAABAABcAAAAJAAMAAABAABgAAAAJAAQAAABAABkAAAAJAAUAAABAABoAAAAJAAYAAABAABsAAAAJAAcAAABAABwAAAAJAAgAAABAAB0AAAAJAAkAAABAAB4AAAAJAAoAAABBABQAAAAKAAAAAABBABUAAAAKAAEAAABBABYAAAAKAAIAAABBABcAAAAKAAMAAABBABgAAAAKAAQAAABBABkAAAAKAAUAAABBABoAAAAKAAYAAABBABsAAAAKAAcAAABBABwAAAAKAAgAAABBAB0AAAAKAAkAAABBAB4AAAAKAAoAAABCABQAAAALAAAAAAA=")
+tile_set = SubResource("TileSet_lha2r")

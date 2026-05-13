@@ -1,367 +1,448 @@
-[gd_scene format=3 uid="uid://m2gd2fh56clc"]
+[gd_scene format=3 uid="uid://djb2dmchmlkst"]
 
-[ext_resource type="Texture2D" uid="uid://bt2cbvv36gvcy" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/east/frame_000.png" id="1_xq5op"]
-[ext_resource type="Texture2D" uid="uid://c82jg078gr7kk" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/east/frame_001.png" id="2_wj5fj"]
-[ext_resource type="Texture2D" uid="uid://d2p7tn545j8m5" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/east/frame_002.png" id="3_ah58m"]
-[ext_resource type="Texture2D" uid="uid://bfqdfwmpcu0r3" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/east/frame_003.png" id="4_14gbf"]
-[ext_resource type="Texture2D" uid="uid://bnvbs60dlwjbu" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/east/frame_004.png" id="5_qxma8"]
-[ext_resource type="Texture2D" uid="uid://cfl8ajb0tf7vy" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/east/frame_005.png" id="6_xqdpx"]
-[ext_resource type="Texture2D" uid="uid://vhmmiqhgndgd" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/east/frame_006.png" id="7_iqyvu"]
-[ext_resource type="Texture2D" uid="uid://mqtcg3nymvnh" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/east/frame_007.png" id="8_onbqq"]
-[ext_resource type="Texture2D" uid="uid://o4k10c2megvh" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north/frame_000.png" id="9_bggee"]
-[ext_resource type="Texture2D" uid="uid://c2svhnxsmmrc3" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north/frame_001.png" id="10_may7x"]
-[ext_resource type="Texture2D" uid="uid://dfs38nnpofamw" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north/frame_002.png" id="11_uusfy"]
-[ext_resource type="Texture2D" uid="uid://bxgm6eilp3qe" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north/frame_003.png" id="12_o5dnc"]
-[ext_resource type="Texture2D" uid="uid://lgttndk8a4xd" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north/frame_004.png" id="13_05avj"]
-[ext_resource type="Texture2D" uid="uid://dxowjtcqfom3y" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north/frame_005.png" id="14_edh73"]
-[ext_resource type="Texture2D" uid="uid://d3dfb7cvryxtl" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north/frame_006.png" id="15_detsw"]
-[ext_resource type="Texture2D" uid="uid://bsbam05g640ww" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north/frame_007.png" id="16_oglyr"]
-[ext_resource type="Texture2D" uid="uid://pemjwxfwxnut" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-east/frame_000.png" id="17_0uvu5"]
-[ext_resource type="Texture2D" uid="uid://c7sk3ta1xs5q0" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-east/frame_001.png" id="18_ksc0d"]
-[ext_resource type="Texture2D" uid="uid://ve4ivasbp537" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-east/frame_002.png" id="19_6grvp"]
-[ext_resource type="Texture2D" uid="uid://uyqyl28yghok" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-east/frame_003.png" id="20_c8uey"]
-[ext_resource type="Texture2D" uid="uid://ghi6dupy3j4d" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-east/frame_004.png" id="21_ywx1p"]
-[ext_resource type="Texture2D" uid="uid://ihn46pbouq4u" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-east/frame_005.png" id="22_7ywnl"]
-[ext_resource type="Texture2D" uid="uid://cip06n4kpmjyc" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-east/frame_006.png" id="23_mkqho"]
-[ext_resource type="Texture2D" uid="uid://vvasn5b0ekq7" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-east/frame_007.png" id="24_4ujin"]
-[ext_resource type="Texture2D" uid="uid://chkkprtb5y0ng" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-west/frame_000.png" id="25_b25q3"]
-[ext_resource type="Texture2D" uid="uid://3m740yyawm6w" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-west/frame_001.png" id="26_4t05h"]
-[ext_resource type="Texture2D" uid="uid://dvut66jxclk7r" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-west/frame_002.png" id="27_2rr5k"]
-[ext_resource type="Texture2D" uid="uid://cgya4vdu8jn6h" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-west/frame_003.png" id="28_gsu5p"]
-[ext_resource type="Texture2D" uid="uid://ikv56qr4dcs5" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-west/frame_004.png" id="29_lujfc"]
-[ext_resource type="Texture2D" uid="uid://v1hxddv0dw88" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-west/frame_005.png" id="30_dhi51"]
-[ext_resource type="Texture2D" uid="uid://d20i785bo3d3t" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-west/frame_006.png" id="31_c5ab6"]
-[ext_resource type="Texture2D" uid="uid://psb0qa26p6hy" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-west/frame_007.png" id="32_xgqjy"]
-[ext_resource type="Texture2D" uid="uid://d0sisp65a4yrd" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south/frame_000.png" id="33_vj8dv"]
-[ext_resource type="Texture2D" uid="uid://dsid4h2o1rwns" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south/frame_001.png" id="34_qnxo6"]
-[ext_resource type="Texture2D" uid="uid://bsst2etq0pvoh" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south/frame_002.png" id="35_rmjy3"]
-[ext_resource type="Texture2D" uid="uid://cpqh2uegwcjj8" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south/frame_003.png" id="36_6dpup"]
-[ext_resource type="Texture2D" uid="uid://bj8dv73d76an7" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south/frame_004.png" id="37_72ajb"]
-[ext_resource type="Texture2D" uid="uid://da0houwdgx8uu" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south/frame_005.png" id="38_02vh8"]
-[ext_resource type="Texture2D" uid="uid://cqqvceud3v0dk" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south/frame_006.png" id="39_hmgp4"]
-[ext_resource type="Texture2D" uid="uid://c46vi5b6a0vyx" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south/frame_007.png" id="40_dfls4"]
-[ext_resource type="Texture2D" uid="uid://c16qwu27v0xj3" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-east/frame_000.png" id="41_jqbrw"]
-[ext_resource type="Texture2D" uid="uid://o7wxuq6lg1i5" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-east/frame_001.png" id="42_qdjpi"]
-[ext_resource type="Texture2D" uid="uid://d05kb3fckq4xo" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-east/frame_002.png" id="43_whnqi"]
-[ext_resource type="Texture2D" uid="uid://cx0p2fg3oad5c" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-east/frame_003.png" id="44_hgeod"]
-[ext_resource type="Texture2D" uid="uid://b41n83h8f4scu" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-east/frame_004.png" id="45_ibc4q"]
-[ext_resource type="Texture2D" uid="uid://b76o5mf36ek54" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-east/frame_005.png" id="46_j2er5"]
-[ext_resource type="Texture2D" uid="uid://d08oikytvo54j" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-east/frame_006.png" id="47_4fhlr"]
-[ext_resource type="Texture2D" uid="uid://d2ywddjwmn1wr" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-east/frame_007.png" id="48_oc0qo"]
-[ext_resource type="Texture2D" uid="uid://bmstebsau7dhq" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-west/frame_000.png" id="49_5x358"]
-[ext_resource type="Texture2D" uid="uid://blhccxekc70fv" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-west/frame_001.png" id="50_go5dc"]
-[ext_resource type="Texture2D" uid="uid://ce4342k4btc8v" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-west/frame_002.png" id="51_knk5k"]
-[ext_resource type="Texture2D" uid="uid://cseya338nwy2b" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-west/frame_003.png" id="52_57cw5"]
-[ext_resource type="Texture2D" uid="uid://dddnbp4pigs03" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-west/frame_004.png" id="53_n68lb"]
-[ext_resource type="Texture2D" uid="uid://wxbyjhmlbu8a" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-west/frame_005.png" id="54_n3p2x"]
-[ext_resource type="Texture2D" uid="uid://b6ynetn31fd68" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-west/frame_006.png" id="55_ircui"]
-[ext_resource type="Texture2D" uid="uid://bud4ev07dmyvc" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-west/frame_007.png" id="56_08t6e"]
-[ext_resource type="Texture2D" uid="uid://dhkulpbfoknl2" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/west/frame_000.png" id="57_lt7jv"]
-[ext_resource type="Texture2D" uid="uid://dbq618ryrb0k8" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/west/frame_001.png" id="58_ncwsb"]
-[ext_resource type="Texture2D" uid="uid://dam4mmwqsm2cd" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/west/frame_002.png" id="59_brhe1"]
-[ext_resource type="Texture2D" uid="uid://ky1weit774s1" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/west/frame_003.png" id="60_co65v"]
-[ext_resource type="Texture2D" uid="uid://b3qjar50ad7vh" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/west/frame_004.png" id="61_528tr"]
-[ext_resource type="Texture2D" uid="uid://d4redbq1oumm" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/west/frame_005.png" id="62_u4rv2"]
-[ext_resource type="Texture2D" uid="uid://chicg7gb3e25q" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/west/frame_006.png" id="63_eduef"]
-[ext_resource type="Texture2D" uid="uid://c8kt8ihhj4fn0" path="res://assets/sprites/characters/goblin/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/west/frame_007.png" id="64_hm6ih"]
-[ext_resource type="Texture2D" uid="uid://7w1vneivyjmu" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north-east/frame_000.png" id="65_3i2wg"]
-[ext_resource type="Texture2D" uid="uid://d2fgcoqkwwxd7" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north-east/frame_001.png" id="66_k0f3f"]
-[ext_resource type="Texture2D" uid="uid://ul4o5ge7kan7" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north-east/frame_002.png" id="67_52q5j"]
-[ext_resource type="Texture2D" uid="uid://e8t3q7ya2mqy" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north-east/frame_003.png" id="68_6u7il"]
-[ext_resource type="Texture2D" uid="uid://d21rijkvpsbqv" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north-east/frame_004.png" id="69_3hgyk"]
-[ext_resource type="Texture2D" uid="uid://dmp7to8chr7bg" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north-east/frame_005.png" id="70_4ihwb"]
-[ext_resource type="Texture2D" uid="uid://yerablsebt2w" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north-east/frame_006.png" id="71_t03tr"]
-[ext_resource type="Texture2D" uid="uid://bd0j3hy28wlck" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north-east/frame_007.png" id="72_ugajb"]
-[ext_resource type="Texture2D" uid="uid://rnbv2no6b6e1" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/east/frame_000.png" id="73_w14d1"]
-[ext_resource type="Texture2D" uid="uid://njo1ln7rsotw" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/east/frame_001.png" id="74_spjai"]
-[ext_resource type="Texture2D" uid="uid://bjg2sf8ncnhgg" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/east/frame_002.png" id="75_uwlb5"]
-[ext_resource type="Texture2D" uid="uid://bcsplynutgule" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/east/frame_003.png" id="76_k37ga"]
-[ext_resource type="Texture2D" uid="uid://cqlid13e3i22u" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/east/frame_004.png" id="77_s5ntp"]
-[ext_resource type="Texture2D" uid="uid://b8unnr5k8enxw" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/east/frame_005.png" id="78_1e28t"]
-[ext_resource type="Texture2D" uid="uid://bngf53t0nsbri" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/east/frame_006.png" id="79_8mlpy"]
-[ext_resource type="Texture2D" uid="uid://xmrmo2dl0o72" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/east/frame_007.png" id="80_7cjq4"]
-[ext_resource type="Texture2D" uid="uid://b2nxvbqpgdmo7" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north/frame_000.png" id="81_3up6i"]
-[ext_resource type="Texture2D" uid="uid://wcgfy2w25hfp" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north/frame_001.png" id="82_kc565"]
-[ext_resource type="Texture2D" uid="uid://be12fn30bh23u" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north/frame_002.png" id="83_5ca0k"]
-[ext_resource type="Texture2D" uid="uid://dbjjco2frd5no" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north/frame_003.png" id="84_k0oit"]
-[ext_resource type="Texture2D" uid="uid://dqv0c54j0rd3m" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north/frame_004.png" id="85_nnt1h"]
-[ext_resource type="Texture2D" uid="uid://bwe2eaqx5qk3c" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north/frame_005.png" id="86_sbya3"]
-[ext_resource type="Texture2D" uid="uid://clyynr4pycyex" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north/frame_006.png" id="87_pe4yl"]
-[ext_resource type="Texture2D" uid="uid://q8yj7hdl0vmq" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north/frame_007.png" id="88_1jul7"]
-[ext_resource type="Texture2D" uid="uid://jtc7juwlnmc5" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north-west-34ff8ea9/frame_000.png" id="89_t7qhd"]
-[ext_resource type="Texture2D" uid="uid://yn20xj6tfbox" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north-west-34ff8ea9/frame_001.png" id="90_h30ni"]
-[ext_resource type="Texture2D" uid="uid://c4xsfd7fd8p31" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north-west-34ff8ea9/frame_002.png" id="91_p62ae"]
-[ext_resource type="Texture2D" uid="uid://bcobp24sthmdr" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north-west-34ff8ea9/frame_003.png" id="92_sufgj"]
-[ext_resource type="Texture2D" uid="uid://sasqm8u6iku3" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north-west-34ff8ea9/frame_004.png" id="93_nrj73"]
-[ext_resource type="Texture2D" uid="uid://wjdmgcdbo848" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north-west-34ff8ea9/frame_005.png" id="94_ic0wf"]
-[ext_resource type="Texture2D" uid="uid://dfoun340xmnbm" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north-west-34ff8ea9/frame_006.png" id="95_t6f3h"]
-[ext_resource type="Texture2D" uid="uid://cwor723vhrws0" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/north-west-34ff8ea9/frame_007.png" id="96_ybynq"]
-[ext_resource type="Texture2D" uid="uid://diljrd8w2ybcq" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south/frame_000.png" id="97_qrhsl"]
-[ext_resource type="Texture2D" uid="uid://dne786m6kmwqj" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south/frame_001.png" id="98_8tsj4"]
-[ext_resource type="Texture2D" uid="uid://b1v8cl7kw5nif" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south/frame_002.png" id="99_aq2o1"]
-[ext_resource type="Texture2D" uid="uid://bhogsriocq1rf" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south/frame_003.png" id="100_qvct5"]
-[ext_resource type="Texture2D" uid="uid://bg6dj0cwjx6yo" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south/frame_004.png" id="101_3dewt"]
-[ext_resource type="Texture2D" uid="uid://u76w7ekv618n" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south/frame_005.png" id="102_b3i81"]
-[ext_resource type="Texture2D" uid="uid://dfki46v7wq0x2" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south/frame_006.png" id="103_lxcrq"]
-[ext_resource type="Texture2D" uid="uid://bklrvph1i2yd" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south/frame_007.png" id="104_ric2g"]
-[ext_resource type="Texture2D" uid="uid://c3eu6pepliqbl" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south-east/frame_000.png" id="105_uuuhw"]
-[ext_resource type="Texture2D" uid="uid://dtpowv3emx5ij" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south-east/frame_001.png" id="106_3i7hj"]
-[ext_resource type="Texture2D" uid="uid://bbot6yto7kcf6" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south-east/frame_002.png" id="107_nvkv6"]
-[ext_resource type="Texture2D" uid="uid://bb41ghqobfa13" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south-east/frame_003.png" id="108_ewbjq"]
-[ext_resource type="Texture2D" uid="uid://dnl8ke0bt8ixa" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south-east/frame_004.png" id="109_q3mhs"]
-[ext_resource type="Texture2D" uid="uid://b7q104xsulngj" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south-east/frame_005.png" id="110_p40dp"]
-[ext_resource type="Texture2D" uid="uid://tx8sx0vk52tc" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south-east/frame_006.png" id="111_g8mqb"]
-[ext_resource type="Texture2D" uid="uid://c2ofpoe6jky6o" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south-east/frame_007.png" id="112_311gf"]
-[ext_resource type="Texture2D" uid="uid://ctnr8yg4ya4m2" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south-west/frame_000.png" id="113_tn6ki"]
-[ext_resource type="Texture2D" uid="uid://c3o4esfre1auu" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south-west/frame_001.png" id="114_pem0a"]
-[ext_resource type="Texture2D" uid="uid://cokv2u2fb4ev" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south-west/frame_002.png" id="115_apccn"]
-[ext_resource type="Texture2D" uid="uid://brvlevc8nubpv" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south-west/frame_003.png" id="116_0g4ov"]
-[ext_resource type="Texture2D" uid="uid://damv2y8l8dm5e" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south-west/frame_004.png" id="117_nbg26"]
-[ext_resource type="Texture2D" uid="uid://ckr2urhixoey1" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south-west/frame_005.png" id="118_lg8w2"]
-[ext_resource type="Texture2D" uid="uid://davvucdn80sxf" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south-west/frame_006.png" id="119_xsixp"]
-[ext_resource type="Texture2D" uid="uid://d0awq35yii00v" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/south-west/frame_007.png" id="120_1dj38"]
-[ext_resource type="Texture2D" uid="uid://7v23f8o4a7kp" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/west/frame_000.png" id="121_eo0qc"]
-[ext_resource type="Texture2D" uid="uid://bfksivi6pd3bc" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/west/frame_001.png" id="122_shv8d"]
-[ext_resource type="Texture2D" uid="uid://dxynrn2peoig2" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/west/frame_002.png" id="123_0p2t3"]
-[ext_resource type="Texture2D" uid="uid://c8ggf631x8c8n" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/west/frame_003.png" id="124_r62n1"]
-[ext_resource type="Texture2D" uid="uid://dg3y8ktdsvnjt" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/west/frame_004.png" id="125_yxqem"]
-[ext_resource type="Texture2D" uid="uid://bixnxsbyexfs6" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/west/frame_005.png" id="126_biksj"]
-[ext_resource type="Texture2D" uid="uid://bms1y3mqy7bci" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/west/frame_006.png" id="127_ghxc6"]
-[ext_resource type="Texture2D" uid="uid://74e5wvrge3ds" path="res://assets/sprites/characters/goblin/animations/Running-de01345a/west/frame_007.png" id="128_k2de3"]
-[ext_resource type="Script" path="res://scripts/enemies/goblin.gd" id="129_goblin"]
+[ext_resource type="Script" uid="uid://bkls6iotbwvue" path="res://scripts/enemies/goblin.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://ry4jrrmqpqai" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/east/frame_000.png" id="2_spjai"]
+[ext_resource type="Texture2D" uid="uid://cqcm5d257pnc5" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/east/frame_001.png" id="3_uwlb5"]
+[ext_resource type="Texture2D" uid="uid://borxpc7653ld1" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/east/frame_002.png" id="4_k37ga"]
+[ext_resource type="Texture2D" uid="uid://i2visgr4newa" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/east/frame_003.png" id="5_s5ntp"]
+[ext_resource type="Texture2D" uid="uid://c5fyj5cc5t0kp" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/east/frame_004.png" id="6_1e28t"]
+[ext_resource type="Texture2D" uid="uid://chtp6j1vj8kco" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/east/frame_005.png" id="7_8mlpy"]
+[ext_resource type="Texture2D" uid="uid://ddrdky5f2eqb" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/east/frame_006.png" id="8_7cjq4"]
+[ext_resource type="Texture2D" uid="uid://dgv3ml1jpiy2a" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/east/frame_007.png" id="9_3up6i"]
+[ext_resource type="Texture2D" uid="uid://djoyn2yl3m5g1" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north/frame_000.png" id="10_kc565"]
+[ext_resource type="Texture2D" uid="uid://cftgeqmryiy1" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north/frame_001.png" id="11_5ca0k"]
+[ext_resource type="Texture2D" uid="uid://b5usmwmfgi0yg" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north/frame_002.png" id="12_k0oit"]
+[ext_resource type="Texture2D" uid="uid://b6e51i07guy0x" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north/frame_003.png" id="13_nnt1h"]
+[ext_resource type="Texture2D" uid="uid://bm52kdqthr3is" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north/frame_004.png" id="14_sbya3"]
+[ext_resource type="Texture2D" uid="uid://bj776roc4v4w6" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north/frame_005.png" id="15_pe4yl"]
+[ext_resource type="Texture2D" uid="uid://jot6f8jlbt1q" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north/frame_006.png" id="16_1jul7"]
+[ext_resource type="Texture2D" uid="uid://cpok5k1r5amma" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north/frame_007.png" id="17_t7qhd"]
+[ext_resource type="Texture2D" uid="uid://c8sm0xnv4p2nn" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-east/frame_000.png" id="18_h30ni"]
+[ext_resource type="Texture2D" uid="uid://baiox8bls4vwv" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-east/frame_001.png" id="19_p62ae"]
+[ext_resource type="Texture2D" uid="uid://bpqnw1ld77oym" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-east/frame_002.png" id="20_sufgj"]
+[ext_resource type="Texture2D" uid="uid://cp8li74777jha" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-east/frame_003.png" id="21_nrj73"]
+[ext_resource type="Texture2D" uid="uid://dfbxb4vbtwpga" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-east/frame_004.png" id="22_ic0wf"]
+[ext_resource type="Texture2D" uid="uid://dwpvnkwfi8yue" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-east/frame_005.png" id="23_t6f3h"]
+[ext_resource type="Texture2D" uid="uid://b0ykts47u6sm0" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-east/frame_006.png" id="24_ybynq"]
+[ext_resource type="Texture2D" uid="uid://dbe6c0bopjx7f" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-east/frame_007.png" id="25_qrhsl"]
+[ext_resource type="Texture2D" uid="uid://dbda6igd87o11" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-west/frame_000.png" id="26_8tsj4"]
+[ext_resource type="Texture2D" uid="uid://do36maxloxv6l" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-west/frame_001.png" id="27_aq2o1"]
+[ext_resource type="Texture2D" uid="uid://21syhtddk0wh" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-west/frame_002.png" id="28_qvct5"]
+[ext_resource type="Texture2D" uid="uid://dhsq6m05psi17" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-west/frame_003.png" id="29_3dewt"]
+[ext_resource type="Texture2D" uid="uid://cg210uv0vj3ch" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-west/frame_004.png" id="30_b3i81"]
+[ext_resource type="Texture2D" uid="uid://cjd38107nli01" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-west/frame_005.png" id="31_lxcrq"]
+[ext_resource type="Texture2D" uid="uid://b383g842dui5a" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-west/frame_006.png" id="32_ric2g"]
+[ext_resource type="Texture2D" uid="uid://bhgyiu0r6qcr5" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/north-west/frame_007.png" id="33_uuuhw"]
+[ext_resource type="Texture2D" uid="uid://f3swdp3yabgk" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south/frame_000.png" id="34_3i7hj"]
+[ext_resource type="Texture2D" uid="uid://dcw87hqsratrg" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south/frame_001.png" id="35_nvkv6"]
+[ext_resource type="Texture2D" uid="uid://6e2vehstlfrx" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south/frame_002.png" id="36_ewbjq"]
+[ext_resource type="Texture2D" uid="uid://bd0dehw1co87" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south/frame_003.png" id="37_q3mhs"]
+[ext_resource type="Texture2D" uid="uid://drfjowl503bc7" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south/frame_004.png" id="38_p40dp"]
+[ext_resource type="Texture2D" uid="uid://cjyu3ynjh6siv" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south/frame_005.png" id="39_g8mqb"]
+[ext_resource type="Texture2D" uid="uid://bpckkjuel3npc" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south/frame_006.png" id="40_311gf"]
+[ext_resource type="Texture2D" uid="uid://bxyvr8th2il1q" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south/frame_007.png" id="41_tn6ki"]
+[ext_resource type="Texture2D" uid="uid://stiva0nvq7q7" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-east/frame_000.png" id="42_pem0a"]
+[ext_resource type="Texture2D" uid="uid://my8ihw4x0tsq" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-east/frame_001.png" id="43_apccn"]
+[ext_resource type="Texture2D" uid="uid://qtnq40t4wcql" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-east/frame_002.png" id="44_0g4ov"]
+[ext_resource type="Texture2D" uid="uid://bfd5cw07g3xpl" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-east/frame_003.png" id="45_nbg26"]
+[ext_resource type="Texture2D" uid="uid://dgq2oyomtg6ie" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-east/frame_004.png" id="46_lg8w2"]
+[ext_resource type="Texture2D" uid="uid://c6dbjkx5377fp" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-east/frame_005.png" id="47_xsixp"]
+[ext_resource type="Texture2D" uid="uid://ci7f0wiqs12de" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-east/frame_006.png" id="48_1dj38"]
+[ext_resource type="Texture2D" uid="uid://dpk1kvms8lelg" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-east/frame_007.png" id="49_eo0qc"]
+[ext_resource type="Texture2D" uid="uid://c5hnqxgkn1qkd" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-west/frame_000.png" id="50_shv8d"]
+[ext_resource type="Texture2D" uid="uid://bs3gesfa2xlgu" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-west/frame_001.png" id="51_0p2t3"]
+[ext_resource type="Texture2D" uid="uid://cdb0n68rnhdav" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-west/frame_002.png" id="52_r62n1"]
+[ext_resource type="Texture2D" uid="uid://ctfpnywkoe4bp" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-west/frame_003.png" id="53_yxqem"]
+[ext_resource type="Texture2D" uid="uid://cvar7namqmh5q" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-west/frame_004.png" id="54_biksj"]
+[ext_resource type="Texture2D" uid="uid://4877mohr8eyo" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-west/frame_005.png" id="55_ghxc6"]
+[ext_resource type="Texture2D" uid="uid://hhiw5born6fy" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-west/frame_006.png" id="56_k2de3"]
+[ext_resource type="Texture2D" uid="uid://cmvjbg8jwk6vy" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/south-west/frame_007.png" id="57_gxd6u"]
+[ext_resource type="Texture2D" uid="uid://dj7u1air3l1np" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/west/frame_000.png" id="58_8cf7t"]
+[ext_resource type="Texture2D" uid="uid://bhyyx52rg0b8" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/west/frame_001.png" id="59_7qmt7"]
+[ext_resource type="Texture2D" uid="uid://v5wnyjb4tucx" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/west/frame_002.png" id="60_2mt0i"]
+[ext_resource type="Texture2D" uid="uid://d4k1vo8yycnhq" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/west/frame_003.png" id="61_cu4vj"]
+[ext_resource type="Texture2D" uid="uid://e4ewq8jws7uj" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/west/frame_004.png" id="62_mljr8"]
+[ext_resource type="Texture2D" uid="uid://bfyaqvmhnx8ji" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/west/frame_005.png" id="63_o8uy2"]
+[ext_resource type="Texture2D" uid="uid://bev24ycbrg646" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/west/frame_006.png" id="64_cpcf4"]
+[ext_resource type="Texture2D" uid="uid://cq0a58fly1hmm" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Frantic_lunging_attack_goblin_rushes_forward_with-62202373/west/frame_007.png" id="65_colg3"]
+[ext_resource type="Texture2D" uid="uid://mhleivdqf582" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/east/frame_000.png" id="66_80dyh"]
+[ext_resource type="Texture2D" uid="uid://bd3dsxlcv42xd" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/east/frame_001.png" id="67_l7xi8"]
+[ext_resource type="Texture2D" uid="uid://nbmxvwnpcaxp" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/east/frame_002.png" id="68_jqn36"]
+[ext_resource type="Texture2D" uid="uid://dbgwmk01vwdgs" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/east/frame_003.png" id="69_jtk1f"]
+[ext_resource type="Texture2D" uid="uid://ncd8dvqvksi3" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/east/frame_004.png" id="70_efe7o"]
+[ext_resource type="Texture2D" uid="uid://c08g6v8xb7a24" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/east/frame_005.png" id="71_bpkhu"]
+[ext_resource type="Texture2D" uid="uid://bdcy1bl0x15aj" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/east/frame_006.png" id="72_p0g0t"]
+[ext_resource type="Texture2D" uid="uid://s8duo22kuctc" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/east/frame_007.png" id="73_vlbdv"]
+[ext_resource type="Texture2D" uid="uid://djcwddpq710ym" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/east/frame_008.png" id="74_334vs"]
+[ext_resource type="Texture2D" uid="uid://64imhdibl8hw" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north/frame_000.png" id="75_g5nxj"]
+[ext_resource type="Texture2D" uid="uid://c34uslmtgi5oe" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north/frame_001.png" id="76_hg0ub"]
+[ext_resource type="Texture2D" uid="uid://cj37goj2x700m" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north/frame_002.png" id="77_22dxn"]
+[ext_resource type="Texture2D" uid="uid://c58tp15o0jlyf" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north/frame_003.png" id="78_3yv2e"]
+[ext_resource type="Texture2D" uid="uid://bkabkkavl8dcq" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north/frame_004.png" id="79_g6alv"]
+[ext_resource type="Texture2D" uid="uid://q4gp2oe7ah57" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north/frame_005.png" id="80_trpe8"]
+[ext_resource type="Texture2D" uid="uid://cj801lftn804t" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north/frame_006.png" id="81_7cfyp"]
+[ext_resource type="Texture2D" uid="uid://dnjtgn03v5tv7" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north/frame_007.png" id="82_l050b"]
+[ext_resource type="Texture2D" uid="uid://b1h5l7sn4bmgy" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north/frame_008.png" id="83_3s3aj"]
+[ext_resource type="Texture2D" uid="uid://c38nnujvkch6m" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-east/frame_000.png" id="84_e4lp4"]
+[ext_resource type="Texture2D" uid="uid://cjfvw7ujhcal0" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-east/frame_001.png" id="85_pe2w2"]
+[ext_resource type="Texture2D" uid="uid://d2dxfojdv230t" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-east/frame_002.png" id="86_w277j"]
+[ext_resource type="Texture2D" uid="uid://dqjlcqi52lo4c" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-east/frame_003.png" id="87_bx7jw"]
+[ext_resource type="Texture2D" uid="uid://bn1npdymliyac" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-east/frame_004.png" id="88_qf0u3"]
+[ext_resource type="Texture2D" uid="uid://vbcfitwwyyx6" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-east/frame_005.png" id="89_qdc4i"]
+[ext_resource type="Texture2D" uid="uid://dqv00bufrpsic" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-east/frame_006.png" id="90_23o7g"]
+[ext_resource type="Texture2D" uid="uid://di63o03wt3p3t" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-east/frame_007.png" id="91_khxst"]
+[ext_resource type="Texture2D" uid="uid://b3bhl3fbmi0nv" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-east/frame_008.png" id="92_53sxw"]
+[ext_resource type="Texture2D" uid="uid://bgx4l2v18q3ix" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-west/frame_000.png" id="93_k6ifs"]
+[ext_resource type="Texture2D" uid="uid://bfuf6l72jdxjd" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-west/frame_001.png" id="94_si0m4"]
+[ext_resource type="Texture2D" uid="uid://j7lnwsmow88y" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-west/frame_002.png" id="95_c0k5h"]
+[ext_resource type="Texture2D" uid="uid://cpk8edyl5anh4" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-west/frame_003.png" id="96_ig0as"]
+[ext_resource type="Texture2D" uid="uid://dsmmgj3uh0jp1" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-west/frame_004.png" id="97_nc3j5"]
+[ext_resource type="Texture2D" uid="uid://d12bp8gl7gni7" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-west/frame_005.png" id="98_kgf0a"]
+[ext_resource type="Texture2D" uid="uid://bo4cj2eopjdhi" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-west/frame_006.png" id="99_3y5ih"]
+[ext_resource type="Texture2D" uid="uid://cfqok43p7j86a" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-west/frame_007.png" id="100_hgwbg"]
+[ext_resource type="Texture2D" uid="uid://6takoasr2sye" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/north-west/frame_008.png" id="101_8vcpw"]
+[ext_resource type="Texture2D" uid="uid://bfrdtpber0ht1" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south/frame_000.png" id="102_201eg"]
+[ext_resource type="Texture2D" uid="uid://co6mwl265x2yd" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south/frame_001.png" id="103_1tomb"]
+[ext_resource type="Texture2D" uid="uid://cexhyjmom625w" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south/frame_002.png" id="104_0i4rr"]
+[ext_resource type="Texture2D" uid="uid://boryfbcd3s81d" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south/frame_003.png" id="105_0njd7"]
+[ext_resource type="Texture2D" uid="uid://ckqw86svfqale" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south/frame_004.png" id="106_nqra7"]
+[ext_resource type="Texture2D" uid="uid://bk5kl31sdw6pb" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south/frame_005.png" id="107_6n2f3"]
+[ext_resource type="Texture2D" uid="uid://bfx35c1xo4qnl" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south/frame_006.png" id="108_7usrj"]
+[ext_resource type="Texture2D" uid="uid://2m7qg2ma3cj1" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south/frame_007.png" id="109_7ob4s"]
+[ext_resource type="Texture2D" uid="uid://bjvrfkhh0bik7" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south/frame_008.png" id="110_utad2"]
+[ext_resource type="Texture2D" uid="uid://djw7gbbv1usfk" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-east/frame_000.png" id="111_eco43"]
+[ext_resource type="Texture2D" uid="uid://dwbmed0junm1p" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-east/frame_001.png" id="112_uj67x"]
+[ext_resource type="Texture2D" uid="uid://c8gt7yn1je1ak" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-east/frame_002.png" id="113_saos2"]
+[ext_resource type="Texture2D" uid="uid://cahev1w1p2mye" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-east/frame_003.png" id="114_t4so5"]
+[ext_resource type="Texture2D" uid="uid://c5knmsok02hrr" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-east/frame_004.png" id="115_2tgvb"]
+[ext_resource type="Texture2D" uid="uid://ckousfl8m5ail" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-east/frame_005.png" id="116_1shf0"]
+[ext_resource type="Texture2D" uid="uid://bhweyylri5s4i" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-east/frame_006.png" id="117_41ayb"]
+[ext_resource type="Texture2D" uid="uid://d0s5uqwgdwqci" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-east/frame_007.png" id="118_hd5k3"]
+[ext_resource type="Texture2D" uid="uid://dhi8d2ailqp58" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-east/frame_008.png" id="119_dfj4u"]
+[ext_resource type="Texture2D" uid="uid://cxtd6363k5d62" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-west/frame_000.png" id="120_avtu0"]
+[ext_resource type="Texture2D" uid="uid://by0g2afi0ahdc" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-west/frame_001.png" id="121_105h4"]
+[ext_resource type="Texture2D" uid="uid://desaidajva4k8" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-west/frame_002.png" id="122_gmn1y"]
+[ext_resource type="Texture2D" uid="uid://vlsuf3h75jd7" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-west/frame_003.png" id="123_3p3ex"]
+[ext_resource type="Texture2D" uid="uid://6fevbuipcvuq" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-west/frame_004.png" id="124_rm4cr"]
+[ext_resource type="Texture2D" uid="uid://e0kkfkuib21o" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-west/frame_005.png" id="125_mtgl2"]
+[ext_resource type="Texture2D" uid="uid://dfcygq8g6jhe1" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-west/frame_006.png" id="126_8ruog"]
+[ext_resource type="Texture2D" uid="uid://bm3x3cq6bcwbg" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-west/frame_007.png" id="127_q0v2d"]
+[ext_resource type="Texture2D" uid="uid://ckfut5encwxvb" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/south-west/frame_008.png" id="128_p2c12"]
+[ext_resource type="Texture2D" uid="uid://dw41nvgmv33rf" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/west/frame_000.png" id="129_2jc1a"]
+[ext_resource type="Texture2D" uid="uid://dgl6fuy13bfqa" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/west/frame_001.png" id="130_q2t53"]
+[ext_resource type="Texture2D" uid="uid://cdk8kbd2446wm" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/west/frame_002.png" id="131_6foi0"]
+[ext_resource type="Texture2D" uid="uid://id62ed3w87bn" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/west/frame_003.png" id="132_7tjaa"]
+[ext_resource type="Texture2D" uid="uid://ddomqqcy1kmqg" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/west/frame_004.png" id="133_dvwlp"]
+[ext_resource type="Texture2D" uid="uid://mhho7k4sw86j" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/west/frame_005.png" id="134_q140j"]
+[ext_resource type="Texture2D" uid="uid://ftmournqyms5" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/west/frame_006.png" id="135_u850p"]
+[ext_resource type="Texture2D" uid="uid://lw8h54mifk0r" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/west/frame_007.png" id="136_0tvdw"]
+[ext_resource type="Texture2D" uid="uid://i8e7tqh2jgc5" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Goblin_takes_fatal_hit_stumbles_backward_dramatica-8093d2c3/west/frame_008.png" id="137_vedim"]
+[ext_resource type="Texture2D" uid="uid://dft0avqvois2f" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/east/frame_000.png" id="138_egqls"]
+[ext_resource type="Texture2D" uid="uid://divqbwvasbhbl" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/east/frame_001.png" id="139_wv26s"]
+[ext_resource type="Texture2D" uid="uid://r00oj2nf2hur" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/east/frame_002.png" id="140_3xrqf"]
+[ext_resource type="Texture2D" uid="uid://bq20qrvvdthv2" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/east/frame_003.png" id="141_xvsxr"]
+[ext_resource type="Texture2D" uid="uid://cux2wmfccv2xc" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/east/frame_004.png" id="142_tmedq"]
+[ext_resource type="Texture2D" uid="uid://dkcccros2mdcu" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/east/frame_005.png" id="143_10kpf"]
+[ext_resource type="Texture2D" uid="uid://dblglcgqlo7qv" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/east/frame_006.png" id="144_wh0su"]
+[ext_resource type="Texture2D" uid="uid://el8ha2is2q0" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/east/frame_007.png" id="145_42se1"]
+[ext_resource type="Texture2D" uid="uid://787f7vine080" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north/frame_000.png" id="146_7io2l"]
+[ext_resource type="Texture2D" uid="uid://da2ya4w2cl4x0" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north/frame_001.png" id="147_sion0"]
+[ext_resource type="Texture2D" uid="uid://5rnjel2l5sxg" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north/frame_002.png" id="148_amsuk"]
+[ext_resource type="Texture2D" uid="uid://d0wm6pvwe0dgq" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north/frame_003.png" id="149_avlaa"]
+[ext_resource type="Texture2D" uid="uid://bdoh14n01m5lw" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north/frame_004.png" id="150_m5eux"]
+[ext_resource type="Texture2D" uid="uid://dcjft6hfecb3d" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north/frame_005.png" id="151_v1m7o"]
+[ext_resource type="Texture2D" uid="uid://bbwifuv1qtl80" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north/frame_006.png" id="152_gbeus"]
+[ext_resource type="Texture2D" uid="uid://cl8vrmniigtqj" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north/frame_007.png" id="153_g33cj"]
+[ext_resource type="Texture2D" uid="uid://dxud4t77p0f4q" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north-east/frame_000.png" id="154_7qn6m"]
+[ext_resource type="Texture2D" uid="uid://id78wkm41nxo" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north-east/frame_001.png" id="155_5abjc"]
+[ext_resource type="Texture2D" uid="uid://d06ugvbubat5j" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north-east/frame_002.png" id="156_gxklx"]
+[ext_resource type="Texture2D" uid="uid://dcfx8cxl3cpym" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north-east/frame_003.png" id="157_73eue"]
+[ext_resource type="Texture2D" uid="uid://b2kskfqyh83en" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north-east/frame_004.png" id="158_jjxc0"]
+[ext_resource type="Texture2D" uid="uid://ctgspftomg72u" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north-east/frame_005.png" id="159_ulwos"]
+[ext_resource type="Texture2D" uid="uid://cxy6nl0gm0wso" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north-east/frame_006.png" id="160_nd6ok"]
+[ext_resource type="Texture2D" uid="uid://bwy28fgcv0k8h" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north-east/frame_007.png" id="161_x2kkx"]
+[ext_resource type="Texture2D" uid="uid://cxx0mfe8anbhn" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north-west-54613957/frame_000.png" id="162_5s7v5"]
+[ext_resource type="Texture2D" uid="uid://deewwyw8h4p7i" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north-west-54613957/frame_001.png" id="163_36qna"]
+[ext_resource type="Texture2D" uid="uid://d11clur3hvctm" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north-west-54613957/frame_002.png" id="164_bilx7"]
+[ext_resource type="Texture2D" uid="uid://dkkl7t0y2442k" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north-west-54613957/frame_003.png" id="165_m1gtt"]
+[ext_resource type="Texture2D" uid="uid://benryxufrnm88" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north-west-54613957/frame_004.png" id="166_bwqgw"]
+[ext_resource type="Texture2D" uid="uid://df41hie2y5bbv" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north-west-54613957/frame_005.png" id="167_0ruwe"]
+[ext_resource type="Texture2D" uid="uid://7ubno6fryy3q" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north-west-54613957/frame_006.png" id="168_h4n1l"]
+[ext_resource type="Texture2D" uid="uid://cik5g8gw5lci8" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/north-west-54613957/frame_007.png" id="169_pxvjb"]
+[ext_resource type="Texture2D" uid="uid://c2v8yc3jf8r5i" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south/frame_000.png" id="170_7y3g0"]
+[ext_resource type="Texture2D" uid="uid://dba2li0ajlgo3" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south/frame_001.png" id="171_ubpat"]
+[ext_resource type="Texture2D" uid="uid://bjjr6ls7wr0g5" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south/frame_002.png" id="172_ywjw0"]
+[ext_resource type="Texture2D" uid="uid://drye34l8k58oc" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south/frame_003.png" id="173_s2nbv"]
+[ext_resource type="Texture2D" uid="uid://pt6y18umi805" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south/frame_004.png" id="174_lbk2w"]
+[ext_resource type="Texture2D" uid="uid://bgt8pl20xjduu" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south/frame_005.png" id="175_h5b1y"]
+[ext_resource type="Texture2D" uid="uid://7h7ma1nvorn2" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south/frame_006.png" id="176_7c8uq"]
+[ext_resource type="Texture2D" uid="uid://dfnfi8w52at2i" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south/frame_007.png" id="177_dyb1a"]
+[ext_resource type="Texture2D" uid="uid://btbbb7xv3qmuj" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south-east/frame_000.png" id="178_a5kgd"]
+[ext_resource type="Texture2D" uid="uid://dhbcdiph67mum" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south-east/frame_001.png" id="179_6evcw"]
+[ext_resource type="Texture2D" uid="uid://4geprio1mian" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south-east/frame_002.png" id="180_d0ald"]
+[ext_resource type="Texture2D" uid="uid://ervcaotnfcee" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south-east/frame_003.png" id="181_q5d2h"]
+[ext_resource type="Texture2D" uid="uid://bxerg53mgj43u" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south-east/frame_004.png" id="182_7l6x1"]
+[ext_resource type="Texture2D" uid="uid://5iu83jnsyr84" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south-east/frame_005.png" id="183_4fy56"]
+[ext_resource type="Texture2D" uid="uid://c4uosr0twel86" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south-east/frame_006.png" id="184_1ul08"]
+[ext_resource type="Texture2D" uid="uid://cgjtpa7ba4djo" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south-east/frame_007.png" id="185_ax4n5"]
+[ext_resource type="Texture2D" uid="uid://8hbrrq18ysgw" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south-west/frame_000.png" id="186_6su0h"]
+[ext_resource type="Texture2D" uid="uid://dsmtxoy4nxcw6" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south-west/frame_001.png" id="187_lhuyg"]
+[ext_resource type="Texture2D" uid="uid://l83f0nha5txr" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south-west/frame_002.png" id="188_1w0em"]
+[ext_resource type="Texture2D" uid="uid://ck5clvqds8wqe" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south-west/frame_003.png" id="189_0qto2"]
+[ext_resource type="Texture2D" uid="uid://dkyajh3k0muda" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south-west/frame_004.png" id="190_n2hay"]
+[ext_resource type="Texture2D" uid="uid://cekfb0nup0jb3" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south-west/frame_005.png" id="191_odhu2"]
+[ext_resource type="Texture2D" uid="uid://bnsewxy42yqh" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south-west/frame_006.png" id="192_glmxt"]
+[ext_resource type="Texture2D" uid="uid://bsi3dd143p8uc" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/south-west/frame_007.png" id="193_ixpao"]
+[ext_resource type="Texture2D" uid="uid://dqhi6627keop0" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/west/frame_000.png" id="194_4es1p"]
+[ext_resource type="Texture2D" uid="uid://ckfey132hf46l" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/west/frame_001.png" id="195_xnkpi"]
+[ext_resource type="Texture2D" uid="uid://c3pr2krqaym78" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/west/frame_002.png" id="196_vy65g"]
+[ext_resource type="Texture2D" uid="uid://bwqpirw3h5og1" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/west/frame_003.png" id="197_xntc7"]
+[ext_resource type="Texture2D" uid="uid://1111wiee51ha" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/west/frame_004.png" id="198_muibs"]
+[ext_resource type="Texture2D" uid="uid://csuhmdpvp5c6" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/west/frame_005.png" id="199_2r5ph"]
+[ext_resource type="Texture2D" uid="uid://b7lji4vhlw82p" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/west/frame_006.png" id="200_b6cdc"]
+[ext_resource type="Texture2D" uid="uid://c7b6fos5y57ip" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/animations/Running-de01345a/west/frame_007.png" id="201_4u86l"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_gxd6u"]
+[ext_resource type="Texture2D" uid="uid://grmzl4hkp2001" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/rotations/east.png" id="202_gre"]
+[ext_resource type="Texture2D" uid="uid://grmzl4hkp2002" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/rotations/north.png" id="203_grn"]
+[ext_resource type="Texture2D" uid="uid://grmzl4hkp2003" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/rotations/north-east.png" id="204_grne"]
+[ext_resource type="Texture2D" uid="uid://grmzl4hkp2004" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/rotations/north-west.png" id="205_grnw"]
+[ext_resource type="Texture2D" uid="uid://grmzl4hkp2005" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/rotations/south.png" id="206_grs"]
+[ext_resource type="Texture2D" uid="uid://grmzl4hkp2006" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/rotations/south-east.png" id="207_grse"]
+[ext_resource type="Texture2D" uid="uid://grmzl4hkp2007" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/rotations/south-west.png" id="208_grsw"]
+[ext_resource type="Texture2D" uid="uid://grmzl4hkp2008" path="res://assets/sprites/enemies/goblin/states/Small_aggressive_goblin_warrior_large_pointed_ears/rotations/west.png" id="209_grw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_goblin"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_xq5op")
+"texture": ExtResource("2_spjai")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_wj5fj")
+"texture": ExtResource("3_uwlb5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_ah58m")
+"texture": ExtResource("4_k37ga")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_14gbf")
+"texture": ExtResource("5_s5ntp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_qxma8")
+"texture": ExtResource("6_1e28t")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_xqdpx")
+"texture": ExtResource("7_8mlpy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_iqyvu")
+"texture": ExtResource("8_7cjq4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_onbqq")
+"texture": ExtResource("9_3up6i")
 }],
 "loop": true,
-"name": &"attack-east",
+"name": &"attack_east",
 "speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_bggee")
+"texture": ExtResource("10_kc565")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_may7x")
+"texture": ExtResource("11_5ca0k")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_uusfy")
+"texture": ExtResource("12_k0oit")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_o5dnc")
+"texture": ExtResource("13_nnt1h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_05avj")
+"texture": ExtResource("14_sbya3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_edh73")
+"texture": ExtResource("15_pe4yl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_detsw")
+"texture": ExtResource("16_1jul7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_oglyr")
+"texture": ExtResource("17_t7qhd")
 }],
 "loop": true,
-"name": &"attack-north",
+"name": &"attack_north",
 "speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("17_0uvu5")
+"texture": ExtResource("18_h30ni")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_ksc0d")
+"texture": ExtResource("19_p62ae")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_6grvp")
+"texture": ExtResource("20_sufgj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_c8uey")
+"texture": ExtResource("21_nrj73")
 }, {
 "duration": 1.0,
-"texture": ExtResource("21_ywx1p")
+"texture": ExtResource("22_ic0wf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("22_7ywnl")
+"texture": ExtResource("23_t6f3h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("23_mkqho")
+"texture": ExtResource("24_ybynq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_4ujin")
+"texture": ExtResource("25_qrhsl")
 }],
 "loop": true,
-"name": &"attack-north-east",
+"name": &"attack_north-east",
 "speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("25_b25q3")
+"texture": ExtResource("26_8tsj4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("26_4t05h")
+"texture": ExtResource("27_aq2o1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("27_2rr5k")
+"texture": ExtResource("28_qvct5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("28_gsu5p")
+"texture": ExtResource("29_3dewt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("29_lujfc")
+"texture": ExtResource("30_b3i81")
 }, {
 "duration": 1.0,
-"texture": ExtResource("30_dhi51")
+"texture": ExtResource("31_lxcrq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("31_c5ab6")
+"texture": ExtResource("32_ric2g")
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_xgqjy")
+"texture": ExtResource("33_uuuhw")
 }],
 "loop": true,
-"name": &"attack-north-west",
+"name": &"attack_north-west",
 "speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("33_vj8dv")
+"texture": ExtResource("34_3i7hj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_qnxo6")
+"texture": ExtResource("35_nvkv6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("35_rmjy3")
+"texture": ExtResource("36_ewbjq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("36_6dpup")
+"texture": ExtResource("37_q3mhs")
 }, {
 "duration": 1.0,
-"texture": ExtResource("37_72ajb")
+"texture": ExtResource("38_p40dp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("38_02vh8")
+"texture": ExtResource("39_g8mqb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("39_hmgp4")
+"texture": ExtResource("40_311gf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("40_dfls4")
+"texture": ExtResource("41_tn6ki")
 }],
 "loop": true,
-"name": &"attack-south",
+"name": &"attack_south",
 "speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("41_jqbrw")
+"texture": ExtResource("42_pem0a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("42_qdjpi")
+"texture": ExtResource("43_apccn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("43_whnqi")
+"texture": ExtResource("44_0g4ov")
 }, {
 "duration": 1.0,
-"texture": ExtResource("44_hgeod")
+"texture": ExtResource("45_nbg26")
 }, {
 "duration": 1.0,
-"texture": ExtResource("45_ibc4q")
+"texture": ExtResource("46_lg8w2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("46_j2er5")
+"texture": ExtResource("47_xsixp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("47_4fhlr")
+"texture": ExtResource("48_1dj38")
 }, {
 "duration": 1.0,
-"texture": ExtResource("48_oc0qo")
+"texture": ExtResource("49_eo0qc")
 }],
 "loop": true,
-"name": &"attack-south-east",
+"name": &"attack_south-east",
 "speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("49_5x358")
+"texture": ExtResource("50_shv8d")
 }, {
 "duration": 1.0,
-"texture": ExtResource("50_go5dc")
+"texture": ExtResource("51_0p2t3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("51_knk5k")
+"texture": ExtResource("52_r62n1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("52_57cw5")
+"texture": ExtResource("53_yxqem")
 }, {
 "duration": 1.0,
-"texture": ExtResource("53_n68lb")
+"texture": ExtResource("54_biksj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("54_n3p2x")
+"texture": ExtResource("55_ghxc6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("55_ircui")
+"texture": ExtResource("56_k2de3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("56_08t6e")
+"texture": ExtResource("57_gxd6u")
 }],
 "loop": true,
-"name": &"attack-south-west",
+"name": &"attack_south-west",
 "speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("57_lt7jv")
+"texture": ExtResource("58_8cf7t")
 }, {
 "duration": 1.0,
-"texture": ExtResource("58_ncwsb")
+"texture": ExtResource("59_7qmt7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("59_brhe1")
+"texture": ExtResource("60_2mt0i")
 }, {
 "duration": 1.0,
-"texture": ExtResource("60_co65v")
+"texture": ExtResource("61_cu4vj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("61_528tr")
+"texture": ExtResource("62_mljr8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("62_u4rv2")
+"texture": ExtResource("63_o8uy2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("63_eduef")
+"texture": ExtResource("64_cpcf4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("64_hm6ih")
+"texture": ExtResource("65_colg3")
 }],
 "loop": true,
-"name": &"attack-west",
+"name": &"attack_west",
 "speed": 12.0
 }, {
 "frames": [],
@@ -371,255 +452,576 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("65_3i2wg")
+"texture": ExtResource("66_80dyh")
 }, {
 "duration": 1.0,
-"texture": ExtResource("66_k0f3f")
+"texture": ExtResource("67_l7xi8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("67_52q5j")
+"texture": ExtResource("68_jqn36")
 }, {
 "duration": 1.0,
-"texture": ExtResource("68_6u7il")
+"texture": ExtResource("69_jtk1f")
 }, {
 "duration": 1.0,
-"texture": ExtResource("69_3hgyk")
+"texture": ExtResource("70_efe7o")
 }, {
 "duration": 1.0,
-"texture": ExtResource("70_4ihwb")
+"texture": ExtResource("71_bpkhu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("71_t03tr")
+"texture": ExtResource("72_p0g0t")
 }, {
 "duration": 1.0,
-"texture": ExtResource("72_ugajb")
+"texture": ExtResource("73_vlbdv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_334vs")
 }],
-"loop": true,
-"name": &"running-north-east",
+"loop": false,
+"name": &"muerte_east",
 "speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("73_w14d1")
+"texture": ExtResource("75_g5nxj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("74_spjai")
+"texture": ExtResource("76_hg0ub")
 }, {
 "duration": 1.0,
-"texture": ExtResource("75_uwlb5")
+"texture": ExtResource("77_22dxn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("76_k37ga")
+"texture": ExtResource("78_3yv2e")
 }, {
 "duration": 1.0,
-"texture": ExtResource("77_s5ntp")
+"texture": ExtResource("79_g6alv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("78_1e28t")
+"texture": ExtResource("80_trpe8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("79_8mlpy")
+"texture": ExtResource("81_7cfyp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("80_7cjq4")
+"texture": ExtResource("82_l050b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_3s3aj")
 }],
-"loop": true,
-"name": &"running-east",
+"loop": false,
+"name": &"muerte_north",
 "speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("81_3up6i")
+"texture": ExtResource("84_e4lp4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("82_kc565")
+"texture": ExtResource("85_pe2w2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("83_5ca0k")
+"texture": ExtResource("86_w277j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("84_k0oit")
+"texture": ExtResource("87_bx7jw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("85_nnt1h")
+"texture": ExtResource("88_qf0u3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("86_sbya3")
+"texture": ExtResource("89_qdc4i")
 }, {
 "duration": 1.0,
-"texture": ExtResource("87_pe4yl")
+"texture": ExtResource("90_23o7g")
 }, {
 "duration": 1.0,
-"texture": ExtResource("88_1jul7")
+"texture": ExtResource("91_khxst")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_53sxw")
 }],
-"loop": true,
-"name": &"running-north",
+"loop": false,
+"name": &"muerte_north-east",
 "speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("89_t7qhd")
+"texture": ExtResource("93_k6ifs")
 }, {
 "duration": 1.0,
-"texture": ExtResource("90_h30ni")
+"texture": ExtResource("94_si0m4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("91_p62ae")
+"texture": ExtResource("95_c0k5h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("92_sufgj")
+"texture": ExtResource("96_ig0as")
 }, {
 "duration": 1.0,
-"texture": ExtResource("93_nrj73")
+"texture": ExtResource("97_nc3j5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("94_ic0wf")
+"texture": ExtResource("98_kgf0a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("95_t6f3h")
+"texture": ExtResource("99_3y5ih")
 }, {
 "duration": 1.0,
-"texture": ExtResource("96_ybynq")
+"texture": ExtResource("100_hgwbg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_8vcpw")
 }],
-"loop": true,
-"name": &"running-north-west",
+"loop": false,
+"name": &"muerte_north-west",
 "speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("97_qrhsl")
+"texture": ExtResource("102_201eg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("98_8tsj4")
+"texture": ExtResource("103_1tomb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("99_aq2o1")
+"texture": ExtResource("104_0i4rr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("100_qvct5")
+"texture": ExtResource("105_0njd7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("101_3dewt")
+"texture": ExtResource("106_nqra7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("102_b3i81")
+"texture": ExtResource("107_6n2f3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("103_lxcrq")
+"texture": ExtResource("108_7usrj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("104_ric2g")
+"texture": ExtResource("109_7ob4s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_utad2")
 }],
-"loop": true,
-"name": &"running-south",
+"loop": false,
+"name": &"muerte_south",
 "speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("105_uuuhw")
+"texture": ExtResource("111_eco43")
 }, {
 "duration": 1.0,
-"texture": ExtResource("106_3i7hj")
+"texture": ExtResource("112_uj67x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("107_nvkv6")
+"texture": ExtResource("113_saos2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("108_ewbjq")
+"texture": ExtResource("114_t4so5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("109_q3mhs")
+"texture": ExtResource("115_2tgvb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("110_p40dp")
+"texture": ExtResource("116_1shf0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("111_g8mqb")
+"texture": ExtResource("117_41ayb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("112_311gf")
+"texture": ExtResource("118_hd5k3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_dfj4u")
 }],
-"loop": true,
-"name": &"running-south-east",
+"loop": false,
+"name": &"muerte_south-east",
 "speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("113_tn6ki")
+"texture": ExtResource("120_avtu0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("114_pem0a")
+"texture": ExtResource("121_105h4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("115_apccn")
+"texture": ExtResource("122_gmn1y")
 }, {
 "duration": 1.0,
-"texture": ExtResource("116_0g4ov")
+"texture": ExtResource("123_3p3ex")
 }, {
 "duration": 1.0,
-"texture": ExtResource("117_nbg26")
+"texture": ExtResource("124_rm4cr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("118_lg8w2")
+"texture": ExtResource("125_mtgl2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("119_xsixp")
+"texture": ExtResource("126_8ruog")
 }, {
 "duration": 1.0,
-"texture": ExtResource("120_1dj38")
+"texture": ExtResource("127_q0v2d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_p2c12")
 }],
-"loop": true,
-"name": &"running-south-west",
+"loop": false,
+"name": &"muerte_south-west",
 "speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("121_eo0qc")
+"texture": ExtResource("129_2jc1a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("122_shv8d")
+"texture": ExtResource("130_q2t53")
 }, {
 "duration": 1.0,
-"texture": ExtResource("123_0p2t3")
+"texture": ExtResource("131_6foi0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("124_r62n1")
+"texture": ExtResource("132_7tjaa")
 }, {
 "duration": 1.0,
-"texture": ExtResource("125_yxqem")
+"texture": ExtResource("133_dvwlp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("126_biksj")
+"texture": ExtResource("134_q140j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("127_ghxc6")
+"texture": ExtResource("135_u850p")
 }, {
 "duration": 1.0,
-"texture": ExtResource("128_k2de3")
+"texture": ExtResource("136_0tvdw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_vedim")
+}],
+"loop": false,
+"name": &"muerte_west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("138_egqls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_wv26s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_3xrqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_xvsxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_tmedq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_10kpf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_wh0su")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_42se1")
 }],
 "loop": true,
-"name": &"running-west",
+"name": &"run_east",
 "speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("146_7io2l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_sion0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_amsuk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_avlaa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_m5eux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_v1m7o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_gbeus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_g33cj")
+}],
+"loop": true,
+"name": &"run_north",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("154_7qn6m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_5abjc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_gxklx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_73eue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_jjxc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_ulwos")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160_nd6ok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_x2kkx")
+}],
+"loop": true,
+"name": &"run_north-east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("162_5s7v5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_36qna")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_bilx7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("165_m1gtt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("166_bwqgw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("167_0ruwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("168_h4n1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("169_pxvjb")
+}],
+"loop": true,
+"name": &"run_north-west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("170_7y3g0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("171_ubpat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("172_ywjw0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("173_s2nbv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174_lbk2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175_h5b1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("176_7c8uq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("177_dyb1a")
+}],
+"loop": true,
+"name": &"run_south",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("178_a5kgd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("179_6evcw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("180_d0ald")
+}, {
+"duration": 1.0,
+"texture": ExtResource("181_q5d2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("182_7l6x1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("183_4fy56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("184_1ul08")
+}, {
+"duration": 1.0,
+"texture": ExtResource("185_ax4n5")
+}],
+"loop": true,
+"name": &"run_south-east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("186_6su0h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("187_lhuyg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("188_1w0em")
+}, {
+"duration": 1.0,
+"texture": ExtResource("189_0qto2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("190_n2hay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("191_odhu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("192_glmxt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("193_ixpao")
+}],
+"loop": true,
+"name": &"run_south-west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("194_4es1p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("195_xnkpi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("196_vy65g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("197_xntc7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("198_muibs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("199_2r5ph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("200_b6cdc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_4u86l")
+}],
+"loop": true,
+"name": &"run_west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("202_gre")
+}],
+"loop": true,
+"name": &"idle_east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("203_grn")
+}],
+"loop": true,
+"name": &"idle_north",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("204_grne")
+}],
+"loop": true,
+"name": &"idle_north-east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("205_grnw")
+}],
+"loop": true,
+"name": &"idle_north-west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("206_grs")
+}],
+"loop": true,
+"name": &"idle_south",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("207_grse")
+}],
+"loop": true,
+"name": &"idle_south-east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("208_grsw")
+}],
+"loop": true,
+"name": &"idle_south-west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("209_grw")
+}],
+"loop": true,
+"name": &"idle_west",
+"speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_goblin"]
-radius = 24.0
+radius = 28.0
 
-[node name="Goblin" type="CharacterBody2D" unique_id=534348253]
+[node name="Goblin" type="CharacterBody2D" unique_id=1110923122]
 collision_layer = 2
-script = ExtResource("129_goblin")
+script = ExtResource("1_script")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1763702699]
-sprite_frames = SubResource("SpriteFrames_gxd6u")
-animation = &"running-south"
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1812777858]
+sprite_frames = SubResource("SpriteFrames_goblin")
+animation = &"idle_south"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1250550528]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=168585451]
 shape = SubResource("CircleShape2D_goblin")
 
-[node name="BarraVida" type="ProgressBar" parent="." unique_id=1250550529]
+[node name="BarraVida" type="ProgressBar" parent="." unique_id=515598864]
 offset_left = -30.0
-offset_top = -62.0
+offset_top = -50.0
 offset_right = 30.0
-offset_bottom = -54.0
+offset_bottom = -42.0
 max_value = 40.0
+value = 40.0
 show_percentage = false
