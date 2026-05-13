@@ -2,11 +2,13 @@ extends "res://scripts/enemies/enemy_base.gd"
 
 signal boss_vida_cambiada(vida_actual: int, vida_max: int)
 
-const BOSS_HP       := 400
+const BOSS_HP        := 400
 const BOSS_VELOCIDAD := 65.0
-const BOSS_DANO     := 20
+const BOSS_DANO      := 20
 
 var vida_max_boss: int = BOSS_HP
+
+@onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 func _ready() -> void:
 	super._ready()
@@ -15,25 +17,54 @@ func _ready() -> void:
 	velocidad     = BOSS_VELOCIDAD
 	dano          = BOSS_DANO
 	rango_ataque  = 110.0
-	_generar_visual()
+	$Poligono.visible = false
+	_play_anim("idle_south")
 
-# Estrella de 6 puntas para diferenciarlo claramente de los enemigos normales
-func _generar_visual() -> void:
-	var polygon := $Poligono as Polygon2D
-	if not polygon:
+func _mover_hacia_jugador() -> void:
+	super._mover_hacia_jugador()
+	_actualizar_animacion()
+
+func _actualizar_animacion() -> void:
+	if jugador == null:
+		_play_anim("idle_south")
 		return
-	var puntos := PackedVector2Array()
-	var radio_ext := 40.0
-	var radio_int := 18.0
-	var puntas := 6
-	for i in range(puntas * 2):
-		var angulo := (PI * i) / float(puntas) - PI / 2.0
-		var radio := radio_ext if i % 2 == 0 else radio_int
-		puntos.append(Vector2(cos(angulo), sin(angulo)) * radio)
-	polygon.polygon = puntos
-	polygon.color = Color(0.85, 0.08, 0.08)
+	var dir := (jugador.global_position - global_position).normalized()
+	var anim: String = _anim_ataque(dir)
+	if sprite.animation != anim:
+		_play_anim(anim)
 
-# Sobrescribir recibir_dano para emitir señal de HUD antes de morir
+# Mapea la direccion a una de las 4 animaciones de ataque disponibles:
+# attack_north-west ("norte"), attack_south ("sur"),
+# attack_south-east ("este"), attack_south-west ("oeste")
+func _anim_ataque(dir: Vector2) -> String:
+	if dir.y < -0.3:
+		return "attack_north-west"
+	elif dir.x > 0.3:
+		return "attack_south-east"
+	elif dir.x < -0.3:
+		return "attack_south-west"
+	else:
+		return "attack_south"
+
+func _sufijo_dir(dir: Vector2) -> String:
+	var ax: float = abs(dir.x)
+	var ay: float = abs(dir.y)
+	if ax > 0.35 and ay > 0.35:
+		return ("south" if dir.y > 0 else "north") + "-" + ("east" if dir.x > 0 else "west")
+	elif ax >= ay:
+		return "east" if dir.x > 0 else "west"
+	else:
+		return "south" if dir.y > 0 else "north"
+
+func _play_anim(anim: String) -> void:
+	if sprite and sprite.sprite_frames and sprite.sprite_frames.has_animation(anim):
+		sprite.play(anim)
+
+func _post_morir() -> void:
+	sprite.sprite_frames.set_animation_loop("muerte_south-west", false)
+	_play_anim("muerte_south-west")
+	sprite.animation_finished.connect(queue_free)
+
 func recibir_dano(cantidad: int) -> void:
 	vida -= cantidad
 	if vida <= 0 and not _muerto:

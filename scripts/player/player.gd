@@ -27,11 +27,32 @@ const ANIM_ATTACK := {
 	"south-east": "attack_south-east", "south-west": "attack_south-west",
 	"north-east": "attack_north-east", "north-west": "attack_north-west"
 }
+const ANIM_IDLE := {
+	"south": "idle_south",           "north": "idle_north",
+	"east": "idle_east",             "west": "idle_west",
+	"south-east": "idle_south-east", "south-west": "idle_south-west",
+	"north-east": "idle_north-east", "north-west": "idle_north-west"
+}
 
 func _ready() -> void:
 	add_to_group("jugador")
 	vida_actual = UpgradeSystem.get_vida_max()
-	sprite.play("running_south")
+	_cargar_idle_rotations()
+	sprite.play("idle_south")
+
+func _cargar_idle_rotations() -> void:
+	var sf: SpriteFrames = sprite.sprite_frames
+	var dirs := ["south", "north", "east", "west", "south-east", "south-west", "north-east", "north-west"]
+	for d in dirs:
+		var nombre: String = "idle_" + d
+		if sf.has_animation(nombre):
+			continue
+		sf.add_animation(nombre)
+		sf.set_animation_loop(nombre, false)
+		sf.set_animation_speed(nombre, 1.0)
+		var tex: Texture2D = load("res://assets/sprites/characters/rael/rotations/" + d + ".png")
+		if tex:
+			sf.add_frame(nombre, tex)
 
 func _physics_process(delta: float) -> void:
 	if ataque_cooldown > 0.0:
@@ -55,7 +76,7 @@ func _manejar_movimiento() -> void:
 	else:
 		velocity = Vector2.ZERO
 		if not atacando:
-			sprite.stop()
+			sprite.play(ANIM_IDLE.get(direccion, "idle_south"))
 
 func _actualizar_direccion(dir: Vector2) -> void:
 	var ax: float = abs(dir.x)
@@ -95,7 +116,7 @@ func _ejecutar_ataque() -> void:
 	var n_frames: int = sprite.sprite_frames.get_frame_count(sprite.animation)
 	var fps: float = sprite.sprite_frames.get_animation_speed(sprite.animation)
 	await get_tree().create_timer(float(n_frames) / fps - 0.15).timeout
-	sprite.stop()
+	sprite.play(ANIM_IDLE.get(direccion, "idle_south"))
 	atacando = false
 
 func _posicionar_hitbox() -> void:
