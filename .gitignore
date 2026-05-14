@@ -2,3 +2,7 @@
 .godot/
 /android/
 .vscode/
+generate_all_animations.py
+generate_all_animations_v2.py
+generate_enemy_scenes.py
+.claude/settings.local.json
