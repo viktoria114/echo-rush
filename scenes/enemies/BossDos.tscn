@@ -1,0 +1,766 @@
+[gd_scene format=3 uid="uid://goblinboss_enemy"]
+
+[ext_resource type="Script" path="res://scripts/enemies/boss.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_stand_south" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/rotations/south.png" id="2_south_standing"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_stand_north" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/rotations/north.png" id="3_north_standing"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_stand_east" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/rotations/east.png" id="4_east_standing"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_stand_west" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/rotations/west.png" id="5_west_standing"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_stand_south-east" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/rotations/south-east.png" id="6_south-east_standing"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_stand_south-west" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/rotations/south-west.png" id="7_south-west_standing"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_stand_north-east" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/rotations/north-east.png" id="8_north-east_standing"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_stand_north-west" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/rotations/north-west.png" id="9_north-west_standing"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south_0" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south/frame_000.png" id="10_goblin_boss_raises_massive_club_high_overhead_with_south_0"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south_1" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south/frame_001.png" id="11_goblin_boss_raises_massive_club_high_overhead_with_south_1"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south_2" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south/frame_002.png" id="12_goblin_boss_raises_massive_club_high_overhead_with_south_2"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south_3" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south/frame_003.png" id="13_goblin_boss_raises_massive_club_high_overhead_with_south_3"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south_4" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south/frame_004.png" id="14_goblin_boss_raises_massive_club_high_overhead_with_south_4"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south_5" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south/frame_005.png" id="15_goblin_boss_raises_massive_club_high_overhead_with_south_5"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south_6" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south/frame_006.png" id="16_goblin_boss_raises_massive_club_high_overhead_with_south_6"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south_7" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south/frame_007.png" id="17_goblin_boss_raises_massive_club_high_overhead_with_south_7"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south_8" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south/frame_008.png" id="18_goblin_boss_raises_massive_club_high_overhead_with_south_8"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north_0" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north/frame_000.png" id="19_goblin_boss_raises_massive_club_high_overhead_with_north_0"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north_1" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north/frame_001.png" id="20_goblin_boss_raises_massive_club_high_overhead_with_north_1"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north_2" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north/frame_002.png" id="21_goblin_boss_raises_massive_club_high_overhead_with_north_2"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north_3" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north/frame_003.png" id="22_goblin_boss_raises_massive_club_high_overhead_with_north_3"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north_4" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north/frame_004.png" id="23_goblin_boss_raises_massive_club_high_overhead_with_north_4"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north_5" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north/frame_005.png" id="24_goblin_boss_raises_massive_club_high_overhead_with_north_5"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north_6" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north/frame_006.png" id="25_goblin_boss_raises_massive_club_high_overhead_with_north_6"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north_7" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north/frame_007.png" id="26_goblin_boss_raises_massive_club_high_overhead_with_north_7"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north_8" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north/frame_008.png" id="27_goblin_boss_raises_massive_club_high_overhead_with_north_8"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_east_0" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/east/frame_000.png" id="28_goblin_boss_raises_massive_club_high_overhead_with_east_0"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_east_1" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/east/frame_001.png" id="29_goblin_boss_raises_massive_club_high_overhead_with_east_1"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_east_2" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/east/frame_002.png" id="30_goblin_boss_raises_massive_club_high_overhead_with_east_2"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_east_3" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/east/frame_003.png" id="31_goblin_boss_raises_massive_club_high_overhead_with_east_3"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_east_4" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/east/frame_004.png" id="32_goblin_boss_raises_massive_club_high_overhead_with_east_4"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_east_5" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/east/frame_005.png" id="33_goblin_boss_raises_massive_club_high_overhead_with_east_5"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_east_6" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/east/frame_006.png" id="34_goblin_boss_raises_massive_club_high_overhead_with_east_6"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_east_7" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/east/frame_007.png" id="35_goblin_boss_raises_massive_club_high_overhead_with_east_7"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_east_8" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/east/frame_008.png" id="36_goblin_boss_raises_massive_club_high_overhead_with_east_8"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_west_0" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/west/frame_000.png" id="37_goblin_boss_raises_massive_club_high_overhead_with_west_0"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_west_1" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/west/frame_001.png" id="38_goblin_boss_raises_massive_club_high_overhead_with_west_1"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_west_2" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/west/frame_002.png" id="39_goblin_boss_raises_massive_club_high_overhead_with_west_2"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_west_3" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/west/frame_003.png" id="40_goblin_boss_raises_massive_club_high_overhead_with_west_3"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_west_4" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/west/frame_004.png" id="41_goblin_boss_raises_massive_club_high_overhead_with_west_4"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_west_5" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/west/frame_005.png" id="42_goblin_boss_raises_massive_club_high_overhead_with_west_5"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_west_6" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/west/frame_006.png" id="43_goblin_boss_raises_massive_club_high_overhead_with_west_6"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_west_7" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/west/frame_007.png" id="44_goblin_boss_raises_massive_club_high_overhead_with_west_7"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_west_8" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/west/frame_008.png" id="45_goblin_boss_raises_massive_club_high_overhead_with_west_8"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-east_0" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-east/frame_000.png" id="46_goblin_boss_raises_massive_club_high_overhead_with_south-east_0"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-east_1" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-east/frame_001.png" id="47_goblin_boss_raises_massive_club_high_overhead_with_south-east_1"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-east_2" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-east/frame_002.png" id="48_goblin_boss_raises_massive_club_high_overhead_with_south-east_2"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-east_3" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-east/frame_003.png" id="49_goblin_boss_raises_massive_club_high_overhead_with_south-east_3"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-east_4" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-east/frame_004.png" id="50_goblin_boss_raises_massive_club_high_overhead_with_south-east_4"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-east_5" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-east/frame_005.png" id="51_goblin_boss_raises_massive_club_high_overhead_with_south-east_5"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-east_6" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-east/frame_006.png" id="52_goblin_boss_raises_massive_club_high_overhead_with_south-east_6"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-east_7" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-east/frame_007.png" id="53_goblin_boss_raises_massive_club_high_overhead_with_south-east_7"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-east_8" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-east/frame_008.png" id="54_goblin_boss_raises_massive_club_high_overhead_with_south-east_8"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-west_0" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-west/frame_000.png" id="55_goblin_boss_raises_massive_club_high_overhead_with_south-west_0"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-west_1" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-west/frame_001.png" id="56_goblin_boss_raises_massive_club_high_overhead_with_south-west_1"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-west_2" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-west/frame_002.png" id="57_goblin_boss_raises_massive_club_high_overhead_with_south-west_2"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-west_3" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-west/frame_003.png" id="58_goblin_boss_raises_massive_club_high_overhead_with_south-west_3"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-west_4" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-west/frame_004.png" id="59_goblin_boss_raises_massive_club_high_overhead_with_south-west_4"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-west_5" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-west/frame_005.png" id="60_goblin_boss_raises_massive_club_high_overhead_with_south-west_5"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-west_6" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-west/frame_006.png" id="61_goblin_boss_raises_massive_club_high_overhead_with_south-west_6"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-west_7" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-west/frame_007.png" id="62_goblin_boss_raises_massive_club_high_overhead_with_south-west_7"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_south-west_8" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/south-west/frame_008.png" id="63_goblin_boss_raises_massive_club_high_overhead_with_south-west_8"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-east_0" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-east/frame_000.png" id="64_goblin_boss_raises_massive_club_high_overhead_with_north-east_0"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-east_1" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-east/frame_001.png" id="65_goblin_boss_raises_massive_club_high_overhead_with_north-east_1"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-east_2" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-east/frame_002.png" id="66_goblin_boss_raises_massive_club_high_overhead_with_north-east_2"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-east_3" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-east/frame_003.png" id="67_goblin_boss_raises_massive_club_high_overhead_with_north-east_3"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-east_4" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-east/frame_004.png" id="68_goblin_boss_raises_massive_club_high_overhead_with_north-east_4"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-east_5" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-east/frame_005.png" id="69_goblin_boss_raises_massive_club_high_overhead_with_north-east_5"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-east_6" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-east/frame_006.png" id="70_goblin_boss_raises_massive_club_high_overhead_with_north-east_6"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-east_7" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-east/frame_007.png" id="71_goblin_boss_raises_massive_club_high_overhead_with_north-east_7"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-east_8" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-east/frame_008.png" id="72_goblin_boss_raises_massive_club_high_overhead_with_north-east_8"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-west_0" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-west/frame_000.png" id="73_goblin_boss_raises_massive_club_high_overhead_with_north-west_0"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-west_1" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-west/frame_001.png" id="74_goblin_boss_raises_massive_club_high_overhead_with_north-west_1"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-west_2" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-west/frame_002.png" id="75_goblin_boss_raises_massive_club_high_overhead_with_north-west_2"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-west_3" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-west/frame_003.png" id="76_goblin_boss_raises_massive_club_high_overhead_with_north-west_3"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-west_4" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-west/frame_004.png" id="77_goblin_boss_raises_massive_club_high_overhead_with_north-west_4"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-west_5" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-west/frame_005.png" id="78_goblin_boss_raises_massive_club_high_overhead_with_north-west_5"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-west_6" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-west/frame_006.png" id="79_goblin_boss_raises_massive_club_high_overhead_with_north-west_6"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-west_7" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-west/frame_007.png" id="80_goblin_boss_raises_massive_club_high_overhead_with_north-west_7"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_raises_massive_club_high_overhead_with_north-west_8" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_raises_massive_club_high_overhead_with-746b4fa2/north-west/frame_008.png" id="81_goblin_boss_raises_massive_club_high_overhead_with_north-west_8"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_takes_devastating_final_blow_staggers_south_0" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_takes_devastating_final_blow_staggers-7b100480/south/frame_000.png" id="82_goblin_boss_takes_devastating_final_blow_staggers_south_0"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_takes_devastating_final_blow_staggers_south_1" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_takes_devastating_final_blow_staggers-7b100480/south/frame_001.png" id="83_goblin_boss_takes_devastating_final_blow_staggers_south_1"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_takes_devastating_final_blow_staggers_south_2" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_takes_devastating_final_blow_staggers-7b100480/south/frame_002.png" id="84_goblin_boss_takes_devastating_final_blow_staggers_south_2"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_takes_devastating_final_blow_staggers_south_3" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_takes_devastating_final_blow_staggers-7b100480/south/frame_003.png" id="85_goblin_boss_takes_devastating_final_blow_staggers_south_3"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_takes_devastating_final_blow_staggers_south_4" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_takes_devastating_final_blow_staggers-7b100480/south/frame_004.png" id="86_goblin_boss_takes_devastating_final_blow_staggers_south_4"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_takes_devastating_final_blow_staggers_south_5" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_takes_devastating_final_blow_staggers-7b100480/south/frame_005.png" id="87_goblin_boss_takes_devastating_final_blow_staggers_south_5"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_takes_devastating_final_blow_staggers_south_6" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_takes_devastating_final_blow_staggers-7b100480/south/frame_006.png" id="88_goblin_boss_takes_devastating_final_blow_staggers_south_6"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_takes_devastating_final_blow_staggers_south_7" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_takes_devastating_final_blow_staggers-7b100480/south/frame_007.png" id="89_goblin_boss_takes_devastating_final_blow_staggers_south_7"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_goblin_boss_takes_devastating_final_blow_staggers_south_8" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Goblin_boss_takes_devastating_final_blow_staggers-7b100480/south/frame_008.png" id="90_goblin_boss_takes_devastating_final_blow_staggers_south_8"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south_0" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south/frame_000.png" id="91_walking_south_0"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south_1" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south/frame_001.png" id="92_walking_south_1"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south_2" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south/frame_002.png" id="93_walking_south_2"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south_3" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south/frame_003.png" id="94_walking_south_3"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south_4" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south/frame_004.png" id="95_walking_south_4"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south_5" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south/frame_005.png" id="96_walking_south_5"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south_6" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south/frame_006.png" id="97_walking_south_6"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south_7" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south/frame_007.png" id="98_walking_south_7"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north_0" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north/frame_000.png" id="99_walking_north_0"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north_1" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north/frame_001.png" id="100_walking_north_1"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north_2" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north/frame_002.png" id="101_walking_north_2"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north_3" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north/frame_003.png" id="102_walking_north_3"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north_4" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north/frame_004.png" id="103_walking_north_4"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north_5" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north/frame_005.png" id="104_walking_north_5"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north_6" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north/frame_006.png" id="105_walking_north_6"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north_7" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north/frame_007.png" id="106_walking_north_7"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_east_0" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/east/frame_000.png" id="107_walking_east_0"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_east_1" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/east/frame_001.png" id="108_walking_east_1"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_east_2" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/east/frame_002.png" id="109_walking_east_2"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_east_3" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/east/frame_003.png" id="110_walking_east_3"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_east_4" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/east/frame_004.png" id="111_walking_east_4"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_east_5" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/east/frame_005.png" id="112_walking_east_5"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_east_6" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/east/frame_006.png" id="113_walking_east_6"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_east_7" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/east/frame_007.png" id="114_walking_east_7"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_west_0" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/west/frame_000.png" id="115_walking_west_0"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_west_1" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/west/frame_001.png" id="116_walking_west_1"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_west_2" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/west/frame_002.png" id="117_walking_west_2"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_west_3" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/west/frame_003.png" id="118_walking_west_3"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_west_4" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/west/frame_004.png" id="119_walking_west_4"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_west_5" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/west/frame_005.png" id="120_walking_west_5"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_west_6" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/west/frame_006.png" id="121_walking_west_6"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_west_7" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/west/frame_007.png" id="122_walking_west_7"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south-east_0" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south-east/frame_000.png" id="123_walking_south-east_0"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south-east_1" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south-east/frame_001.png" id="124_walking_south-east_1"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south-east_2" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south-east/frame_002.png" id="125_walking_south-east_2"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south-east_3" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south-east/frame_003.png" id="126_walking_south-east_3"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south-east_4" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south-east/frame_004.png" id="127_walking_south-east_4"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south-east_5" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south-east/frame_005.png" id="128_walking_south-east_5"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south-east_6" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south-east/frame_006.png" id="129_walking_south-east_6"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south-east_7" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south-east/frame_007.png" id="130_walking_south-east_7"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south-west_0" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south-west/frame_000.png" id="131_walking_south-west_0"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south-west_1" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south-west/frame_001.png" id="132_walking_south-west_1"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south-west_2" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south-west/frame_002.png" id="133_walking_south-west_2"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south-west_3" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south-west/frame_003.png" id="134_walking_south-west_3"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south-west_4" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south-west/frame_004.png" id="135_walking_south-west_4"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south-west_5" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south-west/frame_005.png" id="136_walking_south-west_5"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south-west_6" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south-west/frame_006.png" id="137_walking_south-west_6"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_south-west_7" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/south-west/frame_007.png" id="138_walking_south-west_7"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north-east_0" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north-east/frame_000.png" id="139_walking_north-east_0"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north-east_1" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north-east/frame_001.png" id="140_walking_north-east_1"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north-east_2" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north-east/frame_002.png" id="141_walking_north-east_2"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north-east_3" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north-east/frame_003.png" id="142_walking_north-east_3"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north-east_4" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north-east/frame_004.png" id="143_walking_north-east_4"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north-east_5" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north-east/frame_005.png" id="144_walking_north-east_5"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north-east_6" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north-east/frame_006.png" id="145_walking_north-east_6"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north-east_7" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north-east/frame_007.png" id="146_walking_north-east_7"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north-west_0" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north-west/frame_000.png" id="147_walking_north-west_0"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north-west_1" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north-west/frame_001.png" id="148_walking_north-west_1"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north-west_2" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north-west/frame_002.png" id="149_walking_north-west_2"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north-west_3" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north-west/frame_003.png" id="150_walking_north-west_3"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north-west_4" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north-west/frame_004.png" id="151_walking_north-west_4"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north-west_5" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north-west/frame_005.png" id="152_walking_north-west_5"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north-west_6" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north-west/frame_006.png" id="153_walking_north-west_6"]
+[ext_resource type="Texture2D" uid="uid://goblinboss_walking_north-west_7" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/animations/Walking-0ddd98f1/north-west/frame_007.png" id="154_walking_north-west_7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_goblinboss"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_south_standing")
+}],
+"loop": true,
+"name": &"standing_south",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_north_standing")
+}],
+"loop": true,
+"name": &"standing_north",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_east_standing")
+}],
+"loop": true,
+"name": &"standing_east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_west_standing")
+}],
+"loop": true,
+"name": &"standing_west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_south-east_standing")
+}],
+"loop": true,
+"name": &"standing_south-east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_south-west_standing")
+}],
+"loop": true,
+"name": &"standing_south-west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_north-east_standing")
+}],
+"loop": true,
+"name": &"standing_north-east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_north-west_standing")
+}],
+"loop": true,
+"name": &"standing_north-west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_goblin_boss_raises_massive_club_high_overhead_with_south_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_goblin_boss_raises_massive_club_high_overhead_with_south_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_goblin_boss_raises_massive_club_high_overhead_with_south_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_goblin_boss_raises_massive_club_high_overhead_with_south_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_goblin_boss_raises_massive_club_high_overhead_with_south_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_goblin_boss_raises_massive_club_high_overhead_with_south_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_goblin_boss_raises_massive_club_high_overhead_with_south_6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_goblin_boss_raises_massive_club_high_overhead_with_south_7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_goblin_boss_raises_massive_club_high_overhead_with_south_8")
+}],
+"loop": true,
+"name": &"goblin_boss_raises_massive_club_high_overhead_with-south",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_goblin_boss_raises_massive_club_high_overhead_with_north_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_goblin_boss_raises_massive_club_high_overhead_with_north_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_goblin_boss_raises_massive_club_high_overhead_with_north_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_goblin_boss_raises_massive_club_high_overhead_with_north_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_goblin_boss_raises_massive_club_high_overhead_with_north_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_goblin_boss_raises_massive_club_high_overhead_with_north_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_goblin_boss_raises_massive_club_high_overhead_with_north_6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_goblin_boss_raises_massive_club_high_overhead_with_north_7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_goblin_boss_raises_massive_club_high_overhead_with_north_8")
+}],
+"loop": true,
+"name": &"goblin_boss_raises_massive_club_high_overhead_with-north",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_goblin_boss_raises_massive_club_high_overhead_with_east_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_goblin_boss_raises_massive_club_high_overhead_with_east_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_goblin_boss_raises_massive_club_high_overhead_with_east_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_goblin_boss_raises_massive_club_high_overhead_with_east_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_goblin_boss_raises_massive_club_high_overhead_with_east_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_goblin_boss_raises_massive_club_high_overhead_with_east_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_goblin_boss_raises_massive_club_high_overhead_with_east_6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_goblin_boss_raises_massive_club_high_overhead_with_east_7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_goblin_boss_raises_massive_club_high_overhead_with_east_8")
+}],
+"loop": true,
+"name": &"goblin_boss_raises_massive_club_high_overhead_with-east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37_goblin_boss_raises_massive_club_high_overhead_with_west_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_goblin_boss_raises_massive_club_high_overhead_with_west_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_goblin_boss_raises_massive_club_high_overhead_with_west_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_goblin_boss_raises_massive_club_high_overhead_with_west_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_goblin_boss_raises_massive_club_high_overhead_with_west_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_goblin_boss_raises_massive_club_high_overhead_with_west_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_goblin_boss_raises_massive_club_high_overhead_with_west_6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_goblin_boss_raises_massive_club_high_overhead_with_west_7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_goblin_boss_raises_massive_club_high_overhead_with_west_8")
+}],
+"loop": true,
+"name": &"goblin_boss_raises_massive_club_high_overhead_with-west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("46_goblin_boss_raises_massive_club_high_overhead_with_south-east_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_goblin_boss_raises_massive_club_high_overhead_with_south-east_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_goblin_boss_raises_massive_club_high_overhead_with_south-east_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_goblin_boss_raises_massive_club_high_overhead_with_south-east_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_goblin_boss_raises_massive_club_high_overhead_with_south-east_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_goblin_boss_raises_massive_club_high_overhead_with_south-east_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_goblin_boss_raises_massive_club_high_overhead_with_south-east_6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_goblin_boss_raises_massive_club_high_overhead_with_south-east_7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_goblin_boss_raises_massive_club_high_overhead_with_south-east_8")
+}],
+"loop": true,
+"name": &"goblin_boss_raises_massive_club_high_overhead_with-south-east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("55_goblin_boss_raises_massive_club_high_overhead_with_south-west_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_goblin_boss_raises_massive_club_high_overhead_with_south-west_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_goblin_boss_raises_massive_club_high_overhead_with_south-west_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_goblin_boss_raises_massive_club_high_overhead_with_south-west_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_goblin_boss_raises_massive_club_high_overhead_with_south-west_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_goblin_boss_raises_massive_club_high_overhead_with_south-west_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_goblin_boss_raises_massive_club_high_overhead_with_south-west_6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_goblin_boss_raises_massive_club_high_overhead_with_south-west_7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_goblin_boss_raises_massive_club_high_overhead_with_south-west_8")
+}],
+"loop": true,
+"name": &"goblin_boss_raises_massive_club_high_overhead_with-south-west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("64_goblin_boss_raises_massive_club_high_overhead_with_north-east_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_goblin_boss_raises_massive_club_high_overhead_with_north-east_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_goblin_boss_raises_massive_club_high_overhead_with_north-east_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_goblin_boss_raises_massive_club_high_overhead_with_north-east_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_goblin_boss_raises_massive_club_high_overhead_with_north-east_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_goblin_boss_raises_massive_club_high_overhead_with_north-east_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_goblin_boss_raises_massive_club_high_overhead_with_north-east_6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_goblin_boss_raises_massive_club_high_overhead_with_north-east_7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_goblin_boss_raises_massive_club_high_overhead_with_north-east_8")
+}],
+"loop": true,
+"name": &"goblin_boss_raises_massive_club_high_overhead_with-north-east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("73_goblin_boss_raises_massive_club_high_overhead_with_north-west_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_goblin_boss_raises_massive_club_high_overhead_with_north-west_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_goblin_boss_raises_massive_club_high_overhead_with_north-west_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_goblin_boss_raises_massive_club_high_overhead_with_north-west_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_goblin_boss_raises_massive_club_high_overhead_with_north-west_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_goblin_boss_raises_massive_club_high_overhead_with_north-west_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_goblin_boss_raises_massive_club_high_overhead_with_north-west_6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_goblin_boss_raises_massive_club_high_overhead_with_north-west_7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_goblin_boss_raises_massive_club_high_overhead_with_north-west_8")
+}],
+"loop": true,
+"name": &"goblin_boss_raises_massive_club_high_overhead_with-north-west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("82_goblin_boss_takes_devastating_final_blow_staggers_south_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_goblin_boss_takes_devastating_final_blow_staggers_south_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_goblin_boss_takes_devastating_final_blow_staggers_south_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_goblin_boss_takes_devastating_final_blow_staggers_south_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_goblin_boss_takes_devastating_final_blow_staggers_south_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_goblin_boss_takes_devastating_final_blow_staggers_south_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_goblin_boss_takes_devastating_final_blow_staggers_south_6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_goblin_boss_takes_devastating_final_blow_staggers_south_7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_goblin_boss_takes_devastating_final_blow_staggers_south_8")
+}],
+"loop": true,
+"name": &"goblin_boss_takes_devastating_final_blow_staggers-south",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("91_walking_south_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_walking_south_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_walking_south_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_walking_south_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_walking_south_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_walking_south_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_walking_south_6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_walking_south_7")
+}],
+"loop": true,
+"name": &"walking-south",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("99_walking_north_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_walking_north_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_walking_north_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_walking_north_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_walking_north_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_walking_north_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_walking_north_6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_walking_north_7")
+}],
+"loop": true,
+"name": &"walking-north",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("107_walking_east_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_walking_east_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_walking_east_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_walking_east_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_walking_east_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_walking_east_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_walking_east_6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_walking_east_7")
+}],
+"loop": true,
+"name": &"walking-east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("115_walking_west_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_walking_west_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_walking_west_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_walking_west_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_walking_west_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_walking_west_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_walking_west_6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_walking_west_7")
+}],
+"loop": true,
+"name": &"walking-west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("123_walking_south-east_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_walking_south-east_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_walking_south-east_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_walking_south-east_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_walking_south-east_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_walking_south-east_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_walking_south-east_6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_walking_south-east_7")
+}],
+"loop": true,
+"name": &"walking-south-east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("131_walking_south-west_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_walking_south-west_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_walking_south-west_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_walking_south-west_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_walking_south-west_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_walking_south-west_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_walking_south-west_6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_walking_south-west_7")
+}],
+"loop": true,
+"name": &"walking-south-west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("139_walking_north-east_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_walking_north-east_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_walking_north-east_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_walking_north-east_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_walking_north-east_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_walking_north-east_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_walking_north-east_6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_walking_north-east_7")
+}],
+"loop": true,
+"name": &"walking-north-east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("147_walking_north-west_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_walking_north-west_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_walking_north-west_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_walking_north-west_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_walking_north-west_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_walking_north-west_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_walking_north-west_6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_walking_north-west_7")
+}],
+"loop": true,
+"name": &"walking-north-west",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_goblinboss"]
+radius = 80.0
+
+[node name="GoblinBoss" type="CharacterBody2D"]
+collision_layer = 2
+script = ExtResource("1_script")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_goblinboss")
+animation = &"standing_south"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_goblinboss")
+
+[node name="BarraVida" type="ProgressBar" parent="."]
+offset_left = -30.0
+offset_top = -50.0
+offset_right = 30.0
+offset_bottom = -42.0
+max_value = 40.0
+value = 40.0
+show_percentage = false

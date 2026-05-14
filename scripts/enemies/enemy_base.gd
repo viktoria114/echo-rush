@@ -65,7 +65,10 @@ func _morir() -> void:
 	emit_signal("enemigo_muerto")
 	var pos := global_position
 	call_deferred("_soltar_moneda", pos)
-	call_deferred("queue_free")
+	_post_morir()
+
+func _post_morir() -> void:
+	queue_free()
 
 func _soltar_moneda(pos: Vector2) -> void:
 	var moneda := COIN_SCENE.instantiate()

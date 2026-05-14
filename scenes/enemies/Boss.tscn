@@ -1,17 +1,257 @@
-[gd_scene format=3 uid="uid://boss_scene_01"]
+[gd_scene format=3 uid="uid://cnvs0ld1hh6oi"]
 
-[ext_resource type="Script" path="res://scripts/enemies/boss.gd" id="1_boss"]
+[ext_resource type="Script" uid="uid://bb1t74tqmm4ov" path="res://scripts/enemies/boss.gd" id="1_boss"]
+[ext_resource type="Texture2D" uid="uid://ccq18pwnh4fv1" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/north-west/frame_000(1).png" id="2_mh003"]
+[ext_resource type="Texture2D" uid="uid://b3dncmdqrog04" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/north-west/frame_000.png" id="3_u646n"]
+[ext_resource type="Texture2D" uid="uid://clxgod8y7fbop" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/north-west/frame_001(1).png" id="4_y0su5"]
+[ext_resource type="Texture2D" uid="uid://bjy0vhv78vdmp" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/north-west/frame_001.png" id="5_78jd0"]
+[ext_resource type="Texture2D" uid="uid://dnq7er3fblqrc" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/north-west/frame_002(1).png" id="6_fipn1"]
+[ext_resource type="Texture2D" uid="uid://hh1flgv0hwky" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/north-west/frame_002.png" id="7_uhp1b"]
+[ext_resource type="Texture2D" uid="uid://c5x67fj6fm3q3" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/north-west/frame_003(1).png" id="8_oxc2w"]
+[ext_resource type="Texture2D" uid="uid://31kvft31a2th" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/north-west/frame_003.png" id="9_71815"]
+[ext_resource type="Texture2D" uid="uid://dss3f7ykk5w7y" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/south/frame_000.png" id="10_d3mmw"]
+[ext_resource type="Texture2D" uid="uid://djvqo20m0y5xj" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/south/frame_001.png" id="11_aflc8"]
+[ext_resource type="Texture2D" uid="uid://8xj8bhyxw2i4" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/south/frame_002.png" id="12_ecdpf"]
+[ext_resource type="Texture2D" uid="uid://dds46jb5hji8u" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/south/frame_003.png" id="13_3ulir"]
+[ext_resource type="Texture2D" uid="uid://u0dak0cgaef7" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/south/frame_004.png" id="14_6fqdh"]
+[ext_resource type="Texture2D" uid="uid://b3ejv5dgrm2gj" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/south/frame_005.png" id="15_niuhm"]
+[ext_resource type="Texture2D" uid="uid://bvomw7bfmi7nn" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/south/frame_006.png" id="16_m52pe"]
+[ext_resource type="Texture2D" uid="uid://1g4nlvun170g" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/south/frame_007.png" id="17_6y0yo"]
+[ext_resource type="Texture2D" uid="uid://06hy582u5tdm" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/south/frame_008.png" id="18_qkk6d"]
+[ext_resource type="Texture2D" uid="uid://blbs655xx2mbv" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/south-east/frame_000.png" id="19_jp3qm"]
+[ext_resource type="Texture2D" uid="uid://dht6wsjonikne" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/south-east/frame_001.png" id="20_q1x4a"]
+[ext_resource type="Texture2D" uid="uid://cqnjrdchomwgm" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/south-east/frame_002.png" id="21_w3ojt"]
+[ext_resource type="Texture2D" uid="uid://cx1l8xdceks5" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/south-east/frame_003.png" id="22_hse2y"]
+[ext_resource type="Texture2D" uid="uid://pcdpl7x3615q" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/south-west/frame_000.png" id="23_ts4k8"]
+[ext_resource type="Texture2D" uid="uid://n8j8teo1hsxx" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/south-west/frame_001.png" id="24_4q3fo"]
+[ext_resource type="Texture2D" uid="uid://dnw2fa24y0ls8" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/south-west/frame_002.png" id="25_epugo"]
+[ext_resource type="Texture2D" uid="uid://be310amuk3s5a" path="res://assets/sprites/enemies/slime_boss/animations/Giant slime king attack/south-west/frame_003.png" id="26_dausy"]
+[ext_resource type="Texture2D" uid="uid://reypmvqetouh" path="res://assets/sprites/enemies/slime_boss/animations/muerte/south/frame_000.png" id="27_bntob"]
+[ext_resource type="Texture2D" uid="uid://cl3vsv406oqeo" path="res://assets/sprites/enemies/slime_boss/animations/muerte/south/frame_001.png" id="28_74lh4"]
+[ext_resource type="Texture2D" uid="uid://cjfneiltlae4n" path="res://assets/sprites/enemies/slime_boss/animations/muerte/south/frame_002.png" id="29_xkq1l"]
+[ext_resource type="Texture2D" uid="uid://1sedeeccemm5" path="res://assets/sprites/enemies/slime_boss/animations/muerte/south/frame_003.png" id="30_pxb04"]
+[ext_resource type="Texture2D" uid="uid://djksjdxgum54l" path="res://assets/sprites/enemies/slime_boss/animations/muerte/south/frame_004.png" id="31_js16t"]
+[ext_resource type="Texture2D" uid="uid://bmod0b2dxlhyd" path="res://assets/sprites/enemies/slime_boss/animations/muerte/south/frame_005.png" id="32_m8s58"]
+[ext_resource type="Texture2D" uid="uid://bkfdvoitctbnp" path="res://assets/sprites/enemies/slime_boss/animations/muerte/south/frame_006.png" id="33_81q7r"]
+[ext_resource type="Texture2D" uid="uid://dbsfprix217d0" path="res://assets/sprites/enemies/slime_boss/animations/muerte/south/frame_007.png" id="34_nm3jd"]
+[ext_resource type="Texture2D" uid="uid://ltxaj3ryvg7p" path="res://assets/sprites/enemies/slime_boss/animations/muerte/south/frame_008.png" id="35_55myo"]
+
+[ext_resource type="Texture2D" uid="uid://brmzl4hkp3001" path="res://assets/sprites/enemies/slime_boss/rotations/east.png" id="36_bre"]
+[ext_resource type="Texture2D" uid="uid://brmzl4hkp3002" path="res://assets/sprites/enemies/slime_boss/rotations/north.png" id="37_brn"]
+[ext_resource type="Texture2D" uid="uid://brmzl4hkp3003" path="res://assets/sprites/enemies/slime_boss/rotations/north-east.png" id="38_brne"]
+[ext_resource type="Texture2D" uid="uid://brmzl4hkp3004" path="res://assets/sprites/enemies/slime_boss/rotations/north-west.png" id="39_brnw"]
+[ext_resource type="Texture2D" uid="uid://brmzl4hkp3005" path="res://assets/sprites/enemies/slime_boss/rotations/south.png" id="40_brs"]
+[ext_resource type="Texture2D" uid="uid://brmzl4hkp3006" path="res://assets/sprites/enemies/slime_boss/rotations/south-east.png" id="41_brse"]
+[ext_resource type="Texture2D" uid="uid://brmzl4hkp3007" path="res://assets/sprites/enemies/slime_boss/rotations/south-west.png" id="42_brsw"]
+[ext_resource type="Texture2D" uid="uid://brmzl4hkp3008" path="res://assets/sprites/enemies/slime_boss/rotations/west.png" id="43_brw"]
 
 [sub_resource type="CircleShape2D" id="BossColShape"]
 radius = 42.0
 
-[node name="Boss" type="CharacterBody2D"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_8s4qn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_mh003")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_u646n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_y0su5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_78jd0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_fipn1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_uhp1b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_oxc2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_71815")
+}],
+"loop": true,
+"name": &"attack_north-west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_d3mmw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_aflc8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ecdpf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_3ulir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6fqdh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_niuhm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_m52pe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_6y0yo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_qkk6d")
+}],
+"loop": true,
+"name": &"attack_south",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_jp3qm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_q1x4a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_w3ojt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_hse2y")
+}],
+"loop": true,
+"name": &"attack_south-east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_ts4k8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_4q3fo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_epugo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_dausy")
+}],
+"loop": true,
+"name": &"attack_south-west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_bntob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_74lh4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_xkq1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_pxb04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_js16t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_m8s58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_81q7r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_nm3jd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_55myo")
+}],
+"loop": false,
+"name": &"muerte_south-west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("36_bre")
+}],
+"loop": true,
+"name": &"idle_east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37_brn")
+}],
+"loop": true,
+"name": &"idle_north",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_brne")
+}],
+"loop": true,
+"name": &"idle_north-east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_brnw")
+}],
+"loop": true,
+"name": &"idle_north-west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("40_brs")
+}],
+"loop": true,
+"name": &"idle_south",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("41_brse")
+}],
+"loop": true,
+"name": &"idle_south-east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42_brsw")
+}],
+"loop": true,
+"name": &"idle_south-west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("43_brw")
+}],
+"loop": true,
+"name": &"idle_west",
+"speed": 5.0
+}]
+
+[node name="SlimeRey" type="CharacterBody2D" unique_id=129301062]
 collision_layer = 2
-collision_mask = 1
 script = ExtResource("1_boss")
 
-[node name="Poligono" type="Polygon2D" parent="."]
-color = Color(0.85, 0.08, 0.08, 1.0)
+[node name="Poligono" type="Polygon2D" parent="." unique_id=1629839967]
+color = Color(0.85, 0.08, 0.08, 1)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=6192885]
 shape = SubResource("BossColShape")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1595304208]
+sprite_frames = SubResource("SpriteFrames_8s4qn")
+animation = &"idle_south"
