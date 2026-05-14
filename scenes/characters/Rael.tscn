@@ -622,7 +622,8 @@ height = 45.0
 radius = 40.0
 
 [node name="Rael" type="CharacterBody2D" unique_id=267325098]
-collision_mask = 2
+collision_layer = 1
+collision_mask = 3
 script = ExtResource("1_player")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=899104158]
@@ -639,3 +640,8 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxArea" unique_id=1759961080]
 shape = SubResource("CircleShape2D_hitbox")
+
+[node name="Camara" type="Camera2D" parent="."]
+zoom = Vector2(1.0, 1.0)
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0

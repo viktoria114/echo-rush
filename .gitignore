@@ -2,3 +2,16 @@
 .godot/
 /android/
 .vscode/
+
+# === Cache y temporales ===
+*.tmp  *.cache  *.log
+__pycache__/  node_modules/
+
+# === Godot (ya deberías tener esto) ===
+.godot/
+*.translation
+export_presets.cfg
+
+# === CCGS — logs de sesión y estado efímero ===
+production/session-logs/
+production/review-mode.txt
