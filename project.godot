@@ -55,6 +55,10 @@ disable_install_audio_busses=true
 disable_update_check=false
 disable_install_wizard=true
 
+[layer_names]
+
+2d_physics/layer_1="Entorno"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
