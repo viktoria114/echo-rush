@@ -1,4 +1,8 @@
-extends "res://scripts/enemies/boss.gd"
+extends "res://scripts/enemies/enemy_base.gd"
+
+signal boss_vida_cambiada(vida_actual: int, vida_max: int)
+
+var vida_max_boss: int = 600
 
 func _ready() -> void:
 	super._ready()
@@ -7,6 +11,7 @@ func _ready() -> void:
 	velocidad = 55.0
 	dano = 25
 	rango_ataque = 95.0
+	_generar_visual()
 
 # Estrella de 5 puntas gris acero — Guardián Gólem
 func _generar_visual() -> void:
@@ -23,3 +28,19 @@ func _generar_visual() -> void:
 		puntos.append(Vector2(cos(angulo), sin(angulo)) * radio)
 	polygon.polygon = puntos
 	polygon.color = Color(0.55, 0.62, 0.72)
+
+func recibir_dano(cantidad: int) -> void:
+	vida -= cantidad
+	if vida <= 0 and not _muerto:
+		_morir()
+	elif not _muerto:
+		emit_signal("boss_vida_cambiada", vida, vida_max_boss)
+
+func _actualizar_efectos(delta: float) -> void:
+	if veneno_timer > 0.0:
+		veneno_timer -= delta
+		vida -= int(veneno_dps * delta)
+		if vida <= 0 and not _muerto:
+			_morir()
+		elif not _muerto:
+			emit_signal("boss_vida_cambiada", vida, vida_max_boss)

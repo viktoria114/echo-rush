@@ -105,9 +105,9 @@ Todos los enemigos extienden `enemy_base.gd`. El patrón de herencia:
 enemy_base.gd
   ├── goblin.gd, slime.gd, troll.gd, mage.gd, skeleton_archer.gd
   └── boss.gd
-        ├── boss_golem.gd
-        ├── boss_portal.gd
-        └── boss_final.gd
+		├── boss_golem.gd
+		├── boss_portal.gd
+		└── boss_final.gd
 ```
 
 Los enemigos se identifican por el grupo `"enemigos"`, el jugador por `"jugador"`. Las señales `enemigo_muerto` y `boss_vida_cambiada` comunican estado al `WaveManager` y HUD.

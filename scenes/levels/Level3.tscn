@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://troll_scene_01" path="res://scenes/enemies/Troll.tscn" id="8_troll"]
 [ext_resource type="PackedScene" uid="uid://boss_portal_01" path="res://scenes/enemies/BossPortal.tscn" id="10_portal"]
 [ext_resource type="PackedScene" uid="uid://hudscene0001" path="res://scenes/ui/HUD.tscn" id="9_hud"]
+[ext_resource type="AudioStream" path="res://assets/audio/music/nivel.ogg" id="11_mus"]
+[ext_resource type="PackedScene" uid="uid://wm2nmhcpk5qp" path="res://scenes/windows/pause_menu_layer.tscn" id="12_pause"]
 
 [sub_resource type="RectangleShape2D" id="S_W1"]
 size = Vector2(80, 80)
@@ -30,6 +32,12 @@ size = Vector2(110, 70)
 [node name="Level3" type="Node2D"]
 script = ExtResource("1_lvl")
 proxima_escena = "res://scenes/levels/Level4.tscn"
+
+[node name="BackgroundMusicPlayer" type="AudioStreamPlayer" parent="." unique_id=888001003]
+process_mode = 3
+autoplay = true
+bus = &"Music"
+stream = ExtResource("11_mus")
 
 [node name="Fondo" type="ColorRect" parent="."]
 anchors_preset = 15
@@ -160,3 +168,5 @@ position = Vector2(880, 540)
 position = Vector2(1040, 540)
 
 [node name="HUD" parent="." instance=ExtResource("9_hud")]
+
+[node name="PauseMenuLayer" parent="." unique_id=888002003 instance=ExtResource("12_pause")]

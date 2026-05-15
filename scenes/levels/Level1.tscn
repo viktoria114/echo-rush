@@ -28,6 +28,8 @@
 [ext_resource type="Texture2D" uid="uid://bkd2jcjsodtde" path="res://assets/backgrounds/village/2dvillageassetpackwithoutilne/props/strokevillage0022.png" id="17_pgakm"]
 [ext_resource type="Texture2D" uid="uid://b6gn2jxc0m7r5" path="res://assets/backgrounds/village/2dvillageassetpackwithoutilne/props/strokevillage0023.png" id="18_s7ois"]
 [ext_resource type="Texture2D" uid="uid://dllaj88c8kkjp" path="res://assets/backgrounds/village/2dvillageassetpackwithoutilne/props/strokevillage0024.png" id="19_rw0oh"]
+[ext_resource type="AudioStream" path="res://assets/audio/music/nivel.ogg" id="20_mus"]
+[ext_resource type="PackedScene" uid="uid://wm2nmhcpk5qp" path="res://scenes/windows/pause_menu_layer.tscn" id="21_pause"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p5s5a"]
 texture = ExtResource("2_ukjja")
@@ -83676,6 +83678,12 @@ size = Vector2(96, 2508)
 script = ExtResource("1_lvl")
 proxima_escena = "res://scenes/levels/Level2.tscn"
 
+[node name="BackgroundMusicPlayer" type="AudioStreamPlayer" parent="." unique_id=888001001]
+process_mode = 3
+autoplay = true
+bus = &"Music"
+stream = ExtResource("20_mus")
+
 [node name="Fondo" type="Node2D" parent="." unique_id=637374948]
 z_index = -10
 
@@ -83799,3 +83807,5 @@ polygon = PackedVector2Array(2214, -714, 2310, -714, 2310, 1794, 2214, 1794)
 [node name="Colision" type="CollisionShape2D" parent="Muros/MuroDerecho" unique_id=888000033]
 position = Vector2(2262, 540)
 shape = SubResource("RectangleShape2D_right")
+
+[node name="PauseMenuLayer" parent="." unique_id=888002001 instance=ExtResource("21_pause")]
