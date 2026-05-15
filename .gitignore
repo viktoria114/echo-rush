@@ -2,3 +2,20 @@
 .godot/
 /android/
 .vscode/
+generate_all_animations.py
+generate_all_animations_v2.py
+generate_enemy_scenes.py
+.claude/settings.local.json
+
+# === Cache y temporales ===
+*.tmp  *.cache  *.log
+__pycache__/  node_modules/
+
+# === Godot (ya deberías tener esto) ===
+.godot/
+*.translation
+export_presets.cfg
+
+# === CCGS — logs de sesión y estado efímero ===
+production/session-logs/
+production/review-mode.txt

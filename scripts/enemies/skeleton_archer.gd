@@ -13,6 +13,10 @@ func _ready() -> void:
 	vida = 35
 	velocidad = 85.0
 	dano = 8
+	var barra := get_node_or_null("BarraVida") as ProgressBar
+	if barra:
+		barra.max_value = vida
+		barra.value = vida
 	_generar_visual()
 
 # Reemplaza el _physics_process de la base: gestiona distancia y disparo
@@ -58,12 +62,17 @@ func _disparar(dir: Vector2) -> void:
 	flecha.iniciar(dir, dano)
 	disparando = false
 
-# Rombo blanco hueso — placeholder de arquero esqueleto
+func recibir_dano(cantidad: int) -> void:
+	super.recibir_dano(cantidad)
+	var barra := get_node_or_null("BarraVida") as ProgressBar
+	if barra:
+		barra.value = vida
+
+# La escena no tiene nodo Poligono — se crea como hijo en tiempo de ejecución
 func _generar_visual() -> void:
-	var polygon := $Poligono as Polygon2D
-	if not polygon:
-		return
+	var polygon := Polygon2D.new()
 	polygon.polygon = PackedVector2Array([
 		Vector2(0, -26), Vector2(18, 0), Vector2(0, 26), Vector2(-18, 0)
 	])
 	polygon.color = Color(0.88, 0.88, 0.75)
+	add_child(polygon)
