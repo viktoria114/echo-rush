@@ -13,11 +13,8 @@ config_version=5
 config/name="Echo Rush"
 run/main_scene="res://scenes/opening/opening.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
-
-[audio]
-
-buses/default_bus_layout="uid://bjdwygcvv4awe"
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="res://assets/godot_engine_logo/logo_vertical_color_dark.png"
 
 [autoload]
 

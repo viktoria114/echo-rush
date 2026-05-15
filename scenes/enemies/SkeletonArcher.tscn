@@ -1,30 +1,977 @@
-[gd_scene format=3 uid="uid://skeletonarcher_enemy"]
+[gd_scene format=3 uid="uid://dkjsxony47vgn"]
 
-[ext_resource type="Script" path="res://scripts/enemies/skeleton_archer.gd" id="1_script"]
+[ext_resource type="Script" uid="uid://dldtcsc2rmbbo" path="res://scripts/enemies/skeleton_archer.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://b6oftxhnl8na" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/east/frame_000.png" id="2_ibw4p"]
+[ext_resource type="Texture2D" uid="uid://c44rl1b8fu8jr" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/east/frame_001.png" id="3_7bm3y"]
+[ext_resource type="Texture2D" uid="uid://duibpfrt1w4c1" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/east/frame_002.png" id="4_kj821"]
+[ext_resource type="Texture2D" uid="uid://dtg35o2fanwhw" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/east/frame_003.png" id="5_ys0kb"]
+[ext_resource type="Texture2D" uid="uid://bfj54ojfc88c3" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/east/frame_004.png" id="6_1wlwx"]
+[ext_resource type="Texture2D" uid="uid://cwivfvmxkaffe" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/east/frame_005.png" id="7_johd1"]
+[ext_resource type="Texture2D" uid="uid://cxk25c43yauba" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/east/frame_006.png" id="8_vg6hn"]
+[ext_resource type="Texture2D" uid="uid://eoqghpf8gta2" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/east/frame_007.png" id="9_yxexy"]
+[ext_resource type="Texture2D" uid="uid://lvshx8t5muii" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/east/frame_008.png" id="10_mi4mq"]
+[ext_resource type="Texture2D" uid="uid://dkjqhegagwnaf" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north/frame_000.png" id="11_o4bqp"]
+[ext_resource type="Texture2D" uid="uid://cuqxyalt3dy7s" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north/frame_001.png" id="12_l0msi"]
+[ext_resource type="Texture2D" uid="uid://bysccrtc2fddv" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north/frame_002.png" id="13_p7mes"]
+[ext_resource type="Texture2D" uid="uid://cpkmvpca7kfsi" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north/frame_003.png" id="14_elnbi"]
+[ext_resource type="Texture2D" uid="uid://dl0pphrw54rmj" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north/frame_004.png" id="15_ktp3u"]
+[ext_resource type="Texture2D" uid="uid://cpo77hi8jh2je" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north/frame_005.png" id="16_morva"]
+[ext_resource type="Texture2D" uid="uid://xqmhscbb06s0" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north/frame_006.png" id="17_08hb5"]
+[ext_resource type="Texture2D" uid="uid://bgih57sh0w8fh" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north/frame_007.png" id="18_isvbm"]
+[ext_resource type="Texture2D" uid="uid://bhjk4bn0x2mpf" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north/frame_008.png" id="19_ivyd1"]
+[ext_resource type="Texture2D" uid="uid://btwevpso678vu" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-east/frame_000.png" id="20_b58so"]
+[ext_resource type="Texture2D" uid="uid://05dnrql1uytm" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-east/frame_001.png" id="21_51247"]
+[ext_resource type="Texture2D" uid="uid://dm1m13sgmhagc" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-east/frame_002.png" id="22_58fwm"]
+[ext_resource type="Texture2D" uid="uid://bmfrvfeunl4i8" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-east/frame_003.png" id="23_i6vmr"]
+[ext_resource type="Texture2D" uid="uid://bs3fq2lpk283e" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-east/frame_004.png" id="24_jltvh"]
+[ext_resource type="Texture2D" uid="uid://b1p0npctslfv" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-east/frame_005.png" id="25_qwc1o"]
+[ext_resource type="Texture2D" uid="uid://cijthcuc8bup6" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-east/frame_006.png" id="26_321x6"]
+[ext_resource type="Texture2D" uid="uid://wxuosivg130w" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-east/frame_007.png" id="27_igqfy"]
+[ext_resource type="Texture2D" uid="uid://diky8ih5v65qi" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-east/frame_008.png" id="28_2alxr"]
+[ext_resource type="Texture2D" uid="uid://buyea47t5pd05" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-west/frame_000.png" id="29_plgnp"]
+[ext_resource type="Texture2D" uid="uid://dgrfx8mx2hxjv" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-west/frame_001.png" id="30_4pdor"]
+[ext_resource type="Texture2D" uid="uid://dyi64i2j30atj" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-west/frame_002.png" id="31_72ena"]
+[ext_resource type="Texture2D" uid="uid://e2m3rnnbont" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-west/frame_003.png" id="32_bwowg"]
+[ext_resource type="Texture2D" uid="uid://d1psvoxqfun1a" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-west/frame_004.png" id="33_hftqe"]
+[ext_resource type="Texture2D" uid="uid://dnu67443qi53q" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-west/frame_005.png" id="34_53gqk"]
+[ext_resource type="Texture2D" uid="uid://p1uposl6tlbg" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-west/frame_006.png" id="35_tspi8"]
+[ext_resource type="Texture2D" uid="uid://bknjqep2niach" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-west/frame_007.png" id="36_nrgav"]
+[ext_resource type="Texture2D" uid="uid://c1yaf7d7ksktb" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/north-west/frame_008.png" id="37_vm1gx"]
+[ext_resource type="Texture2D" uid="uid://biaqo0rqug016" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south/frame_000.png" id="38_sd5yy"]
+[ext_resource type="Texture2D" uid="uid://bocrq4yl8cn8o" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south/frame_001.png" id="39_t6lkn"]
+[ext_resource type="Texture2D" uid="uid://b2pse0qocrqhd" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south/frame_002.png" id="40_i7rw6"]
+[ext_resource type="Texture2D" uid="uid://cr5cgfl5c0atg" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south/frame_003.png" id="41_cfkec"]
+[ext_resource type="Texture2D" uid="uid://cmm6ndnu08n8o" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south/frame_004.png" id="42_3obiy"]
+[ext_resource type="Texture2D" uid="uid://f21jguh12syi" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south/frame_005.png" id="43_3cowm"]
+[ext_resource type="Texture2D" uid="uid://bdax3h87khtug" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south/frame_006.png" id="44_qgp45"]
+[ext_resource type="Texture2D" uid="uid://dtt7k7q1gysrq" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south/frame_007.png" id="45_a5auj"]
+[ext_resource type="Texture2D" uid="uid://c5vgofl2glvwi" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south/frame_008.png" id="46_u8d7j"]
+[ext_resource type="Texture2D" uid="uid://5c0doimqam2d" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-east/frame_000.png" id="47_xx1hc"]
+[ext_resource type="Texture2D" uid="uid://dxe6x0li3utdd" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-east/frame_001.png" id="48_u41jy"]
+[ext_resource type="Texture2D" uid="uid://cxtnbghk5kqfw" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-east/frame_002.png" id="49_mew8o"]
+[ext_resource type="Texture2D" uid="uid://ut2t2bvmbobw" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-east/frame_003.png" id="50_32eaa"]
+[ext_resource type="Texture2D" uid="uid://dpgnd7jb1wynx" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-east/frame_004.png" id="51_7wjdm"]
+[ext_resource type="Texture2D" uid="uid://bhcrynlm7wdyu" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-east/frame_005.png" id="52_nhi58"]
+[ext_resource type="Texture2D" uid="uid://s3fpn0y5w1ie" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-east/frame_006.png" id="53_4yao3"]
+[ext_resource type="Texture2D" uid="uid://dhkepf6blcamv" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-east/frame_007.png" id="54_gve1g"]
+[ext_resource type="Texture2D" uid="uid://cb83mbgl7eh42" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-east/frame_008.png" id="55_5kxvy"]
+[ext_resource type="Texture2D" uid="uid://bqi64ifofyfl" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-west/frame_000.png" id="56_lxa0r"]
+[ext_resource type="Texture2D" uid="uid://cd15ir7mn5176" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-west/frame_001.png" id="57_ufne8"]
+[ext_resource type="Texture2D" uid="uid://dyy1vxwxwvyod" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-west/frame_002.png" id="58_m2whr"]
+[ext_resource type="Texture2D" uid="uid://blmjs05paxr4" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-west/frame_003.png" id="59_kbw31"]
+[ext_resource type="Texture2D" uid="uid://dd3baa1iidnuo" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-west/frame_004.png" id="60_02c77"]
+[ext_resource type="Texture2D" uid="uid://c7ouwxwwif488" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-west/frame_005.png" id="61_xaocw"]
+[ext_resource type="Texture2D" uid="uid://el5kg3v6jmxx" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-west/frame_006.png" id="62_2d3ic"]
+[ext_resource type="Texture2D" uid="uid://jstoetblh3w3" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-west/frame_007.png" id="63_c746r"]
+[ext_resource type="Texture2D" uid="uid://c01nvw2aovx6c" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/south-west/frame_008.png" id="64_p7k3e"]
+[ext_resource type="Texture2D" uid="uid://dv8hckgcxi65w" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/west/frame_000.png" id="65_xiut4"]
+[ext_resource type="Texture2D" uid="uid://cuubfl62p8w7q" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/west/frame_001.png" id="66_qtn0l"]
+[ext_resource type="Texture2D" uid="uid://bn2q8fnue46rr" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/west/frame_002.png" id="67_xcp0k"]
+[ext_resource type="Texture2D" uid="uid://di5m5nai81f33" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/west/frame_003.png" id="68_h4n4j"]
+[ext_resource type="Texture2D" uid="uid://bx6tbh6upqokl" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/west/frame_004.png" id="69_f0y6x"]
+[ext_resource type="Texture2D" uid="uid://3vq5rcrdsal1" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/west/frame_005.png" id="70_rq61r"]
+[ext_resource type="Texture2D" uid="uid://dnqijs2gmy2ch" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/west/frame_006.png" id="71_jtrei"]
+[ext_resource type="Texture2D" uid="uid://benfpuhdkhr7t" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/west/frame_007.png" id="72_rqp3m"]
+[ext_resource type="Texture2D" uid="uid://ddqr6g4c8pcor" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_archer_raises_longbow_bony_fingers_draw_b-93bcffd3/west/frame_008.png" id="73_b4via"]
+[ext_resource type="Texture2D" uid="uid://b4y67owxxprvq" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/east/frame_000.png" id="74_p5cww"]
+[ext_resource type="Texture2D" uid="uid://duxegnyjthxry" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/east/frame_001.png" id="75_pbpbq"]
+[ext_resource type="Texture2D" uid="uid://dfaw6uuhutu2g" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/east/frame_002.png" id="76_drar1"]
+[ext_resource type="Texture2D" uid="uid://b02hqh76ufjd5" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/east/frame_003.png" id="77_fun5k"]
+[ext_resource type="Texture2D" uid="uid://vt00qlhnmsbl" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/east/frame_004.png" id="78_6wjpv"]
+[ext_resource type="Texture2D" uid="uid://fpiu3soot315" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/east/frame_005.png" id="79_seely"]
+[ext_resource type="Texture2D" uid="uid://bv7mdakqj5he" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/east/frame_006.png" id="80_10vuq"]
+[ext_resource type="Texture2D" uid="uid://dhswbklv7n47h" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/east/frame_007.png" id="81_8ycfs"]
+[ext_resource type="Texture2D" uid="uid://cbsfncemlkemy" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/east/frame_008.png" id="82_4uwmi"]
+[ext_resource type="Texture2D" uid="uid://by566btwlxuwn" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north/frame_000.png" id="83_5ud7n"]
+[ext_resource type="Texture2D" uid="uid://baht8ka0vi1ch" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north/frame_001.png" id="84_5dmif"]
+[ext_resource type="Texture2D" uid="uid://borgra4rm4sbx" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north/frame_002.png" id="85_wr6b0"]
+[ext_resource type="Texture2D" uid="uid://dfwomc3je0ds1" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north/frame_003.png" id="86_v7816"]
+[ext_resource type="Texture2D" uid="uid://bhq3gfjqsw7v" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north/frame_004.png" id="87_yslku"]
+[ext_resource type="Texture2D" uid="uid://n1k2s0hd03vw" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north/frame_005.png" id="88_4pd3w"]
+[ext_resource type="Texture2D" uid="uid://c2tjmsckvtl6f" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north/frame_006.png" id="89_jmnva"]
+[ext_resource type="Texture2D" uid="uid://nxrbpfy7gplq" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north/frame_007.png" id="90_5us7v"]
+[ext_resource type="Texture2D" uid="uid://cpf64imuwy4nx" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north/frame_008.png" id="91_7goj5"]
+[ext_resource type="Texture2D" uid="uid://wimbjic5kfus" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-east/frame_000.png" id="92_0ye6y"]
+[ext_resource type="Texture2D" uid="uid://cm45toopbvqf2" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-east/frame_001.png" id="93_7e8mc"]
+[ext_resource type="Texture2D" uid="uid://bi72xik3rcobn" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-east/frame_002.png" id="94_e4jql"]
+[ext_resource type="Texture2D" uid="uid://dlw5owvinu51l" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-east/frame_003.png" id="95_o4ou6"]
+[ext_resource type="Texture2D" uid="uid://b6cvimfhtmm12" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-east/frame_004.png" id="96_pqgh7"]
+[ext_resource type="Texture2D" uid="uid://bn3lf77basyl7" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-east/frame_005.png" id="97_7677p"]
+[ext_resource type="Texture2D" uid="uid://c7b2jvnoi12c5" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-east/frame_006.png" id="98_2w0ue"]
+[ext_resource type="Texture2D" uid="uid://ccgpbah47q7tk" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-east/frame_007.png" id="99_c2xmi"]
+[ext_resource type="Texture2D" uid="uid://d11or82i07cla" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-east/frame_008.png" id="100_a0jv1"]
+[ext_resource type="Texture2D" uid="uid://dbuagq2xttnjm" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-west/frame_000.png" id="101_b1t1q"]
+[ext_resource type="Texture2D" uid="uid://da4y7uv8xaxhm" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-west/frame_001.png" id="102_iycca"]
+[ext_resource type="Texture2D" uid="uid://dyi4rdausfnwc" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-west/frame_002.png" id="103_vvywp"]
+[ext_resource type="Texture2D" uid="uid://dqho8o1rpfg82" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-west/frame_003.png" id="104_foqpp"]
+[ext_resource type="Texture2D" uid="uid://cdiw0v85tadt7" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-west/frame_004.png" id="105_xlgtf"]
+[ext_resource type="Texture2D" uid="uid://yqn4e5fwemva" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-west/frame_005.png" id="106_klsi3"]
+[ext_resource type="Texture2D" uid="uid://b0t84ws0u63q0" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-west/frame_006.png" id="107_s8vn8"]
+[ext_resource type="Texture2D" uid="uid://cg6mble8woiqu" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-west/frame_007.png" id="108_q7jrw"]
+[ext_resource type="Texture2D" uid="uid://bgmsi4k6knjnj" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/north-west/frame_008.png" id="109_2a0v0"]
+[ext_resource type="Texture2D" uid="uid://br2d123atbxen" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south/frame_000.png" id="110_b60p2"]
+[ext_resource type="Texture2D" uid="uid://bnfd8k1ve57t0" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south/frame_001.png" id="111_l037q"]
+[ext_resource type="Texture2D" uid="uid://den32eeuovgah" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south/frame_002.png" id="112_3s2ab"]
+[ext_resource type="Texture2D" uid="uid://nytvakls3pgr" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south/frame_003.png" id="113_owfs3"]
+[ext_resource type="Texture2D" uid="uid://u2q75o4tydpe" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south/frame_004.png" id="114_e8v3k"]
+[ext_resource type="Texture2D" uid="uid://bgkyx868pjfct" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south/frame_005.png" id="115_k3e51"]
+[ext_resource type="Texture2D" uid="uid://c1ctwtjqmtwi7" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south/frame_006.png" id="116_1np5i"]
+[ext_resource type="Texture2D" uid="uid://bwdx44cl78ru1" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south/frame_007.png" id="117_j6qaq"]
+[ext_resource type="Texture2D" uid="uid://b2t2o4deun2fs" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south/frame_008.png" id="118_kyqrj"]
+[ext_resource type="Texture2D" uid="uid://cbgjvw8lvr1fb" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-east/frame_000.png" id="119_2slvx"]
+[ext_resource type="Texture2D" uid="uid://dilb0yui5fiw0" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-east/frame_001.png" id="120_xdj8j"]
+[ext_resource type="Texture2D" uid="uid://cxcx7lxpbnnwo" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-east/frame_002.png" id="121_rcce8"]
+[ext_resource type="Texture2D" uid="uid://dwxj0emskpbv4" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-east/frame_003.png" id="122_0ih6a"]
+[ext_resource type="Texture2D" uid="uid://cl3ad23en7c7u" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-east/frame_004.png" id="123_nhq2f"]
+[ext_resource type="Texture2D" uid="uid://ds8wkw0kn6gmd" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-east/frame_005.png" id="124_7ss0c"]
+[ext_resource type="Texture2D" uid="uid://lukvdrjshqyj" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-east/frame_006.png" id="125_rvgw0"]
+[ext_resource type="Texture2D" uid="uid://chbcbneps5hcw" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-east/frame_007.png" id="126_2vhtl"]
+[ext_resource type="Texture2D" uid="uid://c5lcu80aj7xbk" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-east/frame_008.png" id="127_bavrr"]
+[ext_resource type="Texture2D" uid="uid://b05cvpgi4t8bi" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-west/frame_000.png" id="128_si2eh"]
+[ext_resource type="Texture2D" uid="uid://cumq2o4qhw3x7" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-west/frame_001.png" id="129_0erea"]
+[ext_resource type="Texture2D" uid="uid://dqqv3uwnro7pp" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-west/frame_002.png" id="130_kbql8"]
+[ext_resource type="Texture2D" uid="uid://duiup24vxbtxc" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-west/frame_003.png" id="131_allts"]
+[ext_resource type="Texture2D" uid="uid://cgnxsi3nggxk1" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-west/frame_004.png" id="132_pb68r"]
+[ext_resource type="Texture2D" uid="uid://cc5w8mt1e7t7q" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-west/frame_005.png" id="133_tsfvt"]
+[ext_resource type="Texture2D" uid="uid://dm7trdyi3whi3" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-west/frame_006.png" id="134_sdgme"]
+[ext_resource type="Texture2D" uid="uid://d3osc800blu6a" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-west/frame_007.png" id="135_3sx82"]
+[ext_resource type="Texture2D" uid="uid://ddr0smjvb2ljs" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/south-west/frame_008.png" id="136_00ws6"]
+[ext_resource type="Texture2D" uid="uid://dkhcutxasg3n3" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/west/frame_000.png" id="137_l6w2x"]
+[ext_resource type="Texture2D" uid="uid://brn8kcd6ck2mc" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/west/frame_001.png" id="138_jbse8"]
+[ext_resource type="Texture2D" uid="uid://dppstm5k013nk" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/west/frame_002.png" id="139_7vvxm"]
+[ext_resource type="Texture2D" uid="uid://km3e3gdxd7pq" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/west/frame_003.png" id="140_ely8o"]
+[ext_resource type="Texture2D" uid="uid://dw87doxd3dn0w" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/west/frame_004.png" id="141_obsl1"]
+[ext_resource type="Texture2D" uid="uid://ctx1d0eja4la2" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/west/frame_005.png" id="142_10qc6"]
+[ext_resource type="Texture2D" uid="uid://d0vyiueqt01jy" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/west/frame_006.png" id="143_mub7c"]
+[ext_resource type="Texture2D" uid="uid://b4uh0m8cpdx28" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/west/frame_007.png" id="144_oewf7"]
+[ext_resource type="Texture2D" uid="uid://cs2d3s0av5wix" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Skeleton_takes_fatal_hit_bones_fly_apart_in_all_di-c7c2e3f5/west/frame_008.png" id="145_x23ae"]
+[ext_resource type="Texture2D" uid="uid://didc3hqh5bqgb" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/east/frame_000.png" id="146_bpeue"]
+[ext_resource type="Texture2D" uid="uid://fvkddqd24o7o" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/east/frame_001.png" id="147_uq3sm"]
+[ext_resource type="Texture2D" uid="uid://cm7wb2omx2p5m" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/east/frame_002.png" id="148_k8573"]
+[ext_resource type="Texture2D" uid="uid://cjj3af6xpjg88" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/east/frame_003.png" id="149_t88ht"]
+[ext_resource type="Texture2D" uid="uid://87t6kpdx6twu" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/east/frame_004.png" id="150_r2tdf"]
+[ext_resource type="Texture2D" uid="uid://51oauiuqaeu1" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/east/frame_005.png" id="151_cvc54"]
+[ext_resource type="Texture2D" uid="uid://dtrhxs0ftipie" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/east/frame_006.png" id="152_586nc"]
+[ext_resource type="Texture2D" uid="uid://d0rcn2jk3axr4" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/east/frame_007.png" id="153_0uj3d"]
+[ext_resource type="Texture2D" uid="uid://c8oigpos10cab" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north/frame_000.png" id="154_p15j6"]
+[ext_resource type="Texture2D" uid="uid://dordkxepeh467" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north/frame_001.png" id="155_rurml"]
+[ext_resource type="Texture2D" uid="uid://q1k0qxwjop23" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north/frame_002.png" id="156_d1dnp"]
+[ext_resource type="Texture2D" uid="uid://dnjbsyus6bub8" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north/frame_003.png" id="157_rhg7o"]
+[ext_resource type="Texture2D" uid="uid://c4h6cea4q74sc" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north/frame_004.png" id="158_fkxjm"]
+[ext_resource type="Texture2D" uid="uid://b8winhywg1vp3" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north/frame_005.png" id="159_h5jon"]
+[ext_resource type="Texture2D" uid="uid://1kfwtwfx3w6j" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north/frame_006.png" id="160_0i2kn"]
+[ext_resource type="Texture2D" uid="uid://dvubhxw07b5ld" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north/frame_007.png" id="161_1cc4y"]
+[ext_resource type="Texture2D" uid="uid://01628tfdxdme" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north-east/frame_000.png" id="162_wxqrk"]
+[ext_resource type="Texture2D" uid="uid://dr1rm6bxe51u0" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north-east/frame_001.png" id="163_eqws0"]
+[ext_resource type="Texture2D" uid="uid://c2qef0h58pklk" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north-east/frame_002.png" id="164_m5ala"]
+[ext_resource type="Texture2D" uid="uid://bh82y6jpxttx6" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north-east/frame_003.png" id="165_xs35i"]
+[ext_resource type="Texture2D" uid="uid://coowoi0yyv0lp" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north-east/frame_004.png" id="166_hnp2o"]
+[ext_resource type="Texture2D" uid="uid://b61xu8hbqkosc" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north-east/frame_005.png" id="167_ogtl2"]
+[ext_resource type="Texture2D" uid="uid://d3ash20a1stc5" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north-east/frame_006.png" id="168_0bh0g"]
+[ext_resource type="Texture2D" uid="uid://bu1dei76oq2i3" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north-east/frame_007.png" id="169_5ugx1"]
+[ext_resource type="Texture2D" uid="uid://bqa4dph8jidpb" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north-west/frame_000.png" id="170_u3sgh"]
+[ext_resource type="Texture2D" uid="uid://c4jhosdxhrmex" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north-west/frame_001.png" id="171_p6o03"]
+[ext_resource type="Texture2D" uid="uid://c7a2re0lppik4" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north-west/frame_002.png" id="172_bisle"]
+[ext_resource type="Texture2D" uid="uid://covjf5sse1n1d" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north-west/frame_003.png" id="173_uvutf"]
+[ext_resource type="Texture2D" uid="uid://hw0p0gbohlpv" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north-west/frame_004.png" id="174_htxwe"]
+[ext_resource type="Texture2D" uid="uid://dqhouhnio5pw8" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north-west/frame_005.png" id="175_kwla7"]
+[ext_resource type="Texture2D" uid="uid://cvx7fg5hgyqhq" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north-west/frame_006.png" id="176_tyyqf"]
+[ext_resource type="Texture2D" uid="uid://cmumdooysv3nf" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/north-west/frame_007.png" id="177_qdoea"]
+[ext_resource type="Texture2D" uid="uid://cgao8eiuu8jic" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south/frame_000.png" id="178_uvs10"]
+[ext_resource type="Texture2D" uid="uid://di42hp7xryons" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south/frame_001.png" id="179_m0mme"]
+[ext_resource type="Texture2D" uid="uid://o5i7iaoheujp" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south/frame_002.png" id="180_5tc7l"]
+[ext_resource type="Texture2D" uid="uid://b4vahcflkxp4t" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south/frame_003.png" id="181_mkedy"]
+[ext_resource type="Texture2D" uid="uid://dwiyay4s5qwgm" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south/frame_004.png" id="182_g1lql"]
+[ext_resource type="Texture2D" uid="uid://et4fgmaj851w" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south/frame_005.png" id="183_aqtde"]
+[ext_resource type="Texture2D" uid="uid://cd54mg3uowujm" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south/frame_006.png" id="184_4toho"]
+[ext_resource type="Texture2D" uid="uid://dmt0n7wqv5oet" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south/frame_007.png" id="185_0okf5"]
+[ext_resource type="Texture2D" uid="uid://dos1oqyyjic3s" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south-east/frame_000.png" id="186_yv22f"]
+[ext_resource type="Texture2D" uid="uid://b4w6llvojb5rk" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south-east/frame_001.png" id="187_haf4q"]
+[ext_resource type="Texture2D" uid="uid://bkllvj3fdryw8" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south-east/frame_002.png" id="188_uh0h7"]
+[ext_resource type="Texture2D" uid="uid://c5bpvt0hw2u7s" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south-east/frame_003.png" id="189_p8yg1"]
+[ext_resource type="Texture2D" uid="uid://dxwje1ny0iqp4" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south-east/frame_004.png" id="190_klys3"]
+[ext_resource type="Texture2D" uid="uid://8ch2xp52xjfh" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south-east/frame_005.png" id="191_traro"]
+[ext_resource type="Texture2D" uid="uid://cyfi65vr10f62" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south-east/frame_006.png" id="192_o5coa"]
+[ext_resource type="Texture2D" uid="uid://dqhentn4yofie" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south-east/frame_007.png" id="193_ias34"]
+[ext_resource type="Texture2D" uid="uid://cohv673nxh1un" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south-west/frame_000.png" id="194_oio6t"]
+[ext_resource type="Texture2D" uid="uid://ct6evwl5ldys1" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south-west/frame_001.png" id="195_gcd0m"]
+[ext_resource type="Texture2D" uid="uid://bso3q80oh5dwj" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south-west/frame_002.png" id="196_kott0"]
+[ext_resource type="Texture2D" uid="uid://bhe7ck0i2id23" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south-west/frame_003.png" id="197_sp7fr"]
+[ext_resource type="Texture2D" uid="uid://b1ikh2ygf8vus" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south-west/frame_004.png" id="198_8mlor"]
+[ext_resource type="Texture2D" uid="uid://c4blbutyi7k4g" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south-west/frame_005.png" id="199_b51gs"]
+[ext_resource type="Texture2D" uid="uid://b1124dc8mcf0e" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south-west/frame_006.png" id="200_sort3"]
+[ext_resource type="Texture2D" uid="uid://by1j5llkhkumd" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/south-west/frame_007.png" id="201_xcbnb"]
+[ext_resource type="Texture2D" uid="uid://dwebjk6vb6cnu" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/west/frame_000.png" id="202_i4kx0"]
+[ext_resource type="Texture2D" uid="uid://d2cj8e31m4es8" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/west/frame_001.png" id="203_rtqbk"]
+[ext_resource type="Texture2D" uid="uid://cd50ty8ylg36u" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/west/frame_002.png" id="204_nia2m"]
+[ext_resource type="Texture2D" uid="uid://blwky8056wq21" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/west/frame_003.png" id="205_7fkxp"]
+[ext_resource type="Texture2D" uid="uid://b5rm83tsywsvs" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/west/frame_004.png" id="206_kgd72"]
+[ext_resource type="Texture2D" uid="uid://bsx11u25signp" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/west/frame_005.png" id="207_ecrnd"]
+[ext_resource type="Texture2D" uid="uid://hcne322ong2l" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/west/frame_006.png" id="208_jtdtb"]
+[ext_resource type="Texture2D" uid="uid://bfdvvqkx5tgt8" path="res://assets/sprites/enemies/skeleton_archer/states/arquero_esqueleto/animations/Running-149a4f32/west/frame_007.png" id="209_7ooa1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_skeletonarcher"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ibw4p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7bm3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_kj821")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ys0kb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_1wlwx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_johd1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_vg6hn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_yxexy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_mi4mq")
+}],
+"loop": true,
+"name": &"attack_east",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_o4bqp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_l0msi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_p7mes")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_elnbi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ktp3u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_morva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_08hb5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_isvbm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ivyd1")
+}],
+"loop": true,
+"name": &"attack_north",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_b58so")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_51247")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_58fwm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_i6vmr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_jltvh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_qwc1o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_321x6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_igqfy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_2alxr")
+}],
+"loop": true,
+"name": &"attack_north-east",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_plgnp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_4pdor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_72ena")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_bwowg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_hftqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_53gqk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_tspi8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_nrgav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_vm1gx")
+}],
+"loop": true,
+"name": &"attack_north-west",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_sd5yy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_t6lkn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_i7rw6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_cfkec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_3obiy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_3cowm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_qgp45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_a5auj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_u8d7j")
+}],
+"loop": true,
+"name": &"attack_south",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("47_xx1hc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_u41jy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_mew8o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_32eaa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_7wjdm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_nhi58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_4yao3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_gve1g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_5kxvy")
+}],
+"loop": true,
+"name": &"attack_south-east",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("56_lxa0r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_ufne8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_m2whr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_kbw31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_02c77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_xaocw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_2d3ic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_c746r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_p7k3e")
+}],
+"loop": true,
+"name": &"attack_south-west",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("65_xiut4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_qtn0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_xcp0k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_h4n4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_f0y6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_rq61r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_jtrei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_rqp3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_b4via")
+}],
+"loop": true,
+"name": &"attack_west",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("74_p5cww")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_pbpbq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_drar1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_fun5k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_6wjpv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_seely")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_10vuq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_8ycfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_4uwmi")
+}],
+"loop": true,
+"name": &"muerte_east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("83_5ud7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_5dmif")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_wr6b0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_v7816")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_yslku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_4pd3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_jmnva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_5us7v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_7goj5")
+}],
+"loop": true,
+"name": &"muerte_north",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("92_0ye6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_7e8mc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_e4jql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_o4ou6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_pqgh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_7677p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_2w0ue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_c2xmi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_a0jv1")
+}],
+"loop": true,
+"name": &"muerte_north-east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("101_b1t1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_iycca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_vvywp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_foqpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_xlgtf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_klsi3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_s8vn8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_q7jrw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_2a0v0")
+}],
+"loop": true,
+"name": &"muerte_north-west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("110_b60p2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_l037q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_3s2ab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_owfs3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_e8v3k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_k3e51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_1np5i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_j6qaq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_kyqrj")
+}],
+"loop": true,
+"name": &"muerte_south",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("119_2slvx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_xdj8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_rcce8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_0ih6a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_nhq2f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_7ss0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_rvgw0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_2vhtl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_bavrr")
+}],
+"loop": true,
+"name": &"muerte_south-east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("128_si2eh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_0erea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_kbql8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_allts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_pb68r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_tsfvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_sdgme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_3sx82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_00ws6")
+}],
+"loop": true,
+"name": &"muerte_south-west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("137_l6w2x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_jbse8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_7vvxm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_ely8o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_obsl1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_10qc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_mub7c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_oewf7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_x23ae")
+}],
+"loop": true,
+"name": &"muerte_west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("146_bpeue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_uq3sm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_k8573")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_t88ht")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_r2tdf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_cvc54")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_586nc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_0uj3d")
+}],
+"loop": true,
+"name": &"run_east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("154_p15j6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_rurml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_d1dnp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_rhg7o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_fkxjm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_h5jon")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160_0i2kn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_1cc4y")
+}],
+"loop": true,
+"name": &"run_north",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("162_wxqrk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_eqws0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_m5ala")
+}, {
+"duration": 1.0,
+"texture": ExtResource("165_xs35i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("166_hnp2o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("167_ogtl2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("168_0bh0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("169_5ugx1")
+}],
+"loop": true,
+"name": &"run_north-east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("170_u3sgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("171_p6o03")
+}, {
+"duration": 1.0,
+"texture": ExtResource("172_bisle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("173_uvutf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174_htxwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175_kwla7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("176_tyyqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("177_qdoea")
+}],
+"loop": true,
+"name": &"run_north-west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("178_uvs10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("179_m0mme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("180_5tc7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("181_mkedy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("182_g1lql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("183_aqtde")
+}, {
+"duration": 1.0,
+"texture": ExtResource("184_4toho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("185_0okf5")
+}],
+"loop": true,
+"name": &"run_south",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("186_yv22f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("187_haf4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("188_uh0h7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("189_p8yg1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("190_klys3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("191_traro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("192_o5coa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("193_ias34")
+}],
+"loop": true,
+"name": &"run_south-east",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("194_oio6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("195_gcd0m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("196_kott0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("197_sp7fr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("198_8mlor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("199_b51gs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("200_sort3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_xcbnb")
+}],
+"loop": true,
+"name": &"run_south-west",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("202_i4kx0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_rtqbk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_nia2m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_7fkxp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("206_kgd72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("207_ecrnd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("208_jtdtb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("209_7ooa1")
+}],
+"loop": true,
+"name": &"run_west",
+"speed": 10.0
+}]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_skeletonarcher"]
 radius = 28.0
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_skeletonarcher"]
-animations = [{
-"frames": [],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[node name="SkeletonArcher" type="CharacterBody2D"]
+[node name="SkeletonArcher" type="CharacterBody2D" unique_id=1673397293]
 collision_layer = 2
 script = ExtResource("1_script")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=224671973]
 sprite_frames = SubResource("SpriteFrames_skeletonarcher")
-animation = &"default"
+animation = &"run_east"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1684670510]
 shape = SubResource("CircleShape2D_skeletonarcher")
 
-[node name="BarraVida" type="ProgressBar" parent="."]
+[node name="BarraVida" type="ProgressBar" parent="." unique_id=2018876744]
 offset_left = -30.0
 offset_top = -50.0
 offset_right = 30.0

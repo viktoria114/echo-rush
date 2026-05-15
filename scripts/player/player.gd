@@ -67,6 +67,11 @@ func _manejar_movimiento() -> void:
 		Input.get_axis("ui_left", "ui_right"),
 		Input.get_axis("ui_up", "ui_down")
 	)
+	if Input.is_physical_key_pressed(KEY_A): dir.x -= 1.0
+	if Input.is_physical_key_pressed(KEY_D): dir.x += 1.0
+	if Input.is_physical_key_pressed(KEY_W): dir.y -= 1.0
+	if Input.is_physical_key_pressed(KEY_S): dir.y += 1.0
+	dir = dir.clamp(Vector2(-1.0, -1.0), Vector2(1.0, 1.0))
 	if dir != Vector2.ZERO:
 		dir = dir.normalized()
 		_actualizar_direccion(dir)

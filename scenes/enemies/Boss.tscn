@@ -35,15 +35,14 @@
 [ext_resource type="Texture2D" uid="uid://bkfdvoitctbnp" path="res://assets/sprites/enemies/slime_boss/animations/muerte/south/frame_006.png" id="33_81q7r"]
 [ext_resource type="Texture2D" uid="uid://dbsfprix217d0" path="res://assets/sprites/enemies/slime_boss/animations/muerte/south/frame_007.png" id="34_nm3jd"]
 [ext_resource type="Texture2D" uid="uid://ltxaj3ryvg7p" path="res://assets/sprites/enemies/slime_boss/animations/muerte/south/frame_008.png" id="35_55myo"]
-
-[ext_resource type="Texture2D" uid="uid://brmzl4hkp3001" path="res://assets/sprites/enemies/slime_boss/rotations/east.png" id="36_bre"]
-[ext_resource type="Texture2D" uid="uid://brmzl4hkp3002" path="res://assets/sprites/enemies/slime_boss/rotations/north.png" id="37_brn"]
-[ext_resource type="Texture2D" uid="uid://brmzl4hkp3003" path="res://assets/sprites/enemies/slime_boss/rotations/north-east.png" id="38_brne"]
-[ext_resource type="Texture2D" uid="uid://brmzl4hkp3004" path="res://assets/sprites/enemies/slime_boss/rotations/north-west.png" id="39_brnw"]
-[ext_resource type="Texture2D" uid="uid://brmzl4hkp3005" path="res://assets/sprites/enemies/slime_boss/rotations/south.png" id="40_brs"]
-[ext_resource type="Texture2D" uid="uid://brmzl4hkp3006" path="res://assets/sprites/enemies/slime_boss/rotations/south-east.png" id="41_brse"]
-[ext_resource type="Texture2D" uid="uid://brmzl4hkp3007" path="res://assets/sprites/enemies/slime_boss/rotations/south-west.png" id="42_brsw"]
-[ext_resource type="Texture2D" uid="uid://brmzl4hkp3008" path="res://assets/sprites/enemies/slime_boss/rotations/west.png" id="43_brw"]
+[ext_resource type="Texture2D" uid="uid://d3w1lhxmjbmrh" path="res://assets/sprites/enemies/slime_boss/rotations/east.png" id="36_bre"]
+[ext_resource type="Texture2D" uid="uid://cyq6dkfurrqy5" path="res://assets/sprites/enemies/slime_boss/rotations/north.png" id="37_brn"]
+[ext_resource type="Texture2D" uid="uid://crdjmeogapeko" path="res://assets/sprites/enemies/slime_boss/rotations/north-east.png" id="38_brne"]
+[ext_resource type="Texture2D" uid="uid://phaw8vm0q574" path="res://assets/sprites/enemies/slime_boss/rotations/north-west.png" id="39_brnw"]
+[ext_resource type="Texture2D" uid="uid://dvxjsrfdi0aau" path="res://assets/sprites/enemies/slime_boss/rotations/south.png" id="40_brs"]
+[ext_resource type="Texture2D" uid="uid://t3lt80s6k3tb" path="res://assets/sprites/enemies/slime_boss/rotations/south-east.png" id="41_brse"]
+[ext_resource type="Texture2D" uid="uid://q3virwjw0hry" path="res://assets/sprites/enemies/slime_boss/rotations/south-west.png" id="42_brsw"]
+[ext_resource type="Texture2D" uid="uid://bdlnayw4k3koy" path="res://assets/sprites/enemies/slime_boss/rotations/west.png" id="43_brw"]
 
 [sub_resource type="CircleShape2D" id="BossColShape"]
 radius = 42.0
@@ -77,7 +76,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"attack_north-west",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -109,7 +108,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"attack_south",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -126,7 +125,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"attack_south-east",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -143,39 +142,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"attack_south-west",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("27_bntob")
-}, {
-"duration": 1.0,
-"texture": ExtResource("28_74lh4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("29_xkq1l")
-}, {
-"duration": 1.0,
-"texture": ExtResource("30_pxb04")
-}, {
-"duration": 1.0,
-"texture": ExtResource("31_js16t")
-}, {
-"duration": 1.0,
-"texture": ExtResource("32_m8s58")
-}, {
-"duration": 1.0,
-"texture": ExtResource("33_81q7r")
-}, {
-"duration": 1.0,
-"texture": ExtResource("34_nm3jd")
-}, {
-"duration": 1.0,
-"texture": ExtResource("35_55myo")
-}],
-"loop": false,
-"name": &"muerte_south-west",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -240,6 +207,38 @@ animations = [{
 "loop": true,
 "name": &"idle_west",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_bntob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_74lh4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_xkq1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_pxb04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_js16t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_m8s58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_81q7r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_nm3jd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_55myo")
+}],
+"loop": false,
+"name": &"muerte_south-west",
+"speed": 10.0
 }]
 
 [node name="SlimeRey" type="CharacterBody2D" unique_id=129301062]
@@ -254,4 +253,4 @@ shape = SubResource("BossColShape")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1595304208]
 sprite_frames = SubResource("SpriteFrames_8s4qn")
-animation = &"idle_south"
+animation = &"muerte_south-west"

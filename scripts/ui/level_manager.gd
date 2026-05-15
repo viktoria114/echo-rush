@@ -27,8 +27,23 @@ func _ready() -> void:
 	Economy.connect("monedas_cambiadas",        hud.actualizar_monedas)
 	KeywordSystem.connect("keywords_actualizadas", hud.actualizar_keywords)
 
+	_crear_boton_debug()
 	await get_tree().process_frame
 	wave_manager.iniciar_siguiente_oleada()
+
+func _crear_boton_debug() -> void:
+	var btn := Button.new()
+	btn.text = "Saltear nivel"
+	btn.anchor_left   = 0.0
+	btn.anchor_top    = 1.0
+	btn.anchor_right  = 0.0
+	btn.anchor_bottom = 1.0
+	btn.offset_left   = 10.0
+	btn.offset_right  = 160.0
+	btn.offset_top    = -45.0
+	btn.offset_bottom = -10.0
+	hud.add_child(btn)
+	btn.pressed.connect(_abrir_tienda)
 
 func _en_oleada_completada(numero: int) -> void:
 	if numero >= wave_manager.waves_per_level:

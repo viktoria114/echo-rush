@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://raelscene0001" path="res://scenes/characters/Rael.tscn" id="3_rael"]
 [ext_resource type="PackedScene" uid="uid://lenascene0001" path="res://scenes/characters/Lena.tscn" id="4_lena"]
 [ext_resource type="PackedScene" uid="uid://zariscene0001" path="res://scenes/characters/Zari.tscn" id="6_zari"]
-[ext_resource type="PackedScene" uid="uid://skeleton_archer_01" path="res://scenes/enemies/SkeletonArcher.tscn" id="7_skeleton"]
+[ext_resource type="PackedScene" uid="uid://dkjsxony47vgn" path="res://scenes/enemies/SkeletonArcher.tscn" id="7_skeleton"]
 [ext_resource type="PackedScene" uid="uid://troll_scene_01" path="res://scenes/enemies/Troll.tscn" id="8_troll"]
 [ext_resource type="PackedScene" uid="uid://boss_portal_01" path="res://scenes/enemies/BossPortal.tscn" id="10_portal"]
 [ext_resource type="PackedScene" uid="uid://hudscene0001" path="res://scenes/ui/HUD.tscn" id="9_hud"]

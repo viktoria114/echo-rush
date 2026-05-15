@@ -1,0 +1,227 @@
+{
+  "group_id": null,
+  "states": [
+    {
+      "character": {
+        "id": "f33f2c4d-1e1a-4275-9c82-fbc676b28910",
+        "name": "Massive minotaur boss, enormous hulking muscular body, dark deep red and burnt orange skin tone, large curved dark purple horns on top of head, pale bone white skull-like face with dark hollow eye sockets, minimal dark leather waist skirt armor, bare muscular chest with defined exaggerated muscles, huge powerful fists as weapons, wide heavy stance, battle scarred and intimidating, dominant and threatening silhouette. dark crimson red skin, deep red muscles, burnt orange highlights only on muscle peaks, no yellow, no orange skin, dark red dominant color throughout body",
+        "prompt": "Massive minotaur boss, enormous hulking muscular body, dark deep red and burnt orange skin tone, large curved dark purple horns on top of head, pale bone white skull-like face with dark hollow eye sockets, minimal dark leather waist skirt armor, bare muscular chest with defined exaggerated muscles, huge powerful fists as weapons, wide heavy stance, battle scarred and intimidating, dominant and threatening silhouette. dark crimson red skin, deep red muscles, burnt orange highlights only on muscle peaks, no yellow, no orange skin, dark red dominant color throughout body",
+        "size": {
+          "width": 180,
+          "height": 180
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-05-15T01:01:24.147928+00:00"
+      },
+      "folder": "states/Massive_minotaur_boss_enormous_hulking_muscular_bo",
+      "frames": {
+        "rotations": {
+          "south": "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/rotations/south.png",
+          "south-east": "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/rotations/south-east.png",
+          "east": "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/rotations/east.png",
+          "north-east": "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/rotations/north-east.png",
+          "north": "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/rotations/north.png",
+          "north-west": "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/rotations/north-west.png",
+          "west": "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/rotations/west.png",
+          "south-west": "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/rotations/south-west.png"
+        },
+        "animations": {
+          "Running-d1c34d59": {
+            "west": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/west/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/west/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/west/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/west/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/west/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/west/frame_005.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/west/frame_006.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/west/frame_007.png"
+            ],
+            "north": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north/frame_005.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north/frame_006.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north/frame_007.png"
+            ],
+            "east": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/east/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/east/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/east/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/east/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/east/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/east/frame_005.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/east/frame_006.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/east/frame_007.png"
+            ],
+            "south-west": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south-west/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south-west/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south-west/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south-west/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south-west/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south-west/frame_005.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south-west/frame_006.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south-west/frame_007.png"
+            ],
+            "south-east": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south-east/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south-east/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south-east/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south-east/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south-east/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south-east/frame_005.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south-east/frame_006.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south-east/frame_007.png"
+            ],
+            "north-east": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north-east/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north-east/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north-east/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north-east/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north-east/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north-east/frame_005.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north-east/frame_006.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north-east/frame_007.png"
+            ],
+            "north-west": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north-west/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north-west/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north-west/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north-west/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north-west/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north-west/frame_005.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north-west/frame_006.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/north-west/frame_007.png"
+            ],
+            "south": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south/frame_005.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south/frame_006.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Running-d1c34d59/south/frame_007.png"
+            ]
+          },
+          "onda_expansiva-70879294": {
+            "south": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/onda_expansiva-70879294/south/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/onda_expansiva-70879294/south/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/onda_expansiva-70879294/south/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/onda_expansiva-70879294/south/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/onda_expansiva-70879294/south/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/onda_expansiva-70879294/south/frame_005.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/onda_expansiva-70879294/south/frame_006.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/onda_expansiva-70879294/south/frame_007.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/onda_expansiva-70879294/south/frame_008.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/onda_expansiva-70879294/south/frame_009.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/onda_expansiva-70879294/south/frame_010.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/onda_expansiva-70879294/south/frame_011.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/onda_expansiva-70879294/south/frame_012.png"
+            ]
+          },
+          "muerte-fb3bc953": {
+            "south": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/muerte-fb3bc953/south/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/muerte-fb3bc953/south/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/muerte-fb3bc953/south/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/muerte-fb3bc953/south/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/muerte-fb3bc953/south/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/muerte-fb3bc953/south/frame_005.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/muerte-fb3bc953/south/frame_006.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/muerte-fb3bc953/south/frame_007.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/muerte-fb3bc953/south/frame_008.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/muerte-fb3bc953/south/frame_009.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/muerte-fb3bc953/south/frame_010.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/muerte-fb3bc953/south/frame_011.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/muerte-fb3bc953/south/frame_012.png"
+            ]
+          },
+          "Cross_Punch-8ce1a2e1": {
+            "south": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south/frame_005.png"
+            ],
+            "north-west": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north-west/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north-west/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north-west/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north-west/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north-west/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north-west/frame_005.png"
+            ],
+            "north": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north/frame_005.png"
+            ],
+            "west": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/west/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/west/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/west/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/west/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/west/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/west/frame_005.png"
+            ],
+            "north-east": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north-east/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north-east/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north-east/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north-east/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north-east/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/north-east/frame_005.png"
+            ],
+            "east": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/east/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/east/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/east/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/east/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/east/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/east/frame_005.png"
+            ],
+            "south-east": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-east/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-east/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-east/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-east/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-east/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-east/frame_005.png"
+            ],
+            "south-west-4248e7db": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-west-4248e7db/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-west-4248e7db/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-west-4248e7db/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-west-4248e7db/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-west-4248e7db/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-west-4248e7db/frame_005.png"
+            ],
+            "south-west-51b8b21a": [
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-west-51b8b21a/frame_000.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-west-51b8b21a/frame_001.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-west-51b8b21a/frame_002.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-west-51b8b21a/frame_003.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-west-51b8b21a/frame_004.png",
+              "states/Massive_minotaur_boss_enormous_hulking_muscular_bo/animations/Cross_Punch-8ce1a2e1/south-west-51b8b21a/frame_005.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.0",
+  "export_date": "2026-05-15T19:39:48.132407"
+}

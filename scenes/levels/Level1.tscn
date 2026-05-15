@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://exxl2bll56av" path="res://assets/backgrounds/village/2dvillageassetpackwithoutilne/house2 with props/strokevillage0009.png" id="8_jsker"]
 [ext_resource type="Texture2D" uid="uid://8ymxxuwpqepa" path="res://assets/backgrounds/village/2dvillageassetpackwithoutilne/house2 with props/strokevillage0011.png" id="9_6ex7q"]
 [ext_resource type="PackedScene" uid="uid://8xas8e3hg30w" path="res://scenes/enemies/Slime.tscn" id="9_slime"]
-[ext_resource type="PackedScene" uid="uid://m2gd2fh56clc" path="res://scenes/enemies/Goblin.tscn" id="10_goblin"]
+[ext_resource type="PackedScene" uid="uid://djb2dmchmlkst" path="res://scenes/enemies/Goblin.tscn" id="10_goblin"]
 [ext_resource type="Texture2D" uid="uid://cqicwu1vbyhxh" path="res://assets/backgrounds/village/2dvillageassetpackwithoutilne/house2 with props/strokevillage0013.png" id="10_ijfg6"]
 [ext_resource type="Texture2D" uid="uid://beq5gebhrokxp" path="res://assets/backgrounds/village/2dvillageassetpackwithoutilne/house2 with props/strokevillage0015.png" id="11_ijoxy"]
 [ext_resource type="Texture2D" uid="uid://dx78kxmcgnr6g" path="res://assets/backgrounds/village/2dvillageassetpackwithoutilne/props/strokevillage0017.png" id="12_l40or"]
