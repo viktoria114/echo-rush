@@ -119,6 +119,10 @@ func _disparar(dir: Vector2) -> void:
 	get_tree().current_scene.add_child(proyectil)
 	proyectil.global_position = global_position
 	proyectil.iniciar(dir, Config.PLAYER_ATTACK_DAMAGE)
+	var visual := proyectil.get_node_or_null("Visual") as Polygon2D
+	if visual:
+		visual.color = Color(0.4, 0.85, 1.0, 1.0)
+		visual.scale = Vector2(2.0, 2.5)
 
 	await get_tree().create_timer(0.25).timeout
 	sprite.play(_idle_anim(ultima_dir))
