@@ -3,6 +3,7 @@ extends Area2D
 const VALOR := 10
 const RADIO := 8.0
 const VIDA_UTIL := 8.0
+const SONIDO_MONEDA := preload("res://assets/audio/sfx/recogerMoneda.ogg")
 
 var _recogida := false
 
@@ -27,7 +28,16 @@ func _on_body_entered(cuerpo: Node2D) -> void:
 	if cuerpo.is_in_group("jugador"):
 		_recogida = true
 		Economy.ganar(VALOR)
+		_reproducir_sonido()
 		queue_free()
+
+func _reproducir_sonido() -> void:
+	var player := AudioStreamPlayer.new()
+	player.stream = SONIDO_MONEDA
+	player.bus = &"SFX"
+	get_tree().root.add_child(player)
+	player.play()
+	player.finished.connect(player.queue_free)
 
 func _desvanecer() -> void:
 	if not _recogida:
