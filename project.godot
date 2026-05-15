@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Echo Rush"
-run/main_scene="res://scenes/ui/MainMenu.tscn"
+run/main_scene="res://scenes/opening/opening.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://bjdwygcvv4awe"
 
 [autoload]
 
@@ -22,6 +26,18 @@ Economy="*res://scripts/systems/economy.gd"
 KeywordSystem="*res://scripts/systems/keyword_system.gd"
 EchoAPI="*res://scripts/systems/echo_api.gd"
 UpgradeSystem="*res://scripts/systems/upgrade_system.gd"
+AppConfig="*uid://cjke6crjg14a0"
+SceneLoader="*uid://cbwmrnp0af35y"
+ProjectMusicController="*uid://r5t485lr3p7t"
+ProjectUISoundController="*uid://cc37235kj4384"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/maaacks_game_template/plugin.cfg")
+
+[gui]
+
+theme/custom="res://addons/maaacks_game_template/examples/resources/themes/expedition.tres"
 
 [input]
 
@@ -31,6 +47,16 @@ attack={
 , Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
 ]
 }
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://addons/maaacks_game_template/base/translations/menus_translations.en.translation", "res://addons/maaacks_game_template/base/translations/menus_translations.fr.translation")
+
+[maaacks_game_template]
+
+disable_install_audio_busses=true
+disable_update_check=false
+disable_install_wizard=true
 
 [layer_names]
 

@@ -3,6 +3,8 @@ extends Node2D
 @export var proxima_escena: String = ""
 
 const SHOP_ESCENA := preload("res://scenes/ui/Shop.tscn")
+const MUSICA_BOSS := preload("res://assets/audio/music/boss.ogg")
+const MUSICA_NIVEL := preload("res://assets/audio/music/nivel.ogg")
 
 @onready var wave_manager: Node = $WaveManager
 @onready var hud: CanvasLayer = $HUD
@@ -41,7 +43,11 @@ func _en_nivel_completado() -> void:
 func _en_boss_spawneado(boss: Node) -> void:
 	hud.mostrar_barra_boss(boss.get("vida_max_boss"))
 	boss.connect("boss_vida_cambiada", hud.actualizar_barra_boss)
-	boss.connect("enemigo_muerto", func() -> void: hud.ocultar_barra_boss())
+	boss.connect("enemigo_muerto", func() -> void:
+		hud.ocultar_barra_boss()
+		ProjectMusicController.play_stream(MUSICA_NIVEL)
+	)
+	ProjectMusicController.play_stream(MUSICA_BOSS)
 
 func _abrir_tienda() -> void:
 	var tienda := SHOP_ESCENA.instantiate()

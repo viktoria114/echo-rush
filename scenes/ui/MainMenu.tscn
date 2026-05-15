@@ -6,9 +6,6 @@
 script = ExtResource("1_menu")
 
 [node name="Fondo" type="ColorRect" parent="." unique_id=745429018]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
 color = Color(0.05, 0.05, 0.12, 1)
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=191140176]
