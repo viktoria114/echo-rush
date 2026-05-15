@@ -1,5 +1,7 @@
 extends "res://scripts/enemies/enemy_base.gd"
 
+const SFX_MUERTE = preload("res://assets/audio/sfx/trollMuerte.ogg")
+
 func _ready() -> void:
 	super._ready()
 	vida = 120
@@ -7,6 +9,10 @@ func _ready() -> void:
 	dano = 18
 	rango_ataque = 65.0
 	_generar_visual()
+
+func _post_morir() -> void:
+	_reproducir_sonido_muerte(SFX_MUERTE)
+	queue_free()
 
 # Pentágono verde oscuro grande — placeholder de troll
 func _generar_visual() -> void:

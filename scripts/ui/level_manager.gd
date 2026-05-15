@@ -5,6 +5,7 @@ extends Node2D
 const SHOP_ESCENA := preload("res://scenes/ui/Shop.tscn")
 const MUSICA_BOSS := preload("res://assets/audio/music/boss.ogg")
 const MUSICA_NIVEL := preload("res://assets/audio/music/nivel.ogg")
+const PAUSA_ESCENA := preload("res://scenes/windows/pause_menu_layer.tscn")
 
 @onready var wave_manager: Node = $WaveManager
 @onready var hud: CanvasLayer = $HUD
@@ -13,6 +14,16 @@ const MUSICA_NIVEL := preload("res://assets/audio/music/nivel.ogg")
 @onready var puntos_spawn: Node2D = $PuntosSpawn
 
 func _ready() -> void:
+	# Música: arranca nivel.ogg si la escena no tiene BackgroundMusicPlayer propio
+	if not get_node_or_null("BackgroundMusicPlayer"):
+		ProjectMusicController.play_stream(MUSICA_NIVEL)
+
+	# Pausa: añade la capa si la escena (p. ej. Level1) no la tiene
+	if not get_node_or_null("PauseMenuLayer"):
+		var capa := PAUSA_ESCENA.instantiate()
+		capa.name = "PauseMenuLayer"
+		add_child(capa)
+
 	wave_manager.contenedor_enemigos = enemigos
 	wave_manager.puntos_spawn = puntos_spawn.get_children()
 

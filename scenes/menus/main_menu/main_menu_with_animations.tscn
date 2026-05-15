@@ -401,9 +401,6 @@ offset_bottom = -4.0
 [node name="VersionContainer" parent="VersionMargin" index="0" unique_id=1603969262]
 modulate = Color(1, 1, 1, 0)
 
-[node name="VersionLabel" parent="VersionMargin/VersionContainer" index="0" unique_id=793266470]
-text = "v1.0.0"
-
 [node name="NewGameConfirmation" parent="." index="7" unique_id=291913255 instance=ExtResource("5_6xh1d")]
 unique_name_in_owner = true
 visible = false

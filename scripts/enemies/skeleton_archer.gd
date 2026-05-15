@@ -1,5 +1,6 @@
 extends "res://scripts/enemies/enemy_base.gd"
 
+const SFX_MUERTE = preload("res://assets/audio/sfx/esqueletoMuerte.ogg")
 const MIN_DIST := 180.0
 const MAX_DIST := 320.0
 const COOLDOWN_DISPARO := 2.0
@@ -127,6 +128,7 @@ func _disparar(dir: Vector2) -> void:
 	disparando = false
 
 func _post_morir() -> void:
+	_reproducir_sonido_muerte(SFX_MUERTE)
 	var anim := "muerte_" + direccion
 	if sprite.sprite_frames.has_animation(anim):
 		sprite.sprite_frames.set_animation_loop(anim, false)

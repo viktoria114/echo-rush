@@ -165,3 +165,101 @@ scenes/characters/Rael.tscn
 scenes/levels/Level1.tscn
 ---
 
+## Session End: 20260515_181841
+### Commits
+1507653 Merge remote-tracking branch 'origin/maty'
+f7484d8 Merge origin/main into maty — keep Level1 map from maty
+0d24ddd Merge branch 'main' of https://github.com/viktoria114/echo-rush
+8511aa0 Finished level 1
+### Uncommitted Changes
+production/session-logs/agent-audit.log
+project.godot
+scripts/config.gd
+scripts/enemies/enemy_base.gd
+scripts/enemies/goblin.gd
+scripts/enemies/mage.gd
+scripts/enemies/skeleton_archer.gd
+scripts/enemies/slime.gd
+scripts/enemies/troll.gd
+scripts/player/player.gd
+---
+
+## Session End: 20260515_183305
+### Commits
+1507653 Merge remote-tracking branch 'origin/maty'
+f7484d8 Merge origin/main into maty — keep Level1 map from maty
+0d24ddd Merge branch 'main' of https://github.com/viktoria114/echo-rush
+8511aa0 Finished level 1
+### Uncommitted Changes
+production/session-logs/agent-audit.log
+production/session-logs/session-log.md
+project.godot
+scenes/windows/pause_menu_layer.gd
+scenes/windows/pause_menu_layer.tscn
+scripts/config.gd
+scripts/enemies/enemy_base.gd
+scripts/enemies/goblin.gd
+scripts/enemies/mage.gd
+scripts/enemies/skeleton_archer.gd
+scripts/enemies/slime.gd
+scripts/enemies/troll.gd
+scripts/player/player.gd
+scripts/ui/level_manager.gd
+---
+
+## Session End: 20260515_183731
+### Commits
+1507653 Merge remote-tracking branch 'origin/maty'
+f7484d8 Merge origin/main into maty — keep Level1 map from maty
+0d24ddd Merge branch 'main' of https://github.com/viktoria114/echo-rush
+8511aa0 Finished level 1
+### Uncommitted Changes
+production/session-logs/agent-audit.log
+production/session-logs/session-log.md
+project.godot
+scenes/windows/pause_menu_layer.gd
+scenes/windows/pause_menu_layer.tscn
+scripts/config.gd
+scripts/enemies/enemy_base.gd
+scripts/enemies/goblin.gd
+scripts/enemies/mage.gd
+scripts/enemies/skeleton_archer.gd
+scripts/enemies/slime.gd
+scripts/enemies/troll.gd
+scripts/player/player.gd
+scripts/ui/level_manager.gd
+---
+
+## Session End: 20260515_184713
+### Commits
+745e7f4 sprites goblin boss y slime boss actualizados; fix visual proyectil de Lena
+a48d72c Merge branch 'main' of https://github.com/viktoria114/echo-rush
+85cb001 nuevos sprites y bugs arreglados
+1507653 Merge remote-tracking branch 'origin/maty'
+f7484d8 Merge origin/main into maty — keep Level1 map from maty
+0d24ddd Merge branch 'main' of https://github.com/viktoria114/echo-rush
+8511aa0 Finished level 1
+### Uncommitted Changes
+production/session-logs/agent-audit.log
+scripts/enemies/skeleton_archer.gd
+scripts/enemies/skeleton_archer.gd
+---
+
+## Session End: 20260515_185048
+### Commits
+745e7f4 sprites goblin boss y slime boss actualizados; fix visual proyectil de Lena
+a48d72c Merge branch 'main' of https://github.com/viktoria114/echo-rush
+85cb001 nuevos sprites y bugs arreglados
+1507653 Merge remote-tracking branch 'origin/maty'
+f7484d8 Merge origin/main into maty — keep Level1 map from maty
+0d24ddd Merge branch 'main' of https://github.com/viktoria114/echo-rush
+8511aa0 Finished level 1
+### Uncommitted Changes
+production/session-logs/agent-audit.log
+production/session-logs/session-log.md
+scenes/levels/PrologueScene.tscn
+scripts/enemies/skeleton_archer.gd
+scripts/enemies/skeleton_archer.gd
+scripts/ui/prologue_manager.gd
+---
+

@@ -1,5 +1,7 @@
 extends "res://scripts/enemies/enemy_base.gd"
 
+const SFX_MUERTE = preload("res://assets/audio/sfx/goblinMuerte.ogg")
+
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var barra: ProgressBar = $BarraVida
 
@@ -41,6 +43,7 @@ func _sufijo_dir(dir: Vector2) -> String:
 		return "south" if dir.y > 0 else "north"
 
 func _post_morir() -> void:
+	_reproducir_sonido_muerte(SFX_MUERTE)
 	var dir := Vector2.DOWN
 	if jugador != null and is_instance_valid(jugador):
 		dir = (jugador.global_position - global_position).normalized()
