@@ -145,7 +145,7 @@ func recibir_dano(cantidad: int) -> void:
 	emit_signal("vida_cambiada", vida_actual)
 	if vida_actual <= 0:
 		emit_signal("jugador_muerto")
-		queue_free()
+		call_deferred("queue_free")
 
 func curar(cantidad: int) -> void:
 	vida_actual = min(UpgradeSystem.get_vida_max(), vida_actual + cantidad)

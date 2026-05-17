@@ -68,7 +68,7 @@ func _morir() -> void:
 	_post_morir()
 
 func _post_morir() -> void:
-	queue_free()
+	call_deferred("queue_free")
 
 func _soltar_moneda(pos: Vector2) -> void:
 	var moneda := COIN_SCENE.instantiate()
@@ -82,7 +82,8 @@ func aplicar_veneno(dps: float) -> void:
 func aplicar_hielo(_factor: float) -> void:
 	ralentizado = true
 	await get_tree().create_timer(3.0).timeout
-	ralentizado = false
+	if is_instance_valid(self):
+		ralentizado = false
 
 func _actualizar_efectos(delta: float) -> void:
 	if veneno_timer > 0.0:
