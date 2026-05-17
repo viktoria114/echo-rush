@@ -52,15 +52,15 @@ attack={
 
 locale/translations=PackedStringArray("res://addons/maaacks_game_template/base/translations/menus_translations.en.translation", "res://addons/maaacks_game_template/base/translations/menus_translations.fr.translation")
 
+[layer_names]
+
+2d_physics/layer_1="Entorno"
+
 [maaacks_game_template]
 
 disable_install_audio_busses=true
 disable_update_check=false
 disable_install_wizard=true
-
-[layer_names]
-
-2d_physics/layer_1="Entorno"
 
 [physics]
 

@@ -9,11 +9,13 @@ const MUSICA_NIVEL := preload("res://assets/audio/music/nivel.ogg")
 @onready var wave_manager: Node = $WaveManager
 @onready var hud: CanvasLayer = $HUD
 @onready var jugador: CharacterBody2D = $Jugador
-@onready var enemigos: Node2D = $Enemigos
 @onready var puntos_spawn: Node2D = $PuntosSpawn
 
 func _ready() -> void:
-	wave_manager.contenedor_enemigos = enemigos
+	# Niveles con y_sort no tienen nodo Enemigos: los enemigos spawnan en la raíz
+	# para participar en el ordenamiento por Y con edificios y personajes.
+	var contenedor := get_node_or_null("Enemigos") as Node2D
+	wave_manager.contenedor_enemigos = contenedor if contenedor != null else self
 	wave_manager.puntos_spawn = puntos_spawn.get_children()
 
 	hud.configurar_oleadas(wave_manager.waves_per_level)
