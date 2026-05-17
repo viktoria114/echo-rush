@@ -42,7 +42,7 @@ El juego está en desarrollo activo con la mayoría del código implementado:
 - Escenas de UI: MainMenu, HUD, GameOver, Shop, EchoShop
 - Escenas de enemigos: Enemy, Goblin, Slime, Troll, Mage, SkeletonArcher, Boss, BossGolem, BossPortal, BossFinal
 - Escenas de personajes: Rael, Lena, Brom, Zari
-- Autoloads: Config, Economy, KeywordSystem, EchoAPI, UpgradeSystem
+- Autoloads: Config, Economy, KeywordSystem, EchoAPI, UpgradeSystem + AppConfig, SceneLoader, ProjectMusicController, ProjectUISoundController (del template Maaack's)
 
 **Pendiente:**
 - EchoAPI deshabilitada por defecto — requiere `user://api_key.txt` con clave de Anthropic
@@ -56,7 +56,7 @@ El juego está en desarrollo activo con la mayoría del código implementado:
 
 ## Autoloads (Singletons globales)
 
-Estos cinco nodos están disponibles en cualquier script sin `@onready` ni `get_node()`:
+Todos los autoloads están disponibles en cualquier script sin `@onready` ni `get_node()`:
 
 | Singleton | Script | Responsabilidad |
 |-----------|--------|-----------------|
@@ -65,8 +65,18 @@ Estos cinco nodos están disponibles en cualquier script sin `@onready` ni `get_
 | `KeywordSystem` | `scripts/systems/keyword_system.gd` | Lista de keywords activas; aplica al jugador por grupo |
 | `EchoAPI` | `scripts/systems/echo_api.gd` | Llamadas a Claude API; señales `respuesta_recibida`, `error_api`, `cargando` |
 | `UpgradeSystem` | `scripts/systems/upgrade_system.gd` | Bonos de stats entre niveles; persiste al cambiar de escena |
+| `AppConfig` | (addon) | Configuración de la app (opciones de video, audio, input) — del template Maaack's |
+| `SceneLoader` | (addon) | Carga de escenas con pantalla de carga — usar en lugar de `change_scene_to_file()` directamente |
+| `ProjectMusicController` | (addon) | Reproducción de música de fondo; `.play_stream(stream)` para cambiar pista |
+| `ProjectUISoundController` | (addon) | Sonidos de UI (botones, menús) |
 
 `Config` es la primera dependencia — todo lo demás lo referencia. Cualquier valor numérico balanceable va en `config.gd`, nunca hardcodeado.
+
+`ProjectMusicController` se usa activamente en `level_manager.gd` para cambiar entre música de nivel y música de boss:
+```gdscript
+ProjectMusicController.play_stream(MUSICA_BOSS)    # al spawnearse el boss
+ProjectMusicController.play_stream(MUSICA_NIVEL)   # al morir el boss
+```
 
 ---
 
@@ -145,30 +155,42 @@ Sin API key, `EchoAPI.preguntar()` emite un fallback con keyword `[FUEGO]` para 
 
 ```
 /scenes/
-  levels/       → Level1–Level4, PrologueScene
+  opening/      → opening.tscn (escena principal — arranca el juego)
+  levels/       → Level1–Level4, PrologueScene (estructura original)
+  game_scene/   → levels/level_1–3.tscn + tutorials/ (estructura nueva del template)
   ui/           → HUD, GameOver, EchoShop, Shop, MainMenu
+  menus/        → main_menu/, options_menu/ (con tabs: audio, video, input, game), level_select_menu/
+  windows/      → pause_menu, game_won_window, level_lost_window, level_won_window, credits windows
+  loading_screen/ → loading_screen, level_loading_screen, loading_screen_with_shader_caching
   characters/   → Rael, Lena, Brom, Zari
   enemies/      → Enemy, Goblin, Slime, Troll, Mage, SkeletonArcher, Boss, BossGolem, BossPortal, BossFinal
   npcs/         → Echo
   projectiles/  → Arrow, EnemyArrow
   items/        → Coin
+  credits/      → scrollable_credits, scrolling_credits, end_credits
 /scripts/
-  config.gd               → Autoload: todas las constantes
-  player/player.gd        → Movimiento 8 dirs, ataque melee, keywords
-  characters/             → brom.gd, lena.gd, zari.gd (IA autónoma)
-  enemies/                → enemy_base.gd + especializaciones
-  systems/                → wave_manager.gd, echo_api.gd, keyword_system.gd, economy.gd, upgrade_system.gd
-  ui/                     → level_manager.gd, hud.gd, main_menu.gd, shop.gd, echo_shop.gd, game_over.gd, prologue_manager.gd
-  projectiles/            → arrow.gd, enemy_arrow.gd
-  items/                  → coin.gd
-  tools/                  → fill_floor.gd, fill_level1.gd (editor tools)
+  config.gd                     → Autoload: todas las constantes
+  game_state.gd                 → Estado global de la partida (persiste entre escenas)
+  level_state.gd                → Estado del nivel actual
+  level_and_state_manager.gd    → Coordinación de nivel + estado (alternativa a level_manager)
+  player/player.gd              → Movimiento 8 dirs, ataque melee, keywords
+  characters/                   → brom.gd, lena.gd, zari.gd (IA autónoma)
+  enemies/                      → enemy_base.gd + especializaciones
+  systems/                      → wave_manager.gd, echo_api.gd, keyword_system.gd, economy.gd, upgrade_system.gd
+  ui/                           → level_manager.gd, hud.gd, main_menu.gd, shop.gd, echo_shop.gd, game_over.gd, prologue_manager.gd
+  projectiles/                  → arrow.gd, enemy_arrow.gd
+  items/                        → coin.gd
+  tools/                        → fill_floor.gd, fill_level1.gd (editor tools)
 /assets/
   sprites/characters/rael/     → rotations/ (8 dirs) + animations/ (walk, attack, idle)
   sprites/characters/zari/     → rotations/ solo (sin animaciones)
   sprites/characters/lena/     → vacío (Polygon2D placeholder)
   sprites/characters/brom/     → vacío (Polygon2D placeholder)
   backgrounds/                 → ZIPs por nivel — extraer antes de usar
+  audio/music/                 → boss.ogg, nivel.ogg (usados en level_manager)
 ```
+
+**Nota sobre duplicación de escenas:** Existen dos estructuras paralelas — `scenes/levels/` (Level1.tscn etc., usada por `level_manager.gd`) y `scenes/game_scene/levels/` (level_1.tscn etc., del template). Confirmar cuál usa cada nivel antes de modificar.
 
 ---
 
@@ -210,7 +232,7 @@ Los packs son ZIPs — extraer dentro de su carpeta correspondiente antes de ref
 
 ## Comandos
 
-- **Correr el juego:** Godot 4 → F5 (escena principal: `MainMenu.tscn`)
+- **Correr el juego:** Godot 4 → F5 (escena principal: `scenes/opening/opening.tscn`)
 - **Escena activa:** F6 en Godot corre la escena abierta
 - **Exportar:** Godot → Proyecto → Exportar → Windows/Linux
 - **Log de prompts:** registrar en `prompts_log.md` (requerido para expo)
