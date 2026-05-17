@@ -17,7 +17,8 @@ func _ready() -> void:
 	velocidad     = BOSS_VELOCIDAD
 	dano          = BOSS_DANO
 	rango_ataque  = 110.0
-	$Poligono.visible = false
+	if has_node("Poligono"):
+		$Poligono.visible = false
 	_play_anim("idle_south")
 
 func _mover_hacia_jugador() -> void:

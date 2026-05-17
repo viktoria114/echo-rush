@@ -85,6 +85,13 @@ func aplicar_hielo(_factor: float) -> void:
 	if is_instance_valid(self):
 		ralentizado = false
 
+func _reproducir_sonido_muerte(stream: AudioStream) -> void:
+	var asp := AudioStreamPlayer.new()
+	get_tree().current_scene.add_child(asp)
+	asp.stream = stream
+	asp.play()
+	asp.finished.connect(asp.queue_free)
+
 func _actualizar_efectos(delta: float) -> void:
 	if veneno_timer > 0.0:
 		veneno_timer -= delta

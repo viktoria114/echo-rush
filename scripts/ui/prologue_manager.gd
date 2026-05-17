@@ -10,10 +10,22 @@ const PANELES := [
 	"No había retorno.\nSu única opción: sobrevivir juntos y encontrar el camino de regreso.",
 ]
 
+# Una ruta de imagen por cada panel (misma cantidad que PANELES).
+# Pon tus imágenes en assets/sprites/prologue/ y ajusta los nombres aquí.
+# Deja la cadena vacía ("") si un panel no tiene imagen.
+const IMAGENES := [
+	"res://assets/sprites/prologue/panel_0.png",
+	"res://assets/sprites/prologue/panel_1.png",
+	"res://assets/sprites/prologue/panel_2.png",
+	"res://assets/sprites/prologue/panel_3.png",
+	"res://assets/sprites/prologue/panel_4.png",
+]
+
 var panel_actual: int = 0
 
 @onready var label_texto: Label = $UI/Panel/VBox/Texto
 @onready var boton: Button = $UI/Panel/VBox/Boton
+@onready var imagen: TextureRect = $UI/Imagen
 
 func _ready() -> void:
 	_mostrar_panel(0)
@@ -35,3 +47,11 @@ func _mostrar_panel(indice: int) -> void:
 	label_texto.text = PANELES[indice]
 	var es_ultimo := indice == PANELES.size() - 1
 	boton.text = "¡Comenzar!" if es_ultimo else "Continuar →"
+	_cargar_imagen(indice)
+
+func _cargar_imagen(indice: int) -> void:
+	var ruta: String = IMAGENES[indice] if indice < IMAGENES.size() else ""
+	if ruta.is_empty() or not ResourceLoader.exists(ruta):
+		imagen.texture = null
+		return
+	imagen.texture = load(ruta)

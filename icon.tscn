@@ -1,12 +1,26 @@
 [gd_scene format=3 uid="uid://bblbxhgifqypx"]
 
-[ext_resource type="Texture2D" uid="uid://b1ksturm4e6nn" path="res://icon.svg" id="1_tr34o"]
-[ext_resource type="Script" uid="uid://bwnct6fqr38cf" path="res://icon.gd" id="2_hqyvl"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hmqce"]
+
+[sub_resource type="GDScript" id="GDScript_tr34o"]
+script/source = "extends Sprite2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
 
 [node name="Icon" type="Sprite2D" unique_id=610321301]
 position = Vector2(540, 337)
-texture = ExtResource("1_tr34o")
-script = ExtResource("2_hqyvl")
+texture = SubResource("CompressedTexture2D_hmqce")
+script = SubResource("GDScript_tr34o")
 
 [node name="Window" type="Window" parent="." unique_id=1285470657]
 oversampling_override = 1.0
+position = Vector2i(0, 36)

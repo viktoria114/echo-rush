@@ -1,0 +1,299 @@
+{
+  "group_id": null,
+  "states": [
+    {
+      "character": {
+        "id": "0dd923e6-bddd-45e1-ac74-16286a2c70a9",
+        "name": "Massive brutish troll, enormous hulking body, thick rocky grey skin with moss patches, tiny beady angry eyes, wide flat nose, huge protruding jaw with broken teeth, massive arms longer than legs, giant clenched fists as weapons, no armor just raw hide, hunched giant posture, heavy and imposing silhouette, battle scars across body",
+        "prompt": "Massive brutish troll, enormous hulking body, thick rocky grey skin with moss patches, tiny beady angry eyes, wide flat nose, huge protruding jaw with broken teeth, massive arms longer than legs, giant clenched fists as weapons, no armor just raw hide, hunched giant posture, heavy and imposing silhouette, battle scars across body",
+        "size": {
+          "width": 92,
+          "height": 92
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-05-14T12:58:27.875583+00:00"
+      },
+      "folder": "states/Massive_brutish_troll_enormous_hulking_body_thick",
+      "frames": {
+        "rotations": {
+          "south": "states/Massive_brutish_troll_enormous_hulking_body_thick/rotations/south.png",
+          "south-east": "states/Massive_brutish_troll_enormous_hulking_body_thick/rotations/south-east.png",
+          "east": "states/Massive_brutish_troll_enormous_hulking_body_thick/rotations/east.png",
+          "north-east": "states/Massive_brutish_troll_enormous_hulking_body_thick/rotations/north-east.png",
+          "north": "states/Massive_brutish_troll_enormous_hulking_body_thick/rotations/north.png",
+          "north-west": "states/Massive_brutish_troll_enormous_hulking_body_thick/rotations/north-west.png",
+          "west": "states/Massive_brutish_troll_enormous_hulking_body_thick/rotations/west.png",
+          "south-west": "states/Massive_brutish_troll_enormous_hulking_body_thick/rotations/south-west.png"
+        },
+        "animations": {
+          "Running-23a6df99": {
+            "south": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south/frame_007.png"
+            ],
+            "south-east": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south-east/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south-east/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south-east/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south-east/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south-east/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south-east/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south-east/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south-east/frame_007.png"
+            ],
+            "south-west": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south-west/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south-west/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south-west/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south-west/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south-west/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south-west/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south-west/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/south-west/frame_007.png"
+            ],
+            "north-east": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north-east/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north-east/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north-east/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north-east/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north-east/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north-east/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north-east/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north-east/frame_007.png"
+            ],
+            "north-west": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north-west/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north-west/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north-west/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north-west/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north-west/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north-west/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north-west/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north-west/frame_007.png"
+            ],
+            "north": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/north/frame_007.png"
+            ],
+            "east": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/east/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/east/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/east/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/east/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/east/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/east/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/east/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/east/frame_007.png"
+            ],
+            "west": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/west/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/west/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/west/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/west/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/west/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/west/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/west/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Running-23a6df99/west/frame_007.png"
+            ]
+          },
+          "Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef": {
+            "south": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south/frame_007.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south/frame_008.png"
+            ],
+            "north-west": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-west/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-west/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-west/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-west/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-west/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-west/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-west/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-west/frame_007.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-west/frame_008.png"
+            ],
+            "north-east": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-east/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-east/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-east/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-east/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-east/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-east/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-east/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-east/frame_007.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north-east/frame_008.png"
+            ],
+            "east": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/east/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/east/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/east/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/east/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/east/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/east/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/east/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/east/frame_007.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/east/frame_008.png"
+            ],
+            "west": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/west/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/west/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/west/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/west/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/west/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/west/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/west/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/west/frame_007.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/west/frame_008.png"
+            ],
+            "south-west": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-west/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-west/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-west/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-west/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-west/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-west/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-west/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-west/frame_007.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-west/frame_008.png"
+            ],
+            "south-east": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-east/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-east/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-east/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-east/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-east/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-east/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-east/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-east/frame_007.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/south-east/frame_008.png"
+            ],
+            "north": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north/frame_007.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_winds_up_massive_fist_slowly_lunges_forward-ece5e9ef/north/frame_008.png"
+            ]
+          },
+          "Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd": {
+            "south": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south/frame_007.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south/frame_008.png"
+            ],
+            "south-east": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-east/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-east/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-east/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-east/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-east/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-east/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-east/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-east/frame_007.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-east/frame_008.png"
+            ],
+            "north": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north/frame_007.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north/frame_008.png"
+            ],
+            "south-west": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-west/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-west/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-west/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-west/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-west/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-west/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-west/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-west/frame_007.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/south-west/frame_008.png"
+            ],
+            "north-east": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-east/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-east/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-east/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-east/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-east/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-east/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-east/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-east/frame_007.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-east/frame_008.png"
+            ],
+            "north-west": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-west/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-west/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-west/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-west/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-west/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-west/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-west/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-west/frame_007.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/north-west/frame_008.png"
+            ],
+            "west": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/west/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/west/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/west/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/west/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/west/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/west/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/west/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/west/frame_007.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/west/frame_008.png"
+            ],
+            "east": [
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/east/frame_000.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/east/frame_001.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/east/frame_002.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/east/frame_003.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/east/frame_004.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/east/frame_005.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/east/frame_006.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/east/frame_007.png",
+              "states/Massive_brutish_troll_enormous_hulking_body_thick/animations/Troll_takes_fatal_damage_stumbles_sideways_confuse-058b00bd/east/frame_008.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.0",
+  "export_date": "2026-05-15T19:39:37.613171"
+}

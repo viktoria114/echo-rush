@@ -15,7 +15,7 @@ func agregar_keyword(kw: String) -> bool:
 	emit_signal("keywords_actualizadas", keywords_activas.duplicate())
 	return true
 
-func obtener_keywords() -> Array:
+func obtener_keywords() -> Array[String]:
 	return keywords_activas.duplicate()
 
 func reiniciar() -> void:

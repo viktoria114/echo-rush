@@ -37,3 +37,9 @@ const KEYWORD_FUEGO_DAMAGE := 40
 const KEYWORD_FUEGO_RADIUS := 120.0
 const KEYWORD_VENENO_DPS := 5.0
 const KEYWORD_HIELO_SLOW := 0.4
+
+# Mago — ataque a distancia con bola de fuego
+const MAGE_FIREBALL_DAMAGE := 15
+const MAGE_FIREBALL_RADIUS := 65.0
+const MAGE_FIREBALL_SPEED := 300.0
+const MAGE_FIREBALL_COOLDOWN := 2.5

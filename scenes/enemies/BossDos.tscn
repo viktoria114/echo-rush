@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://goblinboss_enemy"]
 
-[ext_resource type="Script" path="res://scripts/enemies/boss.gd" id="1_script"]
+[ext_resource type="Script" path="res://scripts/enemies/goblin_boss.gd" id="1_script"]
 [ext_resource type="Texture2D" uid="uid://goblinboss_stand_south" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/rotations/south.png" id="2_south_standing"]
 [ext_resource type="Texture2D" uid="uid://goblinboss_stand_north" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/rotations/north.png" id="3_north_standing"]
 [ext_resource type="Texture2D" uid="uid://goblinboss_stand_east" path="res://assets/sprites/enemies/goblin_boss/states/Large_imposing_goblin_boss_muscular_bulky_body_jag/rotations/east.png" id="4_east_standing"]
@@ -763,4 +763,3 @@ offset_right = 30.0
 offset_bottom = -42.0
 max_value = 40.0
 value = 40.0
-show_percentage = false

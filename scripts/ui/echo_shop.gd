@@ -37,7 +37,7 @@ func _actualizar_keywords() -> void:
 	if kws.is_empty():
 		label_keywords.text = "Sin poderes activos"
 	else:
-		var nombres := kws.map(func(k: String) -> String: return "[%s]" % k)
+		var nombres: Array[String] = kws.map(func(k: String) -> String: return "[%s]" % k)
 		label_keywords.text = "Poderes: " + ", ".join(nombres)
 
 func _on_btn_preguntar() -> void:

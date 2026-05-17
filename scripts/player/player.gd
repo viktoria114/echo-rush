@@ -12,6 +12,9 @@ var direccion: String = "south"
 var keywords_activas: Array[String] = []
 var escudo_restante: int = 0
 
+const SFX_GOLPE = preload("res://assets/audio/sfx/golpe.ogg")
+var _sfx_golpe: AudioStreamPlayer
+
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var hitbox: Area2D = $HitboxArea
 
@@ -39,6 +42,9 @@ func _ready() -> void:
 	vida_actual = UpgradeSystem.get_vida_max()
 	_cargar_idle_rotations()
 	sprite.play("idle_south")
+	_sfx_golpe = AudioStreamPlayer.new()
+	_sfx_golpe.stream = SFX_GOLPE
+	add_child(_sfx_golpe)
 
 func _cargar_idle_rotations() -> void:
 	var sf: SpriteFrames = sprite.sprite_frames
@@ -67,6 +73,11 @@ func _manejar_movimiento() -> void:
 		Input.get_axis("ui_left", "ui_right"),
 		Input.get_axis("ui_up", "ui_down")
 	)
+	if Input.is_physical_key_pressed(KEY_A): dir.x -= 1.0
+	if Input.is_physical_key_pressed(KEY_D): dir.x += 1.0
+	if Input.is_physical_key_pressed(KEY_W): dir.y -= 1.0
+	if Input.is_physical_key_pressed(KEY_S): dir.y += 1.0
+	dir = dir.clamp(Vector2(-1.0, -1.0), Vector2(1.0, 1.0))
 	if dir != Vector2.ZERO:
 		dir = dir.normalized()
 		_actualizar_direccion(dir)
@@ -100,15 +111,19 @@ func _ejecutar_ataque() -> void:
 	sprite.play(ANIM_ATTACK.get(direccion, "attack_south"))
 
 	await get_tree().create_timer(0.15).timeout
+	var golpeo_enemigo := false
 	for cuerpo in hitbox.get_overlapping_bodies():
 		if cuerpo.is_in_group("enemigos") and cuerpo.has_method("recibir_dano"):
 			cuerpo.recibir_dano(UpgradeSystem.get_dano_melee())
+			golpeo_enemigo = true
 			if "SANGRE" in keywords_activas:
 				curar(Config.KEYWORD_SANGRE_HEAL)
 			if "VENENO" in keywords_activas:
 				cuerpo.aplicar_veneno(Config.KEYWORD_VENENO_DPS)
 			if "HIELO" in keywords_activas:
 				cuerpo.aplicar_hielo(Config.KEYWORD_HIELO_SLOW)
+	if golpeo_enemigo:
+		_sfx_golpe.play()
 
 	if "FUEGO" in keywords_activas and contador_ataques % Config.KEYWORD_FUEGO_INTERVAL == 0:
 		_explosion_fuego()

@@ -5,6 +5,7 @@ extends Node2D
 const SHOP_ESCENA := preload("res://scenes/ui/Shop.tscn")
 const MUSICA_BOSS := preload("res://assets/audio/music/boss.ogg")
 const MUSICA_NIVEL := preload("res://assets/audio/music/nivel.ogg")
+const PAUSA_ESCENA := preload("res://scenes/windows/pause_menu_layer.tscn")
 
 @onready var wave_manager: Node = $WaveManager
 @onready var hud: CanvasLayer = $HUD
@@ -12,6 +13,16 @@ const MUSICA_NIVEL := preload("res://assets/audio/music/nivel.ogg")
 @onready var puntos_spawn: Node2D = $PuntosSpawn
 
 func _ready() -> void:
+	# Música: arranca nivel.ogg si la escena no tiene BackgroundMusicPlayer propio
+	if not get_node_or_null("BackgroundMusicPlayer"):
+		ProjectMusicController.play_stream(MUSICA_NIVEL)
+
+	# Pausa: añade la capa si la escena (p. ej. Level1) no la tiene
+	if not get_node_or_null("PauseMenuLayer"):
+		var capa := PAUSA_ESCENA.instantiate()
+		capa.name = "PauseMenuLayer"
+		add_child(capa)
+
 	# Niveles con y_sort no tienen nodo Enemigos: los enemigos spawnan en la raíz
 	# para participar en el ordenamiento por Y con edificios y personajes.
 	var contenedor := get_node_or_null("Enemigos") as Node2D
@@ -29,8 +40,23 @@ func _ready() -> void:
 	Economy.connect("monedas_cambiadas",        hud.actualizar_monedas)
 	KeywordSystem.connect("keywords_actualizadas", hud.actualizar_keywords)
 
+	_crear_boton_debug()
 	await get_tree().process_frame
 	wave_manager.iniciar_siguiente_oleada()
+
+func _crear_boton_debug() -> void:
+	var btn := Button.new()
+	btn.text = "Saltear nivel"
+	btn.anchor_left   = 0.0
+	btn.anchor_top    = 1.0
+	btn.anchor_right  = 0.0
+	btn.anchor_bottom = 1.0
+	btn.offset_left   = 10.0
+	btn.offset_right  = 160.0
+	btn.offset_top    = -45.0
+	btn.offset_bottom = -10.0
+	hud.add_child(btn)
+	btn.pressed.connect(_abrir_tienda)
 
 func _en_oleada_completada(numero: int) -> void:
 	if numero >= wave_manager.waves_per_level:

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://fireball_enemy_01"]
+
+[ext_resource type="Script" path="res://scripts/projectiles/fireball_enemy.gd" id="1_fball"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fball"]
+radius = 10.0
+
+[node name="FireballEnemy" type="Area2D"]
+collision_layer = 0
+collision_mask = 1
+script = ExtResource("1_fball")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_fball")
+
+[node name="Visual" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(10, 0, 7.07, 7.07, 0, 10, -7.07, 7.07, -10, 0, -7.07, -7.07, 0, -10, 7.07, -7.07)
+color = Color(1, 0.45, 0.1, 1)
