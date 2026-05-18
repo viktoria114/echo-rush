@@ -12,8 +12,11 @@ var direccion: String = "south"
 var keywords_activas: Array[String] = []
 var escudo_restante: int = 0
 
-const SFX_GOLPE = preload("res://assets/audio/sfx/golpe.ogg")
+const SFX_GOLPE           = preload("res://assets/audio/sfx/golpe.ogg")
+const SFX_GOLPE_RECIBIDO  = preload("res://assets/audio/sfx/recibirGolpe.ogg")
+const SFX_MUERTE_JUGADOR  = preload("res://assets/audio/sfx/personajeMuerte.ogg")
 var _sfx_golpe: AudioStreamPlayer
+var _sfx_golpe_recibido: AudioStreamPlayer
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var hitbox: Area2D = $HitboxArea
@@ -45,6 +48,10 @@ func _ready() -> void:
 	_sfx_golpe = AudioStreamPlayer.new()
 	_sfx_golpe.stream = SFX_GOLPE
 	add_child(_sfx_golpe)
+	_sfx_golpe_recibido = AudioStreamPlayer.new()
+	_sfx_golpe_recibido.stream = SFX_GOLPE_RECIBIDO
+	_sfx_golpe_recibido.volume_db = Config.SFX_VOL_GOLPE_RECIBIDO
+	add_child(_sfx_golpe_recibido)
 
 func _cargar_idle_rotations() -> void:
 	var sf: SpriteFrames = sprite.sprite_frames
@@ -159,8 +166,21 @@ func recibir_dano(cantidad: int) -> void:
 	vida_actual = max(0, vida_actual - cantidad)
 	emit_signal("vida_cambiada", vida_actual)
 	if vida_actual <= 0:
+		_reproducir_sonido_escena(SFX_MUERTE_JUGADOR, Config.SFX_VOL_MUERTE_JUGADOR)
 		emit_signal("jugador_muerto")
 		call_deferred("queue_free")
+	else:
+		_sfx_golpe_recibido.play()
+
+func _reproducir_sonido_escena(stream: AudioStream, vol: float) -> void:
+	if not is_instance_valid(get_tree().current_scene):
+		return
+	var asp := AudioStreamPlayer.new()
+	get_tree().current_scene.add_child(asp)
+	asp.stream = stream
+	asp.volume_db = vol
+	asp.play()
+	asp.finished.connect(asp.queue_free)
 
 func curar(cantidad: int) -> void:
 	vida_actual = min(UpgradeSystem.get_vida_max(), vida_actual + cantidad)

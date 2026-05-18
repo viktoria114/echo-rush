@@ -87,5 +87,22 @@ func _abrir_tienda() -> void:
 			get_tree().change_scene_to_file(proxima_escena)
 	)
 
+var _game_over_iniciado := false
+
 func _game_over() -> void:
+	if _game_over_iniciado:
+		return
+	_game_over_iniciado = true
+	ProjectMusicController.stop()
+	await get_tree().create_timer(1.0).timeout
+	var canvas := CanvasLayer.new()
+	canvas.layer = 100
+	add_child(canvas)
+	var overlay := ColorRect.new()
+	overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	overlay.color = Color(0.0, 0.0, 0.0, 0.0)
+	canvas.add_child(overlay)
+	var tween := create_tween()
+	tween.tween_property(overlay, "color:a", 1.0, 0.8)
+	await tween.finished
 	get_tree().change_scene_to_file("res://scenes/ui/GameOver.tscn")

@@ -43,3 +43,9 @@ const MAGE_FIREBALL_DAMAGE := 15
 const MAGE_FIREBALL_RADIUS := 65.0
 const MAGE_FIREBALL_SPEED := 300.0
 const MAGE_FIREBALL_COOLDOWN := 2.5
+
+# Volúmenes SFX (dB; 0.0 = volumen completo)
+const SFX_VOL_GOLPE_RECIBIDO  := 0.0
+const SFX_VOL_MUERTE_BOSS     := 0.0
+const SFX_VOL_GAME_OVER       := 0.0
+const SFX_VOL_MUERTE_JUGADOR  := 0.0

@@ -2,6 +2,8 @@ extends "res://scripts/enemies/enemy_base.gd"
 
 signal boss_vida_cambiada(vida_actual: int, vida_max: int)
 
+const SFX_MUERTE_BOSS = preload("res://assets/audio/sfx/bossMuerte.ogg")
+
 const BOSS_HP        := 400
 const BOSS_VELOCIDAD := 65.0
 const BOSS_DANO      := 20
@@ -62,6 +64,8 @@ func _play_anim(anim: String) -> void:
 		sprite.play(anim)
 
 func _post_morir() -> void:
+	if is_instance_valid(self):
+		_reproducir_sonido_muerte(SFX_MUERTE_BOSS)
 	sprite.sprite_frames.set_animation_loop("muerte_south-west", false)
 	_play_anim("muerte_south-west")
 	sprite.animation_finished.connect(queue_free)
