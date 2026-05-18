@@ -263,3 +263,65 @@ scripts/enemies/skeleton_archer.gd
 scripts/ui/prologue_manager.gd
 ---
 
+## Session End: 20260517_191143
+### Commits
+d52ee8b Merge origin/main into maty — aplicar cambios de main
+ccbbe97 merged proyect
+dc3ac5f finish level4
+2c5ba10 finish level3
+70c673e finish level2
+cc24aa2 modified claude.md
+1950945 merge main to maty
+### Uncommitted Changes
+production/session-logs/agent-audit.log
+production/session-logs/compaction-log.txt
+---
+
+## Session End: 20260517_210314
+### Commits
+e5e3821 fix: resolver conflictos de merge en Level2.tscn y Level3.tscn
+d52ee8b Merge origin/main into maty — aplicar cambios de main
+ccbbe97 merged proyect
+dc3ac5f finish level4
+2c5ba10 finish level3
+70c673e finish level2
+cc24aa2 modified claude.md
+1950945 merge main to maty
+### Uncommitted Changes
+production/session-logs/agent-audit.log
+production/session-logs/compaction-log.txt
+production/session-logs/session-log.md
+---
+
+## Session End: 20260517_211010
+### Commits
+e5e3821 fix: resolver conflictos de merge en Level2.tscn y Level3.tscn
+d52ee8b Merge origin/main into maty — aplicar cambios de main
+ccbbe97 merged proyect
+dc3ac5f finish level4
+2c5ba10 finish level3
+70c673e finish level2
+cc24aa2 modified claude.md
+1950945 merge main to maty
+### Uncommitted Changes
+production/session-logs/agent-audit.log
+production/session-logs/compaction-log.txt
+production/session-logs/session-log.md
+---
+
+## Session End: 20260517_212735
+### Commits
+e5e3821 fix: resolver conflictos de merge en Level2.tscn y Level3.tscn
+d52ee8b Merge origin/main into maty — aplicar cambios de main
+ccbbe97 merged proyect
+dc3ac5f finish level4
+2c5ba10 finish level3
+70c673e finish level2
+cc24aa2 modified claude.md
+1950945 merge main to maty
+### Uncommitted Changes
+production/session-logs/agent-audit.log
+production/session-logs/compaction-log.txt
+production/session-logs/session-log.md
+---
+
